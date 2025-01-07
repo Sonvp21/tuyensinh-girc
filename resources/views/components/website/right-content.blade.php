@@ -1,4 +1,5 @@
 <div class="space-y-3 lg:block px-3">
+    {{-- liên hệ  --}}
     <div class="md:flex flex-row justify-between hidden">
         <a href="https://ocopbentre.girc.edu.vn/contacts" class="flex items-center gap-1 hover:text-yellow-600">
             <span class="rounded-sm bg-yellow-500 p-1">
@@ -33,6 +34,7 @@
         </a>
     </div>
 
+    {{-- Bản đồ --}}
     <div>
         <div class="relative flex h-9 items-center overflow-hidden bg-lime-500 px-4">
             <svg fill="currentColor" class="absolute -right-6 h-full w-auto text-orange-500"
@@ -40,7 +42,6 @@
                 text-rendering="geometricPrecision" viewBox="0 0 120 36">
                 <path d="M120 36s.064942-36 0-36H42.896282C21.448141 0 21.448141 36 0 36h120Z" />
             </svg>
-
             <a href="{{ route('map') }}"
                 class="flex items-center justify-between gap-2 text-sm font-bold uppercase text-white hover:underline">
                 <i class="far fa-map mt-1"></i>
@@ -48,14 +49,12 @@
             </a>
         </div>
         <div
-            class="drawer map-wrapper relative">
+            class=" map-wrapper relative">
             @include('web.map.index-sidebar')
-
         </div>
     </div>
 
-
-
+    {{-- văn bản  --}}
     <div class="flex h-auto flex-col gap-4 !mt-3">
         <div class="grow">
             <div class="relative flex h-9 items-center overflow-hidden bg-lime-500 px-4">
