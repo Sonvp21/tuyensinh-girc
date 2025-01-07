@@ -1,7 +1,6 @@
 /.phpunit.cache
 /node_modules
 /public/hot
-/public/storage
 /storage/*.key
 /storage/logs/laravel.log
 /storage/framework/views/
@@ -22,3 +21,4 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+storage/logs/laravel.log
