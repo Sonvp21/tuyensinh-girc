@@ -120,7 +120,7 @@
             </li>
             <li class="relative flex-row whitespace-nowrap">
                 <a class="hover:bg-lime-500 hover:text-white py-2.5 uppercase text-white font-semibold h-full flex items-center tracking-wider justify-start"
-                    href="">
+                    href="{{ route('map') }}">
                     <span class="border-white px-2 lg:border-l">
                         Bản đồ vùng trồng
                     </span>

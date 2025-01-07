@@ -113,17 +113,6 @@
                                     class="ml-6 space-y-2 border-l border-slate-300 border-l-slate-300 p-2">
                                     <li>
                                         <div class="flex items-start">
-                                            <input id="border-checkbox" type="checkbox" name="border"
-                                                class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                                checked />
-                                            <label for="border-checkbox"
-                                                class="ml-2 text-sm font-medium text-slate-900">
-                                                @lang('web.layer_border')
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-start">
                                             <input id="districts-checkbox" type="checkbox" name="districts"
                                                 value="d"
                                                 class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
@@ -178,7 +167,7 @@
                                 </div>
                                 <ul x-cloak x-show="open" x-transition
                                     class="ml-6 space-y-2 border-l border-slate-300 p-2">
-                                    <div class="grid grid-cols-2 gap-2">
+                                    {{-- <div class="grid grid-cols-2 gap-2">
                                         <div>
                                             <label class="form-control w-full max-w-xs">
                                                 <div class="label">
@@ -201,57 +190,21 @@
                                                 <option value="">Chọn xã</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <li>
-                                        <div class="flex items-start">
-                                            <input id="patents-checkbox" type="checkbox" name="patents"
-                                                value="p"
-                                                class="h-4 w-4 rounded bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                                checked />
-                                            <label for="patents-checkbox"
-                                                class="ml-2 text-sm font-medium text-slate-900">
-                                                Sáng chế toàn văn <span class="text-red-800 italic">( {{ $patentCount }} )</span>
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-start">
-                                            <input id="trademarks-checkbox" type="checkbox" name="trademarks"
-                                                value="t"
-                                                class="h-4 w-4 rounded bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                                checked />
-                                            <label for="trademarks-checkbox"
-                                                class="ml-2 text-sm font-medium text-slate-900">
-                                                Nhãn hiệu <span class="text-red-800 italic">( {{ $trademarkCount }} )</span>
-                                            </label>
-                                        </div>
-                                    </li>
+                                    </div> --}}
+                                    
 
                                     <li>
                                         <div class="flex items-start">
-                                            <input id="industrial_designs-checkbox" type="checkbox" name="industrial_designs"
-                                                value="i"
+                                            <input id="vung_trongs-checkbox" type="checkbox" name="vung_trongs"
+                                                value="vt"
                                                 class="h-4 w-4 rounded bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
                                                 checked />
-                                            <label for="industrial_designs-checkbox"
+                                            <label for="vung_trongs-checkbox"
                                                 class="ml-2 text-sm font-medium text-slate-900">
-                                                Kiểu dáng công nghiệp <span class="text-red-800 italic">( {{ $industrialDesignCount }} )</span>
+                                                Vùng trồng
                                             </label>
                                         </div>
                                     </li>
-
-                                    {{-- <li>
-                                        <div class="flex items-start">
-                                            <input id="science_innovations-checkbox" type="checkbox" name="science_innovations"
-                                                value="si"
-                                                class="h-4 w-4 rounded bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                                checked />
-                                            <label for="science_innovations-checkbox"
-                                                class="ml-2 text-sm font-medium text-slate-900">
-                                                KHCN và Đổi mới sáng tạo <span class="text-red-800 italic">( {{ $scienceInnovationCount }} )</span>
-                                            </label>
-                                        </div>
-                                    </li> --}}
                                 </ul>
                             </div>
 
@@ -272,10 +225,7 @@
             <div class=" w-[-webkit-fill-available]" id="map">
                 <livewire:website.map.info.districts />
                 <livewire:website.map.info.communes />
-                <livewire:website.map.info.patents />
-                <livewire:website.map.info.trademarks />
-                <livewire:website.map.info.industrial-designs />
-                {{-- <livewire:website.map.info.science-innovations /> --}}
+                <livewire:website.map.info.vung-trongs />
             </div>
         </div>
         <x-website.map.control />

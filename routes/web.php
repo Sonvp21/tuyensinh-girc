@@ -43,8 +43,6 @@ Route::post('/save-redirect-url', [AuthenticatedSessionController::class, 'saveU
 // map 
 Route::get('/map', [MapController::class, 'index'])->name('map');
 Route::get('/map/{layer}.geojson', [MapController::class, 'layer']);
-// web.php lấy dữ liệu xã theo huyện từ map (tùy thuộc vào cách bạn muốn xử lý yêu cầu)
-Route::get('/communes/{districtId}', [MapController::class, 'getCommunesByDistrict']);
 
 ////Tra cứu- thống kê
 //Sản phẩm

@@ -2,31 +2,31 @@
 
 namespace App\Livewire\Website\Map\Info;
 
-use App\Models\Admin\Commune;
+use App\Models\Admin\VungTrong;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
-class Communes extends Component
+class VungTrongs extends Component
 {
-    public $commune;
+    public $vungtrong;
     public $openInfoBox = false;
 
     #[On('closeInfoBox')]
     public function closeInfoBox()
     {
         $this->openInfoBox = false;
-        $this->commune = null;
+        $this->vungtrong = null;
     }
-    #[On('getCommuneInfo')]
-    public function getCommuneInfo($id)
+    #[On('getVungtrongInfo')]
+    public function getVungtrongInfo($id)
     {
-        $this->commune = Commune::find($id);
+        $this->vungtrong = VungTrong::find($id);
 
         $this->openInfoBox = true;
     }
 
     public function render()
     {
-        return view('livewire.website.map.info.communes');
+        return view('livewire.website.map.info.vung-trongs');
     }
 }

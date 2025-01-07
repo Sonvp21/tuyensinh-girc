@@ -35,29 +35,10 @@
                     </h3>
                     <div class="flex items-center gap-2 pl-5">
                         <div style="width: 25px; height: 20px;">
-                            <img src="{{ asset('homepage/patent.png') }}" alt="">
+                            
                         </div>
-                        <span class="text-sm font-medium text-slate-900">Sáng chế</span>
+                        <span class="text-sm font-medium text-slate-900">Vùng trồng</span>
                     </div>
-                    <div class="flex items-center gap-2 pl-5">
-                        <div style="width: 25px; height: 20px;">
-                            <img src="{{ asset('homepage/trademark.png') }}" alt="">
-                        </div>
-                        <span class="text-sm font-medium text-slate-900">Nhãn hiệu</span>
-                    </div>
-                    <div class="flex items-center gap-2 pl-5">
-                        <div style="width: 25px; height: 20px;">
-                            <img src="{{ asset('homepage/industrial_design.png') }}" alt="">
-                        </div>
-                        <span class="text-sm font-medium text-slate-900">Kiểu dáng công nghiệp</span>
-                    </div>
-                    {{-- <div class="flex items-center gap-2 pl-5">
-                        <div style="width: 25px; height: 20px;">
-                            <img src="{{ asset('homepage/science_innovation.png') }}" alt="">
-                        </div>
-                        <span class="text-sm font-medium text-slate-900">KHCN và Đổi mới sáng tạo</span>
-                    </div> --}}
-
                 </div>
             </div>
         </div>

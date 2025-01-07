@@ -11,15 +11,15 @@ import { ADMINISTRATIVE_LAYER, ADMINISTRATIVE_INFOBOX } from "./baselayer";
 
 const VIEW = new View({
     projection: 'EPSG:4326',
-    center: [106.372, 10.243],
+    center: [108.046287, 12.502438],
     minZoom: 7,
     maxZoom: 20,
     zoom: 9
 });
 
-const borderSource = ADMINISTRATIVE_LAYER.border.getSource();
-borderSource.on("addfeature", function () {
-    VIEW.fit(borderSource.getExtent());
+const districtsSource = ADMINISTRATIVE_LAYER.districts.getSource();
+districtsSource.on("addfeature", function () {
+    VIEW.fit(districtsSource.getExtent());
 });
 
 const map = new Map({
@@ -28,15 +28,10 @@ const map = new Map({
     }),
     layers: [
         BASEMAP_LAYER,
-        ADMINISTRATIVE_LAYER.border,
-
         ADMINISTRATIVE_LAYER.districts,
         ADMINISTRATIVE_LAYER.communes,
 
-        ADMINISTRATIVE_LAYER.patents,
-        ADMINISTRATIVE_LAYER.trademarks,
-        ADMINISTRATIVE_LAYER.industrial_designs,
-        // ADMINISTRATIVE_LAYER.science_innovations,
+        ADMINISTRATIVE_LAYER.vung_trongs,
     ],
     target: "map",
     view: VIEW,
@@ -45,7 +40,7 @@ const map = new Map({
 /**  Measurementsm, Zoom, Reset **/
 DEFAULT_CONTROLS(
     map,
-    borderSource /* borderSource is use to get the extent for the reset function */
+    districtsSource /* districtsSource is use to get the extent for the reset function */
 );
 
 /** Enable info for administrative map **/
