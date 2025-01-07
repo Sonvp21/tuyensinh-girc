@@ -94,4 +94,9 @@ class HomeController extends Controller
             'relatednotifys' => $relatednotifys,
         ]);
     }
+
+    public function showProduct()
+    {
+        return view('web.products.show');
+    }
 }

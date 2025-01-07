@@ -171,7 +171,7 @@
                                 d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <span>Chương trìnhQuốc gia</span>
+                        <span>Chương trình Quốc gia</span>
                     </a>
                 </li>
                 <li class="px-3 hover:text-slate-800">

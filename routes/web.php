@@ -15,6 +15,8 @@ Route::get('/', HomeController::class)->name('home');
 
 Route::get('/gioi-thieu', [HomeController::class, 'about'])->name('web.abouts.index');
 
+Route::get('/chi-tiet-san-pham', [HomeController::class, 'showProduct'])->name('web.products.show');
+
 Route::get('/tin-tuc-su-kien', [HomeController::class, 'index'])->name('web.posts.index');
 Route::get('/tin-tuc-su-kien/{slug}', [HomeController::class, 'show'])->name('web.posts.show');
 

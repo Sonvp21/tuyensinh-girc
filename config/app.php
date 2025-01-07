@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://bentre-shtt.test'),
+    'url' => env('APP_URL', 'https://gaokrongana.girc.edu.vn'),
 
     /*
     |--------------------------------------------------------------------------
