@@ -56,4 +56,4 @@
         </div>
     </div>
 </footer>
-<?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/components/website/footer.blade.php ENDPATH**/ ?>
+<?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/components/website/footer.blade.php ENDPATH**/ ?>

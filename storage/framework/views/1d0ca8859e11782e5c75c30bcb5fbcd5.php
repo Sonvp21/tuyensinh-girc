@@ -81,4 +81,4 @@
         }
     };
 </script>
-<?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/components/admin/alerts/toast.blade.php ENDPATH**/ ?>
+<?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/components/admin/alerts/toast.blade.php ENDPATH**/ ?>

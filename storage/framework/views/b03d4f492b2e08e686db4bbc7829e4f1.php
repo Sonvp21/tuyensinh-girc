@@ -377,4 +377,4 @@
         </div>
     </div>
 </div>
-<?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/components/website/right-content.blade.php ENDPATH**/ ?>
+<?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/components/website/right-content.blade.php ENDPATH**/ ?>

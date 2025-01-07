@@ -806,4 +806,4 @@
 <?php $component = $__componentOriginalabae5313cb55a9fea6e35b1ec8efbb3e; ?>
 <?php unset($__componentOriginalabae5313cb55a9fea6e35b1ec8efbb3e); ?>
 <?php endif; ?>
-<?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/web/home.blade.php ENDPATH**/ ?>
+<?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/web/home.blade.php ENDPATH**/ ?>

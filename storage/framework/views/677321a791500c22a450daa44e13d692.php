@@ -15,4 +15,4 @@
 }
 </style>
 <div class="custom-background-header">
-</div><?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/components/website/banner.blade.php ENDPATH**/ ?>
+</div><?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/components/website/banner.blade.php ENDPATH**/ ?>

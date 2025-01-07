@@ -396,4 +396,4 @@
 </body>
 
 </html>
-<?php /**PATH D:\ADMIN GIRC-projects\daklak-krongana\resources\views/layouts/website.blade.php ENDPATH**/ ?>
+<?php /**PATH /mnt/vdb/GIRC/Son/daklak-krongana/resources/views/layouts/website.blade.php ENDPATH**/ ?>
