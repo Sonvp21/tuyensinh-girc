@@ -7,10 +7,10 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div x-data="{ panelOpen: true }" class="contents justify-between">
+    <div x-data="{ panelOpen: false }" class="contents justify-between">
         <!-- Panel -->
         <div x-show="panelOpen" x-transition class="panel-container absolute z-10 shadow-lg"
-            style="width: -webkit-fill-available; height: -webkit-fill-available;">
+            style="width: -webkit-fill-available;">
             <ul class="menu block bg-base-200 bg-opacity-80 text-base-content min-h-full">
                 <div x-data="{ open: false }">
                     <div @click="open =! open" :class="open && 'bg-slate-100 '"
