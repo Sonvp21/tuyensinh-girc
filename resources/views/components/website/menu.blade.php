@@ -100,19 +100,19 @@
                         <li class="hover:bg-black hover:bg-opacity-5">
                             <a class="flex items-center justify-start space-x-2 px-2 py-2.5 text-slate-800"
                                 href="#">
-                                Bản đồ vùng trồng
+                                DS hộ trồng lúa
                             </a>
                         </li>
                         <li class="hover:bg-black hover:bg-opacity-5">
                             <a class="flex items-center justify-start space-x-2 px-2 py-2.5 text-slate-800"
                                 href="#">
-                                Danh sách sản phẩm
+                                DS cơ sở chế biến / xay xát
                             </a>
                         </li>
                         <li class="hover:bg-black hover:bg-opacity-5">
                             <a class="flex items-center justify-start space-x-2 px-2 py-2.5 text-slate-800"
                                 href="#">
-                                Thị trường tiêu thụ sản phẩm
+                                Đại lý tiêu thụ
                             </a>
                         </li>
                     </ul>

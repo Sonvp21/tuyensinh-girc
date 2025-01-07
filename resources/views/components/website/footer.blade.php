@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="flex flex-col items-center text-sm text-green-800">
-                <h4 class="font-bold">VĂN PHÒNG ĐIỀU PHỐI CHƯƠNG TRÌNH XÂY DỰNG NÔNG THÔN MỚI</h4>
+                <h4 class="font-bold">UỶ BAN NHÂN DÂN HUYỆN KRÔNG ANA</h4>
                 <span>Địa chỉ: ... Tỉnh Đắk Lắk</span>
                 <span>Điện thoại: 0987 666 555 | Fax: 0987 666 555 | Email: gaokrongana@daklak.gov.vn</span>
             </div>
