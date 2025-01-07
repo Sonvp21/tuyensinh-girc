@@ -4,14 +4,8 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin\About;
-use App\Models\Admin\GeographicalIndication;
-use App\Models\Admin\IndustrialDesign;
-use App\Models\Admin\Initiative;
 use App\Models\Admin\Notify;
-use App\Models\Admin\Patent;
 use App\Models\Admin\Post;
-use App\Models\Admin\ScienceInnovation;
-use App\Models\Admin\Trademark;
 use Illuminate\View\View;
 
 class HomeController extends Controller

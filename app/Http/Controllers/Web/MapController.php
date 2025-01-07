@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
-use App\Models\Admin\Commune;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 
@@ -104,8 +102,11 @@ class MapController extends Controller
             $geoJson = collect($geoJson)->first();
         
             return json_decode($geoJson->data);
-        }
-        
+        }        
+    }
 
+    public function indexSidebar()
+    {
+        return view('web.map.index-sidebar');
     }
 }

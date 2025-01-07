@@ -41,130 +41,15 @@
                 <path d="M120 36s.064942-36 0-36H42.896282C21.448141 0 21.448141 36 0 36h120Z" />
             </svg>
 
-            <a href="https://ocopbentre.girc.edu.vn/map"
+            <a href="{{ route('map') }}"
                 class="flex items-center justify-between gap-2 text-sm font-bold uppercase text-white hover:underline">
                 <i class="far fa-map mt-1"></i>
                 <span>Bản đồ vùng trồng</span>
             </a>
         </div>
-        <div id="map-layer"
-            class="drawer map-wrapper relative mt-1 h-[25.5rem] w-full overflow-hidden bg-checkered-pattern bg-[length:16px_16px]">
-            <div class="flex justify-between">
-                <!-- Drawer 1 -->
-                <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
-
-                <div class="drawer-side contents">
-                    <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                        <div
-                            class="flex items-center justify-between px-4 py-2 text-sm font-bold tracking-tight text-slate-700 hover:bg-slate-100">
-                            <div class="flex items-start">
-                                <span class="mr-2 h-5 w-5 rounded-full">
-                                    <i class="fad fa-layer-group w-5 fill-current group-hover:text-white"></i>
-                                </span>
-                                <span>Bản đồ nền</span>
-                            </div>
-                        </div>
-                        <ul class="ml-6 space-y-2 border-l border-slate-300 border-l-slate-300 p-2">
-                            <li>
-                                <div class="flex items-start">
-                                    <input id="basemap_hide" type="radio" name="basemap"
-                                        class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500" />
-                                    <label for="basemap_hide" class="ml-2 text-sm font-medium text-slate-900">
-                                        Ẩn nền </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex items-start">
-                                    <input id="basemap_road" type="radio" name="basemap" value="m"
-                                        class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                        checked />
-                                    <label for="basemap_road" class="ml-2 text-sm font-medium text-slate-900">
-                                        Địa lý </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex items-start">
-                                    <input id="basemap_satellite" type="radio" name="basemap" value="s"
-                                        class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500" />
-                                    <label for="basemap_satellite" class="ml-2 text-sm font-medium text-slate-900">
-                                        Vệ tinh </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex items-start">
-                                    <input id="terrain-radio" type="radio" name="basemap" value="p"
-                                        class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500" />
-                                    <label for="terrain-radio" class="ml-2 text-sm font-medium text-slate-900">
-                                        Địa hình </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </ul>
-                </div>
-
-                <!-- Drawer 2 -->
-                <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-
-                <div class="drawer-side contents">
-                    <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                        <div
-                        class="flex items-center justify-between px-4 py-2 text-sm font-bold tracking-tight text-slate-700 hover:bg-slate-100">
-                        <div class="flex items-start">
-                            <span class="mr-2 h-5 w-5 rounded-full">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </span>
-                            <span>Lớp sản phẩm</span>
-                        </div>
-                    </div>
-                    <ul class="ml-6 space-y-2 border-l border-slate-300 border-l-slate-300 p-2">
-                        <li>
-                            <div class="flex items-start">
-                                <input value="1" id="category-checkbox-1" type="checkbox" name="product-category"
-                                    class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                    checked />
-                                <label for="category-checkbox-1" class="ml-2 text-sm font-medium text-slate-900">
-                                    Thực phẩm
-                                    <span class="text-xs italic text-lime-700">(178)</span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex items-start">
-                                <input value="2" id="category-checkbox-2" type="checkbox" name="product-category"
-                                    class="h-4 w-4 rounded border-slate-300 bg-slate-200 text-blue-600 focus:ring-2 focus:ring-blue-500"
-                                    checked />
-                                <label for="category-checkbox-2" class="ml-2 text-sm font-medium text-slate-900">
-                                    Đồ uống
-                                    <span class="text-xs italic text-lime-700">(16)</span>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Nút icon ở dưới để mở và đóng drawer -->
-            <div class="absolute bottom-0 z-20 col-span-3 flex w-full gap-1 bg-slate-100 bg-opacity-80">
-                <!-- Nút icon toggle Drawer 1 -->
-                <div id="layer-toggle-1"
-                    class="flex h-8 w-1/2 cursor-pointer items-center justify-center text-slate-700"
-                    onclick="document.getElementById('my-drawer-1').checked = !document.getElementById('my-drawer-1').checked;
-                             document.getElementById('my-drawer-2').checked = false;">
-                    <i class="fad fa-layer-group w-5 fill-current group-hover:text-white"></i>
-                </div>
-
-                <!-- Nút icon toggle Drawer 2 -->
-                <div id="layer-toggle-2"
-                    class="flex h-8 w-1/2 cursor-pointer items-center justify-center text-slate-700"
-                    onclick="document.getElementById('my-drawer-2').checked = !document.getElementById('my-drawer-2').checked;
-                             document.getElementById('my-drawer-1').checked = false;">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-            </div>
-
+        <div
+            class="drawer map-wrapper relative">
+            @include('web.map.index-sidebar')
 
         </div>
     </div>

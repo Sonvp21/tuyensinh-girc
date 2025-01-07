@@ -1,140 +1,19 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="{{ asset('homepage/logo_main.png') }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="app-url" content="{{ config('app.url') }}">
-
-    <title>{{ config('app.name', 'SHTT') }}</title>
-
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @stack('styles')
-
-    <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-
-    <style>
-        /* Tuỳ chỉnh NProgress */
-        #nprogress .bar {
-            background: #38b2ac !important;
-            /* Tailwind teal-500 */
-            height: 2px !important;
-            /* Chiều cao của thanh progress bar */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .dataTables_length select {
-            padding-top: 4px;
-            padding-bottom: 4px;
-            padding-left: 10px;
-            padding-right: 24px;
-            border-radius: 10px;
-            /* Thêm các thuộc tính khác nếu cần */
-        }
-
-        tbody tr:hover {
-            background-color: #f0f0f0;
-            /* Màu nền khi hover */
-        }
-    </style>
-</head>
-
-<body class="font-roboto antialiased">
-    <div class="min-h-screen bg-fixed bg-right">
-        <x-website.banner />
-        <x-website.menu />
-        <main class="bg-white mx-auto mt-1 max-w-7xl">
-            <div class="space-y-6">
-                <div class="mx-auto mt-2 max-w-7xl">
-                    <div class="grid grid-cols-8 gap-4">
-                        {{ $slot }}
-
-                    </div>
-                </div>
-            </div>
-        </main>
-        
-
-    </div>
-
-    <!-- Back to top button -->
-    <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
-        class="z-50 !fixed bottom-5 end-5 !left-5 hidden rounded-full bg-blue-600 p-3 text-xs font-medium uppercase w-[44px] text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
-        id="btn-back-to-top">
-        <span class="[&>svg]:w-4">
-            <i class="far fa-long-arrow-up text-xl"></i>
-        </span>
-    </button>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const btnBackToTop = document.getElementById("btn-back-to-top");
-
-            // Hiển thị nút khi người dùng cuộn xuống 200px
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 200) {
-                    btnBackToTop.classList.remove("hidden");
-                } else {
-                    btnBackToTop.classList.add("hidden");
-                }
-            });
-
-            // Cuộn lên đầu khi nhấp vào nút
-            btnBackToTop.addEventListener("click", () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            });
-        });
-    </script>
-
-    @stack('bottom_scripts')
-
-    <style>
-        .tudongchat-icon.svelte-3x3xt4.svelte-3x3xt4 {
-            padding: 8px;
-            background-color: #ffffff !important;
-        }
-
-        .tudongchat-icon-logo.svelte-3x3xt4.svelte-3x3xt4 {
-            width: 40px;
-            height: 40px;
-        }
-    </style>
-
-    <script>
-        window.iconChatbotUrl = "{{ asset('homepage/icon_chatbot.png') }}";
-    </script>
-    <script src="{{ asset('homepage/chatbox.js') }}"></script>
-    <script>
-        const tudong_chatbox = new TuDongChat('-vsl3dLiHTBmTki_faWsI')
-        tudong_chatbox.initial()
-    </script>
-
-</body>
-
-</html> --}}
-<!DOCTYPE html>
-<html lang="vi">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="csrf-token" content="bCsWNcj0CmjbveJWLrM16bJD0Sgh9cI7h5ziOGV9" />
-    <meta name="app-url" content="{{ env('APP_URL') }}" />
-
     <link rel="shortcut icon" href="{{ asset('homepage/logo/logo_gaokrongana.jpg') }}" type="image/x-icon" />
     <link rel="icon" href="{{ asset('homepage/logo/logo_gaokrongana.jpg') }}" type="image/x-icon" />
-    <title>Gạo Krông Ana</title>
+    <title>{{ config('app.name', 'Gạo Krông Ana') }}</title>
 
     <link rel="stylesheet" href="{{ asset('homepage/css-js/splide.min.css') }}" />
-
     <script src="{{ asset('homepage/css-js/splide.min.js') }}"></script>
     <script src="{{ asset('homepage/css-js/splide-extension-grid.js') }}"></script>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 
