@@ -19,7 +19,7 @@
             </div>
             {{-- <div class="flex justify-center">
                 <a href="" download title="Google play">
-                    <img class="h-16 w-auto" src="https://ocopbentre.girc.edu.vn/files/images/google_play.png"
+                    <img class="h-16 w-auto" src="{{ asset('homepage/icon/google_play.png') }}"
                         alt="" />
                 </a>
             </div> --}}

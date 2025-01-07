@@ -1,7 +1,7 @@
 <div class="space-y-3 lg:block px-3">
     {{-- liên hệ  --}}
     <div class="md:flex flex-row justify-between hidden">
-        <a href="https://ocopbentre.girc.edu.vn/contacts" class="flex items-center gap-1 hover:text-yellow-600">
+        <a href="" class="flex items-center gap-1 hover:text-yellow-600">
             <span class="rounded-sm bg-yellow-500 p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="h-5 w-5 text-white">
@@ -11,7 +11,7 @@
             </span>
             <span class="text-sm">Liên hệ</span>
         </a>
-        <a href="https://ocopbentre.girc.edu.vn/faqs" class="flex items-center gap-1 hover:text-yellow-600">
+        <a href="" class="flex items-center gap-1 hover:text-yellow-600">
             <span class="rounded-sm bg-yellow-500 p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="h-5 w-5 text-white">
@@ -21,7 +21,7 @@
             </span>
             <span class="text-sm">Hỏi đáp</span>
         </a>
-        <a href="https://ocopbentre.girc.edu.vn/admin/login" class="flex items-center gap-1 hover:text-yellow-600">
+        <a href="{{ route('login') }}" class="flex items-center gap-1 hover:text-yellow-600">
             <span class="rounded-sm bg-yellow-500 p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="h-5 w-5 text-white">
@@ -63,7 +63,7 @@
                     text-rendering="geometricPrecision" viewBox="0 0 120 36">
                     <path d="M120 36s.064942-36 0-36H42.896282C21.448141 0 21.448141 36 0 36h120Z" />
                 </svg>
-                <a href="https://ocopbentre.girc.edu.vn/documents"
+                <a href=""
                     class="flex items-center justify-between gap-2 text-sm font-bold uppercase text-white hover:underline">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="h-5 w-5">
@@ -78,71 +78,61 @@
                     class="max-h-[350px] overflow-scroll overscroll-contain scrollbar-hide">
                     <ul class="flex flex-col divide-y divide-dashed divide-lime-500 text-sm text-slate-500">
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/thong-bao-ket-luan-cua-pho-thu-tuong-chinh-phu-vuong-dinh-hue-tai-hoi-thao-toan-quoc-phat-trien-du-lich-nong-thon-gan-voi-xay-dung-nong-thon-moi">
+                            <a href="#">
                                 Thông báo Kết luận của Phó Thủ tướng Chính phủ Vương Đình Huệ tại Hội
                                 thảo toàn quốc &quot;Phát triển du lịch nông thôn gắn với xây dựng nông
                                 thôn mới&quot;
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/cong-van-ve-viec-nhan-ho-so-danh-gia-san-pham-ocop">
+                            <a href="#">
                                 Công văn về việc nhận hồ sơ đánh giá sản phẩm OCOP
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/cong-van-ve-viec-danh-gia-san-pham-ocop-tai-hoi-cho-nong-nghiep-va-san-pham-ocop-khu-vuc-dong-bang-song-cuu-long">
+                            <a href="#">
                                 Công văn về việc đánh giá sản phẩm OCOP tại Hội chợ nông nghiệp và sản
                                 phẩm OCOP khu vực Đồng bằng sông Cửu Long
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/cong-van-ve-viec-nang-cao-chat-luong-phat-trien-san-pham-ocop-tren-dia-ban-tinh">
+                            <a href="#">
                                 Công văn về việc nâng cao chất lượng, phát triển sản phẩm OCOP trên địa
                                 bàn tỉnh
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/quyet-dinh-phe-duyet-ket-qua-danh-gia-phan-hang-san-pham-ocop-tinh-ben-tre-nam-2022-san-pham-nang-cap-va-cong-nhan-lai">
+                            <a href="#">
                                 Quyết định phê duyệt kết quả đánh giá, phân hạng sản phẩm OCOP tỉnh Bến
                                 Tre năm 2022 (sản phẩm nâng cấp và công nhận lại)
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/quyet-dinh-phe-duyet-chuong-trinh-moi-xa-mot-san-pham-giai-doan-2018-2020">
+                            <a href="#">
                                 Quyết định phê duyệt chương trình mỗi xã một sản phẩm giai đoạn
                                 2018-2020
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/quyet-dinh-ban-hanh-quy-che-quan-ly-va-su-dung-nhan-hieu-chung-nhan-san-pham-ocop-viet-nam">
+                            <a href="#">
                                 Quyết định ban hành Quy chế quản lý và sử dụng nhãn hiệu chứng nhận sản
                                 phẩm OCOP Việt Nam
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/nghi-dinh-ve-chinh-sach-khuyen-khich-phat-trien-hop-tac-lien-ket-trong-san-xuat-va-tieu-thu-san-pham-nong-nghiep">
+                            <a href="#">
                                 Nghị định về chính sách khuyến khích phát triển hợp tác, liên kết trong
                                 sản xuất và tiêu thụ sản phẩm nông nghiệp
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/quyet-dinh-ve-viec-cho-phep-trien-khai-thuc-hien-de-tai-nghien-cuu-khoa-hoc-va-cong-nghe-cap-tinh-1">
+                            <a href="#">
                                 Quyết định về việc cho phép triển khai thực hiện đề tài nghiên cứu khoa
                                 học và công nghệ cấp tỉnh
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
-                            <a
-                                href="https://ocopbentre.girc.edu.vn/documents/quyet-dinh-ve-viec-phe-duyet-ket-qua-danh-gia-phan-hang-san-pham-ocop-tinh-ben-tre-nam-2021-dot-2">
+                            <a href="#">
                                 Quyết định về việc phê duyệt kết quả đánh giá, phân hạng sản phẩm OCOP
                                 tỉnh Đắk Lắk năm 2021 (đợt 2)
                             </a>
@@ -255,8 +245,8 @@
                     </a>
                 </li>
             </ul>
-            <a href="https://ocopbentre.girc.edu.vn/charts" class="bg-white pt-8">
-                <img src="https://ocopbentre.girc.edu.vn/website/images/sample_stat_image.png" alt="" />
+            <a href="#" class="bg-white pt-8">
+                <img src="{{ asset('homepage/icon/sample_stat_image.png') }}" alt="" />
             </a>
         </div>
     </div>

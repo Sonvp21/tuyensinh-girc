@@ -34,7 +34,7 @@
                 <div class="md:col-span-9 col-span-12">
 
                     <div class="flex flex-row justify-between md:hidden mb-3">
-                        <a href="https://ocopbentre.girc.edu.vn/contacts" class="flex items-center gap-1 hover:text-yellow-600">
+                        <a href="" class="flex items-center gap-1 hover:text-yellow-600">
                             <span class="rounded-sm bg-yellow-500 p-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="h-5 w-5 text-white">
@@ -44,7 +44,7 @@
                             </span>
                             <span class="text-sm">Liên hệ</span>
                         </a>
-                        <a href="https://ocopbentre.girc.edu.vn/faqs" class="flex items-center gap-1 hover:text-yellow-600">
+                        <a href="" class="flex items-center gap-1 hover:text-yellow-600">
                             <span class="rounded-sm bg-yellow-500 p-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="h-5 w-5 text-white">
@@ -54,7 +54,7 @@
                             </span>
                             <span class="text-sm">Hỏi đáp</span>
                         </a>
-                        <a href="https://ocopbentre.girc.edu.vn/admin/login" class="flex items-center gap-1 hover:text-yellow-600">
+                        <a href="{{ route('login') }}" class="flex items-center gap-1 hover:text-yellow-600">
                             <span class="rounded-sm bg-yellow-500 p-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" class="h-5 w-5 text-white">
