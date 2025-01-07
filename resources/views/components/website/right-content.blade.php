@@ -86,24 +86,24 @@
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
-                                Công văn về việc nhận hồ sơ đánh giá sản phẩm OCOP
+                                Công văn về việc nhận hồ sơ đánh giá sản phẩm
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
-                                Công văn về việc đánh giá sản phẩm OCOP tại Hội chợ nông nghiệp và sản
-                                phẩm OCOP khu vực Đồng bằng sông Cửu Long
+                                Công văn về việc đánh giá sản phẩmtại Hội chợ nông nghiệp và sản
+                                phẩmkhu vực Đồng bằng sông Cửu Long
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
-                                Công văn về việc nâng cao chất lượng, phát triển sản phẩm OCOP trên địa
+                                Công văn về việc nâng cao chất lượng, phát triển sản phẩmtrên địa
                                 bàn tỉnh
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
-                                Quyết định phê duyệt kết quả đánh giá, phân hạng sản phẩm OCOP tỉnh Bến
+                                Quyết định phê duyệt kết quả đánh giá, phân hạng sản phẩmtỉnh Bến
                                 Tre năm 2022 (sản phẩm nâng cấp và công nhận lại)
                             </a>
                         </li>
@@ -116,7 +116,7 @@
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
                                 Quyết định ban hành Quy chế quản lý và sử dụng nhãn hiệu chứng nhận sản
-                                phẩm OCOP Việt Nam
+                                phẩmViệt Nam
                             </a>
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
@@ -133,7 +133,7 @@
                         </li>
                         <li class="p-3 italic hover:text-slate-800">
                             <a href="#">
-                                Quyết định về việc phê duyệt kết quả đánh giá, phân hạng sản phẩm OCOP
+                                Quyết định về việc phê duyệt kết quả đánh giá, phân hạng sản phẩm
                                 tỉnh Đắk Lắk năm 2021 (đợt 2)
                             </a>
                         </li>
@@ -171,7 +171,7 @@
                                 d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <span>Chương trình OCOP Quốc gia</span>
+                        <span>Chương trìnhQuốc gia</span>
                     </a>
                 </li>
                 <li class="px-3 hover:text-slate-800">

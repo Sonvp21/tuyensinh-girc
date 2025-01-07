@@ -24,7 +24,7 @@
                                         Tên tỉnh
                                     </th>
                                     <td class="px-2 py-1 text-slate-700">
-                                        Bến Tre
+                                        Đắk Lắk
                                     </td>
                                 </tr>
 

@@ -11,14 +11,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
 
-class User extends Authenticatable implements HasMedia
+class User extends Authenticatable
 {
-    use HasFactory, Notifiable, SoftDeletes, InteractsWithMedia;
+    use HasFactory, Notifiable, SoftDeletes;
 
     protected $fillable = [
         'category_id',

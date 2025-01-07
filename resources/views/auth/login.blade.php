@@ -1,6 +1,4 @@
 <x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
     <main>
         <div class="absolute right-2 top-2 flex">
             <a aria-label="Go to homepage" class="rounded-full p-2 hover:bg-slate-200" rel="noopener noreferrer"
@@ -26,12 +24,11 @@
                     <div class="w-5xl mx-auto">
                         <div class="mb-2 flex flex-row align-bottom">
                             <div class="flex font-['Montserrat'] text-6xl font-extrabold">
-                                <span class="text-[#99572f]">S</span>
-                                <span class="text-[#117f43]">H</span>
-                                <span class="text-[#ed3337]">T</span>
-                                <span class="text-[#f9a51a]">T</span>
+                                <span class="text-[#99572f]">G</span>
+                                <span class="text-[#117f43]">Ạ</span>
+                                <span class="text-[#f9a51a]">O</span>
                             </div>
-                            <h1 class="self-end font-dancing_script text-2xl font-bold">Bến Tre</h1>
+                            <h1 class="self-end font-dancing_script text-2xl font-bold">Krông Ana</h1>
                         </div>
 
                         <form method="POST" action="{{ route('login') }}">

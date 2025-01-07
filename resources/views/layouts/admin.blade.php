@@ -136,7 +136,7 @@
             NProgress.done();
         });
     </script>
-
+    <x-admin.alerts.toast />
     @stack('bottom_scripts')
 </body>
 

@@ -10,7 +10,7 @@ return [
     'administrative_layers' => 'Lớp Hành chính',
     'layer_border' => 'Ranh giới',
     'layer_communes' => 'Ranh giới xã',
-    'layer_companies' => 'Lớp chủ thể OCOP',
+    'layer_companies' => 'Lớp chủ thể',
     'layer_districts' => 'Ranh giới huyện',
     'layer_products' => 'Lớp sản phẩm',
 
