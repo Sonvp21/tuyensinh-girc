@@ -45,7 +45,7 @@
 <!-- Hiển thị thông báo thành công -->
 @if (session('success'))
     <div id="toast-success" class="toast">
-        <p>{{ session('success') }}</p>
+        <p>{!! session('success') !!}</p>
     </div>
 @endif
 
@@ -68,7 +68,7 @@
             setTimeout(function() {
                 toastSuccess.classList.remove('show');
                 toastSuccess.classList.add('hide');
-            }, 3000);
+            }, 8000);
         }
 
         // Nếu có toast lỗi
@@ -77,7 +77,7 @@
             setTimeout(function() {
                 toastError.classList.remove('show');
                 toastError.classList.add('hide');
-            }, 3000);
+            }, 8000);
         }
     };
 </script>

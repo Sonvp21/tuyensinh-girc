@@ -30,9 +30,9 @@
                             <li class="tw-sb"><a href="#whychoose">Tại sao nên chọn?</a></li>
                             <li class="tw-sb"><a href="#timeline">Lộ trình đào tạo</a></li>
                             <li class="tw-sb"><a href="#tuyensinh">Tuyển sinh ngành</a></li>
-                            <li class="tw-sb"><a href="#hocbong">Nhận học bổng</a></li>
+                            <li class="tw-sb"><a href="#hocbong">Học bổng</a></li>
                         </ul>
-                        <a class="tw-dh tw-qb tw-ve">Đăng ký</a>
+                        <a class="tw-dh tw-qb tw-ve" href="#dangky">Đăng ký</a>
                     </div>
                 </nav>
 
@@ -47,8 +47,8 @@
                             <li class="tw-sb"><a href="#whychoose">Tại sao nên chọn?</a></li>
                             <li class="tw-sb"><a href="#timeline">Lộ trình đào tạo</a></li>
                             <li class="tw-sb"><a href="#tuyensinh">Tuyển sinh ngành</a></li>
-                            <li class="tw-sb"><a href="#hocbong">Nhận học bổng</a></li>
-                            <li class="tw-sb"><a>Đăng ký</a></li>
+                            <li class="tw-sb"><a href="#hocbong">Học bổng</a></li>
+                            <li class="tw-sb"><a href="#dangky">Đăng ký</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     <div
                         class="absolute animated slide-in-top inset-0 flex items-center justify-center h-fit w-fit 
                 top-[450px] md:top-[460px] sm:top-[200px] left-36 md:left-20 sm:left-10">
-                        <a href="#"
+                        <a href="#dangky"
                             class="btn border-2 px-12 uppercase border-none bg-gradient-to-b 
             text-black font-bold rounded-full shadow-lg
             transition duration-300 animate-scale"
@@ -357,7 +357,7 @@
                         </ul>
 
                         <div class="text-center">
-                            <a href="#"
+                            <a href="#dangky"
                                 class="btn border-2 px-12 uppercase border-none bg-gradient-to-b text-black font-bold rounded-full shadow-lg transition duration-300 animate-scale"
                                 style="background-image: linear-gradient(rgb(254, 244, 18), rgb(243, 140, 1));">
                                 Đăng Kí Ngay
@@ -399,7 +399,7 @@
         </section>
 
 
-        <section id="timeline" class="relative mt-10 md:py-10 justify-items-center !h-full bg-gray-50">
+        <section id="timeline" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
             <p class="text-3xl uppercase font-bold">Lộ trình đào tạo</p>
             <hr class="bg-gray-100 w-36 h-1">
             <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg">
@@ -489,12 +489,11 @@
             </div>
         </section>
 
-        <section id="tuyensinh" class="relative mt-10 md:py-10 justify-items-center !h-full bg-gray-50">
+        <section id="tuyensinh" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
             <p class="text-3xl uppercase font-bold">Tuyển sinh</p>
             <p class="text-xl uppercase font-semibold">Các chuyên ngành</p>
             <hr class="bg-gray-100 w-36 h-1">
-            <div
-                class="carousel-container relative overflow-hidden bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+            <div class="carousel-container relative overflow-hidden mt-3 md:mx-48">
                 <div class="carousel-inner md:flex contents transition-transform duration-500 ease-in-out p-4">
                     <!-- Slide 1 -->
                     <div
@@ -574,7 +573,7 @@
                                     </ul>
 
                                     <div class="text-center">
-                                        <a href="#"
+                                        <a href="#dangky"
                                             class="btn border-2 px-12 uppercase border-none bg-gradient-to-b text-black font-bold rounded-full shadow-lg transition duration-300 animate-scale"
                                             style="background-image: linear-gradient(rgb(254, 244, 18), rgb(243, 140, 1));">
                                             Đăng Kí Ngay
@@ -668,7 +667,7 @@
                                     </ul>
 
                                     <div class="text-center">
-                                        <a href="#"
+                                        <a href="#dangky"
                                             class="btn border-2 px-12 uppercase border-none bg-gradient-to-b text-black font-bold rounded-full shadow-lg transition duration-300 animate-scale"
                                             style="background-image: linear-gradient(rgb(18, 244, 254), rgb(1, 140, 243));">
                                             Đăng Kí Ngay
@@ -700,7 +699,7 @@
                 }
 
                 .carousel-inner {
-                    
+
                     width: 200%;
                     /* Adjust based on the number of slides */
                     transform: translateX(0%);
@@ -727,6 +726,419 @@
                     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
                 });
             </script>
+        </section>
+
+        <section id="hocbong" class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+            <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+                <div class="text-base text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="card-body p-0">
+                        <h1 class="p-2 w-fit card-title block">
+                            <span class="font-bold uppercase text-2xl text-blue-950">
+                                Học bổng
+                            </span>
+                            <br>
+                            <span class="font-normal uppercase text-2xl text-blue-950">
+                                Ưu đãi học bổng
+                            </span>
+                            <div class="divider m-0"></div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto"
+                            style="background-image: linear-gradient(255deg, rgb(255, 90, 94), rgb(232, 36, 77));
+                                        border-radius:0 4px 4px 4px;">
+                            <span class="font-bold text-base text-white flex items-center">
+                                <img class="w-14 rounded-full mr-2" src="{{ asset('home/icon_hocbong1.png') }}"
+                                    alt="">Học bổng theo chế độ chính sách của Nhà nước
+                            </span>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto"
+                            style="background-image: linear-gradient(255deg, rgb(255, 90, 94), rgb(232, 36, 77));
+                                        border-radius:0 4px 4px 4px;">
+                            <span class="font-bold text-base text-white flex items-center">
+                                <img class="w-14 rounded-full mr-2" src="{{ asset('home/icon_hocbong2.png') }}"
+                                    alt="">Học bổng Trường Đại học Nông Lâm
+                            </span>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto"
+                            style="background-image: linear-gradient(255deg, rgb(255, 90, 94), rgb(232, 36, 77));
+                                        border-radius:0 4px 4px 4px;">
+                            <span class="font-bold text-base text-white flex items-center">
+                                <img class="w-14 rounded-full mr-2" src="{{ asset('home/icon_hocbong3.png') }}"
+                                    alt="">Học bổng của Trung tâm Nghiên cứu Địa tin học
+                            </span>
+                        </h1>
+
+                    </div>
+                    <div class="content-center transition duration-300 animate-scale">
+                        <img src="{{ asset('home/đăng ký nhận H.png') }}" alt="">
+                    </div>
+
+                </div>
+                <div class="col-span-2">
+                    <img src="{{ asset('home/cơ hội học bổng.png') }}" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+            <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+                <div class="text-base text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="card-body p-0 h-fit">
+                        <h1 class="p-2 w-fit card-title block">
+                            <span class="font-bold uppercase text-2xl text-blue-950">
+                                Nộp hồ sơ
+                            </span>
+                            <br>
+                            <span class="font-normal uppercase text-2xl text-blue-950">
+                                Hồ sơ cần thiết
+                            </span>
+                            <div class="divider m-0"></div>
+                        </h1>
+                        <p>
+                            Hình thức nhận hồ sơ đăng ký xét tuyển sớm theo học bạ THPT
+                            Thí sinh có thể nộp 1 trong 3 hình thức sau:
+                        </p>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">1</span>
+                                </div>Nộp hồ sơ online: <br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                Thí sinh truy cập địa chỉ website: <a class="link link-hover hover:text-blue-500"
+                                    href="http://tuyensinh.tuaf.edu.vn">http://tuyensinh.tuaf.edu.vn</a> và làm theo
+                                hướng dẫn.
+                            </div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">2</span>
+                                </div>Nộp chuyển phát nhanh qua đường bưu điện theo địa chỉ: <br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                Trung tâm Tuyển sinh và truyền thông, Trường Đại học Nông Lâm – Đại học Thái Nguyên,
+                                thành phố Thái Nguyên, tỉnh Thái Nguyên.
+                            </div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-10 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">3</span>
+                                </div>Nộp trực tiếp tại Trung tâm Tuyển sinh và truyền thông, trường Đại học Nông Lâm –
+                                Đại học Thái Nguyên: <br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                Khu hành chính B trường ĐHNL, tổ 10 xã Quyết Thắng, TP Thái Nguyên.
+                            </div>
+                        </h1>
+
+                        <p class="mt-4">* Hồ sơ xét tuyển theo học bạ THPT gồm:
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col pb-0 small-12 large-12">
+                                <div class="col-inner">
+                                    <div class="flex text-left">
+                                        <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+                                            <p> Phiếu đăng ký xét tuyển: Theo mẫu <a
+                                                    class="link link-hover hover:text-blue-500"
+                                                    href="https://tuyensinh.tuaf.edu.vn/uploads/files/2024/phieudk2024.pdf"
+                                                    target="_blank">tại đây</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="col-2021340070" class="col pb-0 small-12 large-12">
+                                <div class="col-inner">
+                                    <div class="flex text-left">
+                                        <div
+                                            class="bg-gray-100 w-14 h-fit text-center font-semibold mr-2 rounded-full">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+                                            <p>Bản photo Bằng hoặc giấy chứng nhận tốt nghiệp THPT tạm thời (đối với các
+                                                thí sinh tốt nghiệp THPT năm 2024, trường hợp chưa có sẽ nộp bổ sung
+                                                sau).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="col-621219163" class="col pb-0 small-12 large-12">
+                                <div class="col-inner">
+                                    <div class="flex text-left">
+                                        <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+                                            <p>Bản photo Học bạ THPT.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="content-center">
+                        <img src="{{ asset('home/QTTS2425.png') }}" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        {{-- <section class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
+            <p class="text-3xl uppercase font-bold text-blue-800">Cảm nhận sinh viên và phụ huynh</p>
+            <div class="divider m-0 w-80"></div>
+            <div class="p-3 h-auto mt-80">
+                <div class="w-96 mx-auto" style="scroll-snap-type: x mandatory;">
+                    <!-- first -->
+                    <div class="">
+                        <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+                        <!-- content #1 -->
+                        <div
+                            class="w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white
+                             rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0 
+                             flex p-4" style="border: 10px solid #ececec;">
+                            <div class="avatar self-center">
+                                <div
+                                    class="ring-primary ring-offset-base-100 w-28 h-28 rounded-full ring ring-offset-2">
+                                    <img
+                                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                </div>
+                            </div>
+                            <div class="py-4 px-8">
+                                <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                                    Lorem
+                                    ipsum dolor sit amet consectetur adipisicing.
+                                </h1>
+                                <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Lorem ipsum dolor, sit
+                                    amet
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <!-- controls -->
+                            <div class="absolute top-1/2 w-full flex justify-between z-20">
+                                <label for="carousel-3"
+                                    class="inline-block text-red-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="carousel-2"
+                                    class="inline-block text-red-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second -->
+                    <div class="">
+                        <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+                        <!-- content #2 -->
+                        <div
+                            class="w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white
+                             rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0 
+                             flex p-4" style="border: 10px solid #ececec;">
+
+                            <div class="avatar self-center">
+                                <div
+                                    class="ring-primary ring-offset-base-100 w-28 h-28 rounded-full ring ring-offset-2">
+                                    <img
+                                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                </div>
+                            </div>
+
+                            <div class="py-4 px-8">
+                                <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                                    Scelerisque eleifend donec pretium vulputate sapien.
+                                </h1>
+                                <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Egestas diam in arcu
+                                    cursus euismod
+                                    quis. Fusce id velit ut tortor. Congue quisque egestas diam in arcu cursus euismod
+                                    quis.
+                                </p>
+                            </div>
+                            <!-- controls -->
+                            <div class="absolute top-1/2 w-full flex justify-between z-20">
+                                <label for="carousel-1"
+                                    class="inline-block text-blue-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="carousel-3"
+                                    class="inline-block text-blue-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- three -->
+                    <div class="">
+                        <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" checked />
+                        <!-- content #3 -->
+                        <div
+                            class="w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white
+                             rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0 
+                             flex p-4" style="border: 10px solid #ececec;">
+                            <div class="avatar self-center">
+                                <div
+                                    class="ring-primary ring-offset-base-100 w-28 h-28 rounded-full ring ring-offset-2">
+                                    <img
+                                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                </div>
+                            </div>
+                            <div class="py-4 px-8">
+                                <h1 class="hover:cursor-pointer mt-2 text-gray-900 font-bold text-2xl tracking-tight">
+                                    Consectetur purus ut faucibus pulvinar elementum.
+                                </h1>
+                                <p class="hover:cursor-pointer py-3 text-gray-600 leading-6">Aliquam ultrices sagittis
+                                    orci a
+                                    scelerisque purus semper. Quisque id diam vel quam elementum pulvinar. Facilisis
+                                    magna etiam
+                                    tempor orci eu lobortis elementum.
+                                </p>
+                            </div>
+                            <!-- controls -->
+                            <div class="absolute top-1/2 w-full flex justify-between z-20">
+                                <label for="carousel-2"
+                                    class="inline-block text-yellow-600 cursor-pointer -translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                                <label for="carousel-1"
+                                    class="inline-block text-yellow-600 cursor-pointer translate-x-5 bg-white rounded-full shadow-md active:translate-y-0.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+
+        <section id="dangky" class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+            <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+                <div
+                    class="text-base justify-items-center text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="card-body w-96 p-0 h-fit">
+                        <div class="text-center p-2 rounded-lg"
+                            style="background-image: linear-gradient(rgb(254, 120, 120), rgb(232, 36, 77));">
+                            <form action="{{ route('dangky.store') }}" method="POST" class="space-y-4 p-4 rounded"
+                                style="border: 1px solid rgba(255, 198, 198, 0.4);">
+                                @csrf
+
+                                <p class="text-white uppercase text-xl font-bold">Đăng ký ngay hôm nay <br>để nhận tư
+                                    vấn miễn phí!</p>
+                                <div>
+                                    <input type="text" name="name" placeholder="Họ và tên" required
+                                        class="w-full input input-bordered" />
+                                </div>
+                                <div>
+                                    <input type="email" name="email" placeholder="Email (nếu có)"
+                                        class="w-full input input-bordered" />
+                                </div>
+                                <div>
+                                    <input type="text" name="phone" placeholder="Số điện thoại" required
+                                        class="w-full input input-bordered" />
+                                </div>
+                                <div>
+                                    <input type="text" name="province" placeholder="Địa chỉ" required
+                                        class="w-full input input-bordered" />
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit"
+                                        class="btn border-2 px-12 uppercase border-none bg-gradient-to-b text-black font-bold rounded-full shadow-lg transition duration-300 animate-scale"
+                                        style="background-image: linear-gradient(rgb(254, 244, 18), rgb(243, 140, 1));">
+                                        Tư vấn ngay
+                                    </button>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-body p-0 h-fit">
+                        <h1 class="p-2 w-fit card-title block">
+                            <span class="font-bold uppercase text-2xl text-blue-950">
+                                Đăng ký ngay
+                            </span>
+                            <br>
+                            <span class="font-normal uppercase text-2xl text-blue-950">
+                                Để nhận học bổng và ưu đãi
+                            </span>
+                            <div class="divider m-0"></div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">1</span>
+                                </div>Tặng gói sinh trắc vân tay định hướng bản thân trị giá <br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                3.500.000 vnđ
+                            </div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">2</span>
+                                </div>Tặng voucher lên đến<br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                1500 Euro
+                            </div>
+                        </h1>
+                        <h1 class="p-2 card-title block w-auto shadow-lg">
+                            <span class="text-base flex items-center">
+                                <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
+                                    <span class="text-sm">3</span>
+                                </div>Tặng vé máy bay 1 chiều trị giá <br>
+                            </span>
+                            <div class="text-sm pl-8 font-normal">
+                                1000 Euro ( tùy chương trình )
+                            </div>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         @include('web.footer')
@@ -841,7 +1253,7 @@
         }
 
         .animated {
-            animation-duration: 1s;
+            animation-duration: 1.5s;
             animation-fill-mode: both;
         }
 

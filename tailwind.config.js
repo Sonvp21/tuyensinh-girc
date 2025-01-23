@@ -114,7 +114,7 @@ export default {
             lime: colors.lime,
             rose: colors.rose,
             amber: colors.amber,
-            gray: colors.trueGray,
+            gray: colors.neutral,
             transparent: 'transparent',
             screens: {
                 'md': '1768px',

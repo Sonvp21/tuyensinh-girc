@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="app-url" content="{{ config('app.url') }}">
-    <link rel="shortcut icon" href="{{ asset('home/logo_girc.jpg') }}" type="image/x-icon" />
-    <link rel="icon" href="{{ asset('home/logo_girc.jpg') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('home/logo GIRC.jpg') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('home/logo GIRC.jpg') }}" type="image/x-icon" />
     <title>{{ config('app.name', 'Gạo Krông Ana') }}</title>
     <meta name="description"
         content="Trung tâm nghiên cứu Địa tin học - Trường đại học Nông lâm Thái Nguyên, đại học Thái Nguyên thông báo tuyển sinh đại học năm học 2025.">
