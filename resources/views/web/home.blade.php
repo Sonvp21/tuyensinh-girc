@@ -32,7 +32,9 @@
                             <li class="tw-sb"><a href="#tuyensinh">Tuyển sinh ngành</a></li>
                             <li class="tw-sb"><a href="#hocbong">Học bổng</a></li>
                         </ul>
-                        <a class="tw-dh tw-qb tw-ve" href="#dangky">Đăng ký</a>
+                        <a class="btn border-2 uppercase border-none bg-gradient-to-b text-black font-bold shadow-lg"
+                            style="min-height: 2rem; height: 2rem; ;background-image: linear-gradient(rgb(254, 244, 18), rgb(243, 140, 1));"
+                            href="#dangky">Đăng ký</a>
                     </div>
                 </nav>
 
@@ -1106,33 +1108,33 @@
                             <div class="divider m-0"></div>
                         </h1>
                         <h1 class="p-2 card-title block w-auto shadow-lg">
-                            <span class="text-base flex items-center">
+                            <span class="text-base flex items-center text-red-500">
                                 <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
-                                    <span class="text-sm">1</span>
-                                </div>Tặng gói sinh trắc vân tay định hướng bản thân trị giá <br>
+                                    <span class="text-sm"><i class="fal fa-hand-point-right"></i></span>
+                                </div>Miễn học phí<br>
                             </span>
                             <div class="text-sm pl-8 font-normal">
-                                3.500.000 vnđ
+                                cho 5 sinh viên suất sắc nhất
                             </div>
                         </h1>
                         <h1 class="p-2 card-title block w-auto shadow-lg">
-                            <span class="text-base flex items-center">
+                            <span class="text-base flex items-center text-red-500">
                                 <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
-                                    <span class="text-sm">2</span>
-                                </div>Tặng voucher lên đến<br>
+                                    <span class="text-sm"><i class="fal fa-hand-point-right"></i></span>
+                                </div>Miễn phí ký túc xá<br>
                             </span>
                             <div class="text-sm pl-8 font-normal">
-                                1500 Euro
+                                Năm đầu
                             </div>
                         </h1>
                         <h1 class="p-2 card-title block w-auto shadow-lg">
-                            <span class="text-base flex items-center">
+                            <span class="text-base flex items-center text-red-500">
                                 <div class="bg-gray-100 w-6 text-center font-semibold mr-2 rounded-full">
-                                    <span class="text-sm">3</span>
-                                </div>Tặng vé máy bay 1 chiều trị giá <br>
+                                    <span class="text-sm"><i class="fal fa-hand-point-right"></i></span>
+                                </div>Miễn phí 540 giờ<br>
                             </span>
                             <div class="text-sm pl-8 font-normal">
-                                1000 Euro ( tùy chương trình )
+                                học tiếng Anh và tiếng Trung với người nước ngoài
                             </div>
                         </h1>
                     </div>
