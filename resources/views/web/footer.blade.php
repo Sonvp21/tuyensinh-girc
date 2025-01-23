@@ -90,7 +90,7 @@
         </div>
 
     </section>
-    <div class="text-center text-gray-500 font-semibold px-40 p-1">
+    <div class="text-center text-gray-500 font-semibold px-40 p-1 w-max justify-self-center">
         Made with
         <a class="tw-mc tw-lg" target="_blank">GIRC</a>
     </div>

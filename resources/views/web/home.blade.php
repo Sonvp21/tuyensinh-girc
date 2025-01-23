@@ -369,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="w-96 animated slide-in-right">
+                <div class="w-96 animated zoom-in">
                     <div>
                         <figure class="rounded-lg" style="border: 8px solid #e56161;">
                             <iframe width="100%" height="224"
@@ -404,7 +404,7 @@
         <section id="timeline" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
             <p class="text-3xl uppercase font-bold">Lộ trình đào tạo</p>
             <hr class="bg-gray-100 w-36 h-1">
-            <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg">
+            <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg animated rotate-in">
                 <div class="card-body">
                     <div class="mt-1 space-y-1 overflow-auto">
                         <ul class="timeline">
@@ -491,7 +491,7 @@
             </div>
         </section>
 
-        <section id="tuyensinh" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
+        <section id="tuyensinh" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50 animated fade-in">
             <p class="text-3xl uppercase font-bold">Tuyển sinh</p>
             <p class="text-xl uppercase font-semibold">Các chuyên ngành</p>
             <hr class="bg-gray-100 w-36 h-1">
@@ -730,7 +730,7 @@
             </script>
         </section>
 
-        <section id="hocbong" class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+        <section id="hocbong" class="relative md:py-10 justify-items-center !h-full bg-gray-50 animated fade-zoom">
             <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
                 <div class="text-base text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div class="card-body p-0">
@@ -781,7 +781,7 @@
             </div>
         </section>
 
-        <section class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+        <section class="relative md:py-10 justify-items-center !h-full bg-gray-50 animated slide-in-top">
             <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
                 <div class="text-base text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div class="card-body p-0 h-fit">
@@ -1052,7 +1052,7 @@
             </div>
         </section> --}}
 
-        <section id="dangky" class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+        <section id="dangky" class="relative md:py-10 justify-items-center !h-full bg-gray-50 animated zoom-in">
             <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
                 <div
                     class="text-base justify-items-center text-black text-justify p-8 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -1148,8 +1148,6 @@
 
     {{-- hiệu ứng animation --}}
     {{-- <div class="animated fade-in">Nội dung xuất hiện từ dưới lên</div>
-    <div class="animated slide-in-left">Nội dung trượt từ trái</div>
-    <div class="animated slide-in-right">Nội dung trượt từ phải</div>
     <div class="animated slide-in-top">Nội dung trượt từ trên</div>
     <div class="animated zoom-in">Nội dung phóng to</div>
     <div class="animated rotate-in">Nội dung xoay</div>
