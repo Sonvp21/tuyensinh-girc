@@ -28,7 +28,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'email' => ['required', 'string', 'email'],
-            'password' => ['required', 'string', 'confirmed'],
+            'password' => ['required', 'string'],
         ];
     }
 
@@ -38,7 +38,6 @@ class LoginRequest extends FormRequest
             'email.required' => 'Vui lòng nhập địa chỉ email.',
             'email.email' => 'Địa chỉ email không hợp lệ.',
             'password.required' => 'Vui lòng nhập mật khẩu.',
-            'password.confirmed' => 'Mật khẩu xác nhận không chính xác.',
         ];
     }
 
