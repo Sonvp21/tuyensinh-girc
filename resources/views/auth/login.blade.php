@@ -18,10 +18,14 @@
                 {{-- <div class="absolute inset-0 -skew-y-6 transform bg-gradient-to-r from-sky-300 to-sky-600 shadow-lg sm:-rotate-6 sm:skew-y-0 sm:rounded-3xl"
                     style="background: #7bffff;">
                 </div> --}}
-                <div class="w-5xl relative bg-white px-4 py-10 shadow-lg sm:min-w-[450px] sm:rounded-3xl sm:p-20">
+                <div class="w-5xl relative bg-white px-4 py-4 shadow-lg sm:min-w-[450px] sm:rounded-3xl sm:p-4">
                     {{-- <h2 class="mb-2 text-left font-bold uppercase text-slate-600">
                         Đăng nhập </h2> --}}
-                        Vui lòng nhập mật khẩu để tiếp tục
+                        <div>
+                            <h6 class="w-96 rounded-lg p-2">
+                                <img src="{{ asset('home/logo GIRC co chu.jpg') }}" alt="">
+                            </h6>
+                        </div>
                     <div class="w-5xl mx-auto">
                         {{-- <div class="mb-2 flex flex-row align-bottom">
                             <div class="flex font-['Montserrat'] text-6xl font-extrabold">
