@@ -26,7 +26,7 @@
     </main>
 
     <x-admin.alerts.toast />
-    <a href="#top" class="hover:bg-red-700 invert fixed z-1 circle rounded-full" id="top-link"
+    <a href="#top" class="hover:bg-red-700 bg-red-500 invert fixed z-1 circle rounded-full" id="top-link"
         aria-label="Go to top"><i class="far fa-chevron-up"></i></a>
     <style>
         #top-link {

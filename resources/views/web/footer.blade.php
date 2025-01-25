@@ -1,5 +1,5 @@
 <footer>
-    <section class="!bg-[#152b4f] p-2 md:px-60 md:py-12 mt-5"
+    <section class="!bg-[#152b4f] p-2 md:px-60 md:py-12"
         style="background: url(https://web3ngay.net/wp-content/uploads/2020/08/bg-global.png) no-repeat;
             background-size: 40%;
             background-position: center top 50%;">
@@ -90,8 +90,8 @@
         </div>
 
     </section>
-    <div class="text-center text-gray-500 font-semibold px-40 p-1 w-max justify-self-center">
+    <!-- <div class="text-center text-gray-500 font-semibold px-40 p-1 w-max justify-self-center">
         Made with
         <a class="tw-mc tw-lg" target="_blank">GIRC</a>
-    </div>
+    </div> -->
 </footer>

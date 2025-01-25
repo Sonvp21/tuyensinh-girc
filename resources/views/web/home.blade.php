@@ -282,8 +282,8 @@
         </section>
 
         <section id="whychoose" class="relative mt-10 md:py-10 justify-items-center !h-full bg-gray-50">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="card bg-base-100 w-96 shadow-xl animated fade-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 w-auto md:w-[1048px]">
+                <div class="card bg-base-100 w-full shadow-xl animated fade-in">
                     <div class="card-body p-0"
                         style="background-image: linear-gradient(255deg, rgb(255, 90, 94), rgb(232, 36, 77));
                             border-radius: 20px 20px 0 0;">
@@ -291,6 +291,7 @@
                             <span class="font-bold uppercase text-2xl text-white">
                                 Tại sao nên chọn học
                             </span>
+                            <br>
                             <span class="uppercase text-white text-xl font-semibold">
                                 CN&ĐMST và QLTT?
                             </span>
@@ -401,10 +402,11 @@
         </section>
 
 
-        <section id="timeline" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50">
-            <p class="text-3xl uppercase font-bold">Lộ trình đào tạo</p>
-            <hr class="bg-gray-100 w-36 h-1">
+        <section id="timeline" class="relative md:py-10 justify-items-center !h-full bg-gray-50">
+            
             <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg animated rotate-in">
+            <p class="text-3xl uppercase font-bold mt-3 justify-self-center">Lộ trình đào tạo</p>
+            <hr class="bg-gray-100 w-36 h-1 justify-self-center">
                 <div class="card-body">
                     <div class="mt-1 space-y-1 overflow-auto">
                         <ul class="timeline">
@@ -491,16 +493,20 @@
             </div>
         </section>
 
-        <section id="tuyensinh" class="relative mt-5 md:py-10 justify-items-center !h-full bg-gray-50 animated fade-in">
-            <p class="text-3xl uppercase font-bold">Tuyển sinh</p>
-            <p class="text-xl uppercase font-semibold">Các chuyên ngành</p>
-            <hr class="bg-gray-100 w-36 h-1">
+        <section id="tuyensinh" class="relative md:py-10 justify-items-center !h-full bg-gray-50 animated fade-in">
+            
             <div class="carousel-container relative overflow-hidden mt-3 md:mx-48">
+                
                 <div class="carousel-inner md:flex contents transition-transform duration-500 ease-in-out p-4">
                     <!-- Slide 1 -->
                     <div
                         class="carousel-item w-full flex-shrink-0 flex text-base text-black text-justify grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+                        <div class="bg-base-100 card-bordered mt-3 shadow-sm rounded-lg md:mx-48">
+
+                        <p class="text-3xl uppercase font-bold justify-self-center mt-2">Tuyển sinh</p>
+                        <p class="text-xl uppercase font-semibold justify-self-center">Các chuyên ngành</p>
+                        <hr class="bg-gray-100 w-36 h-1 justify-self-center">
+
                             <div class="text-base text-black text-justify p-4 grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div class="card-body p-0">
                                     <h1 class="p-2 w-fit card-title block text-center"
@@ -592,7 +598,10 @@
                     <!-- Slide 2 -->
                     <div
                         class="carousel-item w-full flex-shrink-0 flex text-base text-black text-justify grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div class="bg-base-100 card-bordered mt-3 shadow-xl rounded-lg md:mx-48">
+                        <div class="bg-base-100 card-bordered mt-3 shadow-sm rounded-lg md:mx-48">
+                        <p class="text-3xl uppercase font-bold justify-self-center mt-2">Tuyển sinh</p>
+                        <p class="text-xl uppercase font-semibold justify-self-center">Các chuyên ngành</p>
+                        <hr class="bg-gray-100 w-36 h-1 justify-self-center">
                             <div class="text-base text-black text-justify p-4 grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div class="card-body p-0">
                                     <h1 class="p-2 w-fit card-title block text-center"
@@ -685,7 +694,7 @@
                     </div>
                 </div>
                 <!-- Buttons -->
-                <div class="absolute top-1/2 hidden md:block left-28 transform -translate-y-1/2">
+                <div class="absolute top-1/2 hidden md:block left-16 transform -translate-y-1/2">
                     <button id="prev-btn" class="btn btn-circle">❮</button>
                 </div>
                 <div class="absolute top-1/2 hidden md:block right-16 transform -translate-y-1/2">
@@ -863,7 +872,7 @@
                                         </div>
                                         <div class="icon-box-text last-reset">
                                             <p>Bản photo Bằng hoặc giấy chứng nhận tốt nghiệp THPT tạm thời (đối với các
-                                                thí sinh tốt nghiệp THPT năm 2024, trường hợp chưa có sẽ nộp bổ sung
+                                                thí sinh tốt nghiệp THPT năm 2025, trường hợp chưa có sẽ nộp bổ sung
                                                 sau).</p>
                                         </div>
                                     </div>
