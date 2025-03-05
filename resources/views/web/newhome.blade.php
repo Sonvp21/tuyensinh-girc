@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css" rel="stylesheet">
     {{-- icon liên hệ lơ lửng  --}}
-    <link rel='stylesheet' id='pzf-style-css'
-        href='https://httmaster.edu.vn/wp-content/plugins/zalo/css/style.css?ver=6.7.2' type='text/css'
+    <link rel='stylesheet' id='pzf-style-css' href='{{ asset('newhome/zalostyle.css') }}' type='text/css'
         media='all' />
     {{-- icon liên hệ lơ lửng  --}}
 </head>
@@ -287,10 +286,11 @@
                     <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
                         <div class="w-full flex-shrink-0">
                             <video class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls>
-                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}" type="video/mp4">
+                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
+                                    type="video/mp4">
                                 Trình duyệt của bạn không hỗ trợ video.
                             </video>
-                        </div>                        
+                        </div>
                         <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
                                 src="https://www.youtube.com/embed/_tWf95mYxck" allowfullscreen></iframe></div>
                         <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
@@ -324,6 +324,7 @@
                         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
                         updateSlidePosition();
                     }
+
                     function stopAutoSlide() {
                         clearInterval(interval);
                     }
@@ -903,8 +904,8 @@
     <!-- Chat trực tuyến -->
     <script src="https://app.tudongchat.com/js/chatbox.js"></script>
     <script>
-      const tudong_chatbox = new TuDongChat('_eyUyr4r_GvLn10OhaRSw')
-      tudong_chatbox.initial()
+        const tudong_chatbox = new TuDongChat('_eyUyr4r_GvLn10OhaRSw')
+        tudong_chatbox.initial()
     </script>
     <!-- End Chat trực tuyến -->
 </body>
