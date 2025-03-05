@@ -22,7 +22,7 @@
         <img src="{{ asset('newhome/header.png') }}" alt="">
     </header>
 
-    <section class="container mx-auto p-6 relative hidden md:flex">
+    <section class="container mx-auto px-12 relative hidden md:flex">
         <!-- Hình ảnh nền -->
         <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
 
@@ -113,50 +113,55 @@
     </section>
     {{-- end mobile  --}}
 
+
     <!-- Giới thiệu ngành học -->
-    <section class="relative">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame background.png') }}" alt="Tech Frame" class="w-full h-auto">
-
-        <!-- Tiêu đề ở giữa -->
-        <div class="absolute top-0 left-0 right-0 mt-2 text-center text-white text-xl md:text-2xl font-bold p-4">
-            CHUYÊN NGÀNH ĐÀO TẠO CÔNG NGHỆ THÔNG TIN, CHUYỂN ĐỔI SỐ
-        </div>
-
-        <!-- Chứa ảnh theo hàng ngang -->
-        <div class="md:absolute inset-0 md:flex flex-col items-center justify-center p-6 pb-0">
-            <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
-                <!-- ảnh 1 -->
-                <div class="relative flex justify-center">
-                    <img src="{{ asset('newhome/nganh 1.png') }}" class="w-80 h-auto" alt="">
-                    <p class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
-                        Mã ngành 7320205
-                    </p>
+    <section class="relative bg-[#019bc8]">
+        <div class="container mx-auto px-12 justify-self-center ">
+            <div class="bg-[#037ca5]">
+                <!-- Tiêu đề ở giữa -->
+                <div class="text-center text-white text-xl md:text-2xl font-bold p-4">
+                    CHUYÊN NGÀNH ĐÀO TẠO CÔNG NGHỆ THÔNG TIN, CHUYỂN ĐỔI SỐ
                 </div>
 
-                <!-- ảnh 2 -->
-                <div class="relative flex justify-center">
-                    <img src="{{ asset('newhome/nganh 2.png') }}" class="w-80 h-auto" alt="">
-                    <p class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
-                        Mã ngành 7480201
-                    </p>
-                </div>
+                <!-- Chứa ảnh theo hàng ngang -->
+                <div class="md:flex flex-col items-center justify-center">
+                    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
+                        <!-- ảnh 1 -->
+                        <div class="relative flex justify-center">
+                            <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
+                            <p
+                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                Mã ngành 7320205
+                            </p>
+                        </div>
 
-                <!-- ảnh 3 -->
-                <div class="relative flex justify-center">
-                    <img src="{{ asset('newhome/nganh 3.png') }}" class="w-80 h-auto" alt="">
-                    <p class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
-                        Mã ngành 7480201
-                    </p>
+                        <!-- ảnh 2 -->
+                        <div class="relative flex justify-center">
+                            <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
+                            <p
+                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                Mã ngành 7480201
+                            </p>
+                        </div>
+
+                        <!-- ảnh 3 -->
+                        <div class="relative flex justify-center">
+                            <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
+                            <p
+                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                Mã ngành 7480201
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section
-        class="flex flex-col container mx-auto md:flex-row items-start md:items-center justify-between px-20 gap-20">
+        class="flex flex-col container mx-auto px-2 md:px-12 md:flex-row items-start md:items-center justify-between gap-20">
         <!-- Phương thức xét tuyển -->
-        <div class="w-full md:w-1/2 text-white p-4 rounded-lg">
+        <div class="w-full md:w-1/2 text-white rounded-lg md:mt-0 mt-4">
             <!-- Tiêu đề với nền xanh -->
             <div class="relative inline-block">
                 <!-- Nền xanh và chữ -->
@@ -170,7 +175,7 @@
 
 
             <!-- Danh sách xét tuyển -->
-            <ul class="mt-3 space-y-2">
+            <ul class="mt-3 space-y-2 md:leading-10 w-[90%] md:w-full">
                 <li class="flex items-center text-orange-600 font-bold">
                     <span class="mr-2"><img src="{{ asset('newhome/bullet 2.png') }}" class="size-5 md:size-5"
                             alt="">
@@ -191,8 +196,8 @@
 
 
         <!-- Tổ hợp xét tuyển -->
-        <div class="w-full md:w-1/2 text-white p-4 rounded-lg ">
-            <div class="flex items-start mt-2">
+        <div class="w-full md:w-1/2 text-white rounded-lg ">
+            <div class="flex items-start">
                 <img src="{{ asset('newhome/to_hop.png') }}" alt="icon" class="">
 
             </div>
@@ -202,20 +207,20 @@
     {{-- 100% SINH VIÊN CÓ CƠ HỘI NHẬN ĐƯỢC HỌC <br> BỔNG GIÁ TRỊ LÊN ĐẾN 150 TRIỆU ĐỒNG --}}
     <section class="relative bg-[#def0fe]">
         <!-- Chứa ảnh theo hàng ngang -->
-        <div class="md:flex flex-col items-center justify-center px-6 pb-0 mx-20">
+        <div class="container mx-auto md:px-12 md:flex flex-col justify-self-center items-center">
             <div class="flex">
                 <!-- Danh sách Nghị quyết -->
                 <div class="relative justify-center">
                     <div
-                        class="text-center text-xl md:text-2xl font-bold p-4 
+                        class="text-center text-xl md:text-2xl font-bold md:p-4 p-2 
                             bg-gradient-to-b from-blue-600 to-purple-600 
                             text-transparent bg-clip-text 
                             italic inline-block">
-                        100% SINH VIÊN CÓ CƠ HỘI NHẬN ĐƯỢC<br> HỌC
+                        100% SINH VIÊN CÓ CƠ HỘI NHẬN ĐƯỢC HỌC
                         BỔNG GIÁ TRỊ LÊN ĐẾN 150 TRIỆU ĐỒNG
                     </div>
 
-                    <div class="ml-8 text-sm md:text-sm lg:text-lg leading-relaxed">
+                    <div class="md:ml-8 ml-4 text-sm md:text-sm lg:text-lg leading-relaxed">
                         <div class="flex items-center">
                             <img src="{{ asset('newhome/bullet.png') }}" class="size-6 md:size-8" alt="">
                             <p class="ml-2">Miễn tiền ký túc xá năm đầu.</p>
@@ -257,34 +262,93 @@
                 </div>
 
                 <!-- Ảnh minh họa -->
-                <div class="relative flex justify-center">
+                <div class="relative md:flex justify-center hidden">
                     <img src="{{ asset('newhome/boy&girl.png') }}" class="w-[80%] h-auto" alt="">
-                    <img src="{{ asset('home/đăng ký nhận H.png') }}"
-                        class="w-48 left-[28rem] absolute -top-24 bottom-0 right-0 text-center text-black mb-9 font-bold italic text-base">
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- Cam kết với sinh viên -->
-    <section class="relative pt-6 ">
+    <!-- video cam kết sv -->
+    <section class="relative container mx-auto md:px-12 px-2 justify-self-center">
         <!-- Chứa ảnh theo hàng ngang -->
-        <div class="md:flex flex-col items-center justify-center px-6 pb-0 mx-20">
+        <div class="md:flex flex-col items-center justify-center">
             <div class="flex">
                 <!-- Ảnh minh họa -->
-                <div class="relative flex justify-center">
-                    <img src="{{ asset('newhome/album/cam kết.JPG') }}" class="w-full h-auto max-h-96"
-                        alt="">
+                <div class="relative max-w-5xl mx-auto py-10 overflow-hidden">
+                    <!-- Nút điều hướng trái -->
+                    <button id="prevBtn"
+                        class="absolute size-10 left-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-b from-yellow-400 to-orange-500 text-white text-center rounded-full shadow-lg text-2xl z-10 transition-all duration-300">
+                        ❮
+                    </button>
 
+                    <!-- Slider -->
+                    <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
+                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
+                                src="https://www.youtube.com/embed/Ixg0tUsKlkg" allowfullscreen></iframe></div>
+                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
+                                src="https://www.youtube.com/embed/_tWf95mYxck" allowfullscreen></iframe></div>
+                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
+                                src="https://www.youtube.com/embed/at4Ve-F0RvM" allowfullscreen></iframe></div>
+                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
+                                src="https://www.youtube.com/embed/vmsrUKZlhLk" allowfullscreen></iframe></div>
+                    </div>
+
+                    <!-- Nút điều hướng phải -->
+                    <button id="nextBtn"
+                        class="absolute size-10 right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-b from-yellow-400 to-orange-500 text-white text-center rounded-full shadow-lg text-2xl z-10 transition-all duration-300">
+                        ❯
+                    </button>
                 </div>
+                <script>
+                    let currentIndex = 0;
+                    const totalSlides = document.querySelectorAll('#carousel > div').length;
+                    const carousel = document.getElementById('carousel');
+                    let interval;
+
+                    function updateSlidePosition() {
+                        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    }
+
+                    function nextSlide() {
+                        currentIndex = (currentIndex + 1) % totalSlides;
+                        updateSlidePosition();
+                    }
+
+                    function prevSlide() {
+                        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                        updateSlidePosition();
+                    }
+
+                    function startAutoSlide() {
+                        interval = setInterval(nextSlide, 5000);
+                    }
+
+                    function stopAutoSlide() {
+                        clearInterval(interval);
+                    }
+
+                    document.getElementById('nextBtn').addEventListener('click', () => {
+                        nextSlide();
+                    });
+
+                    document.getElementById('prevBtn').addEventListener('click', () => {
+                        prevSlide();
+                    });
+
+                    document.querySelectorAll('iframe').forEach(iframe => {
+                        iframe.addEventListener('mouseenter', stopAutoSlide);
+                        iframe.addEventListener('mouseleave', startAutoSlide);
+                    });
+
+                    updateSlidePosition();
+                    startAutoSlide();
+                </script>
+
                 <!-- Cam kết với sinh viên -->
-                <div class="relative justify-center self-center">
-                    <div
-                        class="text-center text-xl md:text-2xl font-bold p-4 uppercase
-            bg-gradient-to-b from-yellow-600 to-orange-600
-            text-transparent bg-clip-text 
-            italic inline-block">
+                {{-- <div class="relative justify-center self-center">
+                    <div class="text-center text-xl md:text-2xl font-bold p-4 uppercase bg-gradient-to-b from-yellow-600 to-orange-600 text-transparent bg-clip-text italic inline-block">
                         Cam kết với sinh viên
                     </div>
 
@@ -307,55 +371,70 @@
                         </div>
                     </div>
 
-                </div>
+                </div> --}}
 
             </div>
         </div>
     </section>
 
     <!-- Môi trường học tập -->
-    <section class="container mx-auto px-12 relative">
+    <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold p-4 uppercase
+            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-blue-400 to-blue-900
             text-transparent bg-clip-text 
             italic inline-block">
             MÔI TRƯỜNG HỌC TẬP
         </div>
-        <div class="grid grid-cols-5 gap-4">
+        <div class="grid md:grid-cols-5 gap-4">
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}" class="w-80 h-auto"
+                <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}" class="md:w-80 h-auto"
                     alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Ký túc xá
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/giảng đường.jfif') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/giảng đường.jfif') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Giảng đường
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/thư viện.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/thư viện.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Thư viện
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/phòng máy.png') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/phòng máy.png') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Phòng máy tính
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Nhà thể thao
                 </p>
             </div>
@@ -365,47 +444,62 @@
     </section>
 
     <!-- HOẠT ĐỘNG CỦA SINH VIÊN -->
-    <section class="container mx-auto px-12 relative">
+    <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold p-4 uppercase
+            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
                 bg-gradient-to-b from-yellow-400 to-orange-700
                 text-transparent bg-clip-text 
                 italic inline-block">
             HOẠT ĐỘNG CỦA SINH VIÊN
         </div>
-        <div class="grid grid-cols-5 gap-4">
+        <div class="grid md:grid-cols-5 gap-4">
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/nhập học.JPG') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/nhập học.JPG') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Nhập học
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/học tiếng anh.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/học tiếng anh.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Học ngoại ngữ
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/chuc tết.jfif') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/chuc tết.jfif') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Chúc tết sinh viên
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/thể thao.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/thể thao.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Hoạt động thể thao
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/văn nghệ.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/văn nghệ.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Văn nghệ
                 </p>
             </div>
@@ -413,47 +507,63 @@
     </section>
 
     <!-- KHOA HỌC & CÔNG NGHỆ -->
-    <section class="container mx-auto px-12 relative">
+    <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold p-4 uppercase
+            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-blue-400 to-blue-900
             text-transparent bg-clip-text 
             italic inline-block">
             KHOA HỌC & CÔNG NGHỆ
         </div>
-        <div class="grid grid-cols-5 gap-4">
+        <div class="grid md:grid-cols-5 gap-4">
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Hợp tác quốc tế
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/dự án.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/dự án.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Triển khai dự án
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/điều tra.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/điều tra.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Điều tra thực địa
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/tạp huấn.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/tạp huấn.jpg') }}" class="md:w-80 h-auto" alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Tập huấn công nghệ
                 </p>
             </div>
             <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}" class="w-80 h-auto" alt="">
-                <p
-                    class="absolute bottom-0 left-0 right-0 text-center text-black font-bold italic text-base bg-white/70 p-1">
+                <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}" class="md:w-80 h-auto"
+                    alt="">
+                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
                     Nghiên cứu khoa học
                 </p>
             </div>
@@ -461,66 +571,234 @@
     </section>
 
     <!-- Thông tin liên hệ -->
-    <footer>
-        <div class="bg-[#80a6f7] text-white p-3 mt-6 justify-center md:gap-60 block md:flex">
-            <div class="col-span-2 justify-self-center text-sm">
-                <h2 class="!text-4xl font-bold">Thông tin liên hệ</h2>
-                <div class="text-black mt-2">
-                    <p class="font-semibold">
-                        <i class="fad fa-user-tie"></i>
-                        Tiến sĩ Nguyễn Văn Hiểu
-                    </p>
-                    <div class="ml-5">
-                        <p>Giám đốc Trung tâm Nghiên cứu Địa tin học</p>
-                        <p>Trường đại học Nông Lâm, Đại học Thái Nguyên</p>
+    <footer id="footer" class="text-white bg-cover bg-center mt-5"
+        style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
 
-                        <p>SĐT/Zalo: 0934 001 103</p>
+        <div class="grid md:grid-cols-4 container mx-auto px-12 pb-6 gap-5">
+            <div class="md:col-span-2 mt-5">
+                <div id="text-3" class="col pb-0 widget widget_text">
+                    <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-7">
+                            <li>
+                                <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
+                                <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
+                                <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
+                                    Thái Nguyên</span>
+                            </li>
+
+                            <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
+                            <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
+                            <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="my-5">
+                    <ul class="flex gap-5 items-center">
+                        <li class="">
+                            <a title="Facebook" href="https://www.facebook.com/girctuaf" rel="nofollow"
+                                target="_blank">
+                                <img alt="Fanpage" class="size-7"
+                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/Facebook.png">
+                            </a>
+                        </li>
+                        <li class="">
+                            <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
+                                <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
+                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
+                        </li>
+                        <li>
+                            <a title="Youtube" href="https://www.youtube.com/@girctuaf" rel="nofollow"
+                                target="_blank">
+                                <img alt="youtube" class="w-8 h-7 p-2 bg-red-500 rounded-sm"
+                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/youtube.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <hr class="border-t-2  my-1">
+
+                <p class="mb-0 mt-5">© 2025 GeoInformatics Research Center</p>
+            </div>
+            <div class="col-span-1">
+                <div class="mt-5">
+                    <span class="font-semibold text-xl uppercase">Danh mục</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-8">
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Trang chủ</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Học bổng - Ưu đãi</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Chương trình đào tạo</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Hoạt động sinh viên</a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
 
-                <p class="flex text-black font-semibold mt-2">
-                    <svg class="w-5" fill="#000000" viewBox="0 0 14 14" role="img" focusable="false"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M 7,7 C 8.6570312,7 10,5.65703 10,4 10,2.34297 8.6570312,1 7,1 5.3429688,1 4,2.34297 4,4 4,5.65703 5.3429688,7 7,7 Z M 9.2453125,7.76406 8.125,12.25 7.375,9.0625 8.125,7.75 5.875,7.75 6.625,9.0625 5.875,12.25 4.7546875,7.76406 C 3.0835937,7.84375 1.75,9.21016 1.75,10.9 l 0,0.975 C 1.75,12.49609 2.2539063,13 2.875,13 l 8.25,0 c 0.621094,0 1.125,-0.50391 1.125,-1.125 l 0,-0.975 c 0,-1.68984 -1.333594,-3.05625 -3.0046875,-3.13594 z">
-                            </path>
-                        </g>
-                    </svg>
-                    Thạc sĩ Phạm Ngọc Huyền - Phụ trách chương trình đào tạo
-                </p>
-                <p class="text-black ml-5">SĐT/Zalo: 0329 014 816</p>
+                <div class="mt-5">
+                    <span class="font-semibold text-xl uppercase">Chính sách</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-8">
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Chính sách và quy định chung</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết việc làm</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết học phí</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="mt-2 text-black">
-                    <p class="font-semibold">
-                        <i class="fad fa-map-marker-alt"></i>
-                        Địa chỉ: Trường Đại học Nông Lâm, Đại học Thái Nguyên
-                    </p>
-                    <p class="ml-5">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh Thái Nguyên</p>
                 </div>
             </div>
-            <div class="col-span-1 justify-self-center mt-3 md:mt-0">
-                <iframe class="w-[375px] md:w-96"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
-                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-span-1">
+                <div class="mt-5">
+                    <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
+                    <div class="is-divider small"></div>
+                    <div class="fb-page mt-3" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
+                        data-width="500" data-height="140" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
+                    </div>
+
+                    <!-- Script Facebook SDK -->
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
+                    </script>
+                </div>
+
+                <div class="mt-5">
+                    <iframe class="w-[281px] md:w-72"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
+        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+                </div>
             </div>
-        </div>
-        <div class="bg-[#2753ac] text-white text-center text-sm h-8 place-content-center">
-            <span>
-                @2025 GeoInformatics Research Center
-            </span>
         </div>
 
     </footer>
 
-    <x-admin.alerts.toast />
+    <!-- Popup Đăng ký -->
+    <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex z-50 items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg w-[90%] max-w-3xl relative">
+            <!-- Nút đóng -->
+            <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                ✖
+            </button>
 
-    {{-- icon liên hệ lơ lửng  --}}
-    <!-- if gom all in one show -->
+            <div class="flex flex-col md:flex-row gap-4">
+                <!-- Hình ảnh -->
+                <div class="w-full md:w-1/2">
+                    <img src="http://httmaster.edu.vn/wp-content/uploads/2025/02/TS-thang-3_555x753px-03-scaled.jpg"
+                        alt="Banner" class="w-full rounded-lg">
+                </div>
+
+                <!-- Form Đăng Ký -->
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold text-center mb-2 text-green-600">ĐĂNG KÝ NGAY</h2>
+                    <p class="text-sm text-center mb-4">Thí sinh điền đầy đủ thông tin vào biểu mẫu dưới đây. Chúng tôi
+                        sẽ liên hệ với bạn trong vòng 01 ngày làm việc để xác nhận và hướng dẫn bạn hoàn thiện hồ sơ một
+                        cách thuận tiện nhất…</p>
+
+                    <form class="space-y-3">
+                        <input type="text" name="fullname" placeholder="Họ và Tên*"
+                            class="input input-bordered w-full">
+                        <input type="tel" name="phone" placeholder="Số điện thoại"
+                            class="input input-bordered w-full">
+
+                        <label class="block text-sm font-medium">Ngày sinh <span class="text-red-500">*</span></label>
+                        <input type="date" name="birthday" class="input input-bordered w-full" lang="vi">
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <select name="participant_type" class="select select-bordered w-full">
+                                <option selected>Bạn là</option>
+                                <option>Học sinh</option>
+                                <option>Phụ huynh</option>
+                            </select>
+                            <select name="education_level" class="select select-bordered w-full">
+                                <option selected>Hệ tốt nghiệp</option>
+                                <option>THPT</option>
+                                <option>Trung Cấp</option>
+                                <option>Cao đẳng</option>
+                            </select>
+                        </div>
+
+                        <input type="text" name="address" placeholder="Địa chỉ"
+                            class="input input-bordered w-full">
+                        <select name="major" class="select select-bordered w-full">
+                            <option selected>Chọn ngành học</option>
+                            <option>Công nghệ và đổi mới sáng tạo</option>
+                            <option>Ứng dụng trí tuệ nhân tạo</option>
+                            <option>Quản lý thông tin</option>
+                        </select>
+                        <input type="text" name="facebook_link" placeholder="Link Facebook"
+                            class="input input-bordered w-full">
+
+                        <button type="submit" class="btn btn-primary w-full">Gửi cho chúng tôi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popup = document.getElementById("popup");
+                const closePopup = document.getElementById("closePopup");
+
+                // Hiển thị popup khi trang load
+                setTimeout(() => {
+                    popup.classList.remove("hidden");
+                }, 1000);
+
+                // Đóng popup khi nhấn nút "X"
+                closePopup.addEventListener("click", function() {
+                    popup.classList.add("hidden");
+                });
+
+                // Đóng popup khi nhấn bên ngoài nội dung
+                popup.addEventListener("click", function(event) {
+                    if (event.target === popup) {
+                        popup.classList.add("hidden");
+                    }
+                });
+            });
+        </script>
+    </div>
+
+
+
+    <!-- thông báo toast -->
+    <x-admin.alerts.toast />
+    <!-- End thông báo toast -->
+
+    <!-- icon liên hệ lơ lửng -->
     <div id="button-contact-vr" class="">
         <div id="gom-all-in-one">
             <!-- fanpage -->
@@ -577,7 +855,9 @@
             <!-- end phone -->
         </div><!-- end v3 class gom-all-in-one -->
     </div>
-    {{-- icon liên hệ lơ lửng  --}}
+    <!-- End icon liên hệ lơ lửng -->
+
+    <!-- Back to top -->
     <a href="#top" class="hover:bg-red-700 bg-red-500 invert fixed z-1 circle rounded-full" id="top-link"
         aria-label="Go to top">
         <i class="fas fa-arrow-up"></i>
@@ -621,8 +901,9 @@
             });
         </script>
     </a>
+    <!-- End Back to top -->
 
-    {{-- fchat  --}}
+    <!-- Chat trực tuyến -->
     <script type="text/javascript">
         window.$crisp = [];
         window.CRISP_WEBSITE_ID = "47b7fc7d-cd8b-4241-94e9-ee69286e4505";
@@ -634,6 +915,7 @@
             d.getElementsByTagName("head")[0].appendChild(s);
         })();
     </script>
+    <!-- End Chat trực tuyến -->
 </body>
 
 </html>
