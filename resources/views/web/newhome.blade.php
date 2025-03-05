@@ -573,7 +573,7 @@
         style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
 
         <div class="grid md:grid-cols-4 container mx-auto px-12 pb-6 gap-5">
-            <div class="md:col-span-2 mt-5">
+            <div class="md:col-span-3 mt-5">
                 <div id="text-3" class="col pb-0 widget widget_text">
                     <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
                     <div class="is-divider small"></div>
@@ -622,7 +622,7 @@
 
                 <p class="mb-0 mt-5">© 2025 GeoInformatics Research Center</p>
             </div>
-            <div class="col-span-1">
+            {{-- <div class="col-span-1">
                 <div class="mt-5">
                     <span class="font-semibold text-xl uppercase">Danh mục</span>
                     <div class="is-divider small"></div>
@@ -674,7 +674,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> --}}
             <div class="col-span-1">
                 <div class="mt-5">
                     <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
