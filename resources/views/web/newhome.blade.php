@@ -263,7 +263,7 @@
 
                 <!-- Ảnh minh họa -->
                 <div class="relative md:flex justify-center hidden">
-                    <img src="{{ asset('newhome/boy&girl.png') }}" class="w-[80%] h-auto" alt="">
+                    <img src="{{ asset('newhome/boy&girl.png') }}" class="h-auto" alt="">
                 </div>
             </div>
         </div>
@@ -285,8 +285,12 @@
 
                     <!-- Slider -->
                     <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
-                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
-                                src="https://www.youtube.com/embed/Ixg0tUsKlkg" allowfullscreen></iframe></div>
+                        <div class="w-full flex-shrink-0">
+                            <video class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls>
+                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}" type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ video.
+                            </video>
+                        </div>                        
                         <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
                                 src="https://www.youtube.com/embed/_tWf95mYxck" allowfullscreen></iframe></div>
                         <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
@@ -320,11 +324,6 @@
                         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
                         updateSlidePosition();
                     }
-
-                    function startAutoSlide() {
-                        interval = setInterval(nextSlide, 5000);
-                    }
-
                     function stopAutoSlide() {
                         clearInterval(interval);
                     }
@@ -339,11 +338,9 @@
 
                     document.querySelectorAll('iframe').forEach(iframe => {
                         iframe.addEventListener('mouseenter', stopAutoSlide);
-                        iframe.addEventListener('mouseleave', startAutoSlide);
                     });
 
                     updateSlidePosition();
-                    startAutoSlide();
                 </script>
 
                 <!-- Cam kết với sinh viên -->
@@ -693,11 +690,11 @@
                 </div>
 
                 <div class="mt-5">
-                    <iframe class="w-[281px] md:w-72"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
-        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+                    <iframe class="w-[292px]"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
+                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
 
                 </div>
             </div>
