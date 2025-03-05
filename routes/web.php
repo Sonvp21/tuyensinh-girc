@@ -8,6 +8,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/', HomeController::class)->name('home');
 });
 
+Route::get('/test', function() {
+    return view('test');
+});
+
 // Route::get('/', HomeController::class)->name('home');
 
 Route::get('/dangky', [HomeController::class, 'register'])->name('dangky');
