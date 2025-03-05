@@ -901,16 +901,10 @@
     <!-- End Back to top -->
 
     <!-- Chat trực tuyến -->
-    <script type="text/javascript">
-        window.$crisp = [];
-        window.CRISP_WEBSITE_ID = "47b7fc7d-cd8b-4241-94e9-ee69286e4505";
-        (function() {
-            d = document;
-            s = d.createElement("script");
-            s.src = "https://client.crisp.chat/l.js";
-            s.async = 1;
-            d.getElementsByTagName("head")[0].appendChild(s);
-        })();
+    <script src="https://app.tudongchat.com/js/chatbox.js"></script>
+    <script>
+      const tudong_chatbox = new TuDongChat('_eyUyr4r_GvLn10OhaRSw')
+      tudong_chatbox.initial()
     </script>
     <!-- End Chat trực tuyến -->
 </body>
