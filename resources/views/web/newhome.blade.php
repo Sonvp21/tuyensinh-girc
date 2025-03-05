@@ -610,8 +610,8 @@
                         <li>
                             <a title="Youtube" href="https://www.youtube.com/@girctuaf" rel="nofollow"
                                 target="_blank">
-                                <img alt="youtube" class="w-8 h-7 p-2 bg-red-500 rounded-sm"
-                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/youtube.png">
+                                <img alt="youtube" class="size-8 rounded-full"
+                                    src="https://banner2.cleanpng.com/20190827/hfk/transparent-youtube-icon-1713873095633.webp">
                             </a>
                         </li>
 
