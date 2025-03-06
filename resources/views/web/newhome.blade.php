@@ -131,28 +131,28 @@
                 <div class="md:flex flex-col items-center justify-center">
                     <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
                         <!-- ảnh 1 -->
-                        <div class="relative flex justify-center">
+                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
                             <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
                                 Mã ngành 7320205
                             </p>
                         </div>
 
                         <!-- ảnh 2 -->
-                        <div class="relative flex justify-center">
+                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
                                 Mã ngành 7480201
                             </p>
                         </div>
 
                         <!-- ảnh 3 -->
-                        <div class="relative flex justify-center">
+                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
                             <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center text-black mb-9 font-bold italic text-base">
+                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
                                 Mã ngành 7480201
                             </p>
                         </div>
@@ -273,7 +273,6 @@
         </div>
     </section>
 
-
     <!-- video cam kết sv -->
     <section class="relative container mx-auto md:px-12 px-2 justify-self-center">
         <div class="md:flex flex-col items-center justify-center">
@@ -300,7 +299,7 @@
             italic inline-block">
             MÔI TRƯỜNG HỌC TẬP
         </div>
-        <div class="relative max-w-3xl mx-auto">
+        <div class="relative mx-auto">
             <button
                 class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-1">
@@ -309,26 +308,72 @@
 
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 1"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 2"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 3"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 4"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 5"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
-                            class="w-full rounded-lg shadow-md"></div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
-                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Ký túc xá
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Giảng đường
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/thư viện.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Thư viện
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/phòng máy.png') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Phòng máy tính
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Nhà thể thao
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Ký túc xá
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -340,47 +385,204 @@
         </div>
     </section>
 
-    <!-- Swiper 2 -->
-    <div class="relative max-w-3xl mx-auto mt-10">
-        <button
-            class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
-            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-2">
-            ❮
-        </button>
-
-        <div class="swiper mySwiper2">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
-                        class="w-full rounded-lg shadow-md"></div>
-                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
-                        class="w-full rounded-lg shadow-md"></div>
-            </div>
+    <!-- Swiper 2 HOẠT ĐỘNG CỦA SINH VIÊN -->
+    <section class="container mx-auto md:px-12 px-1 relative">
+        <div
+            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
+            bg-gradient-to-b from-lime-200 via-yellow-400 via-40% to-orange-700
+            text-transparent bg-clip-text 
+            italic inline-block">
+            HOẠT ĐỘNG CỦA SINH VIÊN
         </div>
+        <div class="relative mx-auto">
+            <button
+                class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-2">
+                ❮
+            </button>
 
-        <button
-            class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/nhập học.JPG') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Nhập học
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/học tiếng anh.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Học ngoại ngữ
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/chuc tết.jfif') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                                   transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Chúc tết sinh viên
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/thể thao.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Hoạt động thể thao
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/văn nghệ.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                                   transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Văn nghệ
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/nhập học.JPG') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Nhập học
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-2">
-            ❯
-        </button>
-    </div>
+                ❯
+            </button>
+        </div>
+    </section>
+
+    <!-- Swiper 3 khoa học công nghệ -->
+    <section class="container mx-auto md:px-12 px-1 relative">
+        <div
+            class="text-xl md:text-2xl py-4 font-bold uppercase italic 
+               bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
+               bg-clip-text text-transparent">
+            KHOA HỌC & CÔNG NGHỆ
+        </div>
+        <div class="relative mx-auto">
+            <button
+                class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-3">
+                ❮
+            </button>
+
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Hợp tác quốc tế
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Hợp tác quốc tế
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/dự án.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Triển khai dự án
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/điều tra.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Điều tra thực địa
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/tạp huấn.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tập huấn công nghệ
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Nghiên cứu khoa học
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-3">
+                ❯
+            </button>
+        </div>
+    </section>
 
     <!-- Initialize Swiper -->
+    <style>
+        .disabled {
+            background: #ccc !important;
+            /* Màu xám */
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+    </style>
     <script>
         var swiper1 = new Swiper(".mySwiper1", {
             spaceBetween: 10,
@@ -398,7 +600,15 @@
                 1024: {
                     slidesPerView: 5
                 }, // Laptop trở lên
-            }
+            },
+            on: {
+                init: function() {
+                    checkButtons(this, ".swiper-button-prev-1", ".swiper-button-next-1");
+                },
+                slideChange: function() {
+                    checkButtons(this, ".swiper-button-prev-1", ".swiper-button-next-1");
+                },
+            },
         });
 
         var swiper2 = new Swiper(".mySwiper2", {
@@ -417,342 +627,53 @@
                 1024: {
                     slidesPerView: 5
                 },
-            }
+            },
+            on: {
+                init: function() {
+                    checkButtons(this, ".swiper-button-prev-2", ".swiper-button-next-2");
+                },
+                slideChange: function() {
+                    checkButtons(this, ".swiper-button-prev-2", ".swiper-button-next-2");
+                },
+            },
         });
+
+        var swiper3 = new Swiper(".mySwiper3", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next-3",
+                prevEl: ".swiper-button-prev-3",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                640: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 5
+                },
+            },
+            on: {
+                init: function() {
+                    checkButtons(this, ".swiper-button-prev-3", ".swiper-button-next-3");
+                },
+                slideChange: function() {
+                    checkButtons(this, ".swiper-button-prev-3", ".swiper-button-next-3");
+                },
+            },
+        });
+        // Hàm kiểm tra và vô hiệu hóa nút khi cần
+        function checkButtons(swiper, prevBtn, nextBtn) {
+            document.querySelector(prevBtn).classList.toggle("disabled", swiper.isBeginning);
+            document.querySelector(nextBtn).classList.toggle("disabled", swiper.isEnd);
+        }
     </script>
 
-    <!-- Môi trường học tập -->
-    <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
-            bg-gradient-to-b from-blue-200 via-blue-400 via-40% to-blue-800
-            text-transparent bg-clip-text 
-            italic inline-block">
-            MÔI TRƯỜNG HỌC TẬP
-        </div>
-        <div class="grid md:grid-cols-5 gap-4">
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}" class="md:w-80 h-auto"
-                    alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Ký túc xá
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/giảng đường.jfif') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Giảng đường
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/thư viện.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Thư viện
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/phòng máy.png') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Phòng máy tính
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Nhà thể thao
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOẠT ĐỘNG CỦA SINH VIÊN -->
-    <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
-                bg-gradient-to-b from-yellow-400 to-orange-700
-                text-transparent bg-clip-text 
-                italic inline-block">
-            HOẠT ĐỘNG CỦA SINH VIÊN
-        </div>
-        <div class="grid md:grid-cols-5 gap-4">
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/nhập học.JPG') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Nhập học
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/học tiếng anh.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Học ngoại ngữ
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/chuc tết.jfif') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Chúc tết sinh viên
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/thể thao.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Hoạt động thể thao
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/văn nghệ.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Văn nghệ
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- KHOA HỌC & CÔNG NGHỆ -->
-    <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="text-xl md:text-2xl py-4 font-bold uppercase italic 
-               bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
-               bg-clip-text text-transparent">
-            KHOA HỌC & CÔNG NGHỆ
-        </div>
-
-
-        <div class="grid md:grid-cols-5 gap-4">
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Hợp tác quốc tế
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/dự án.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Triển khai dự án
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/điều tra.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Điều tra thực địa
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/tạp huấn.jpg') }}" class="md:w-80 h-auto" alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Tập huấn công nghệ
-                </p>
-            </div>
-            <div class="relative flex justify-center">
-                <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}" class="md:w-80 h-auto"
-                    alt="">
-                <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                    style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                    onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                    onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                    Nghiên cứu khoa học
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Thông tin liên hệ -->
-    <footer id="footer" class="text-white bg-cover bg-center mt-5"
-        style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
-
-        <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
-            <div class="md:col-span-2 mt-5">
-                <div id="text-3" class="col pb-0 widget widget_text">
-                    <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-7">
-                            <li>
-                                <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
-                                <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
-                                <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
-                                    Thái Nguyên</span>
-                            </li>
-
-                            <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
-                            <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
-                            <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="my-5">
-                    <ul class="flex gap-5 items-center">
-                        <li class="">
-                            <a title="Facebook" href="https://www.facebook.com/girctuaf" rel="nofollow"
-                                target="_blank">
-                                <img alt="Fanpage" class="size-7"
-                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/Facebook.png">
-                            </a>
-                        </li>
-                        <li class="">
-                            <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
-                                <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
-                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
-                        </li>
-                        <li>
-                            <a title="Youtube" href="https://www.youtube.com/@girctuaf" rel="nofollow"
-                                target="_blank">
-                                <img alt="youtube" class="size-8 rounded-full"
-                                    src="https://banner2.cleanpng.com/20190827/hfk/transparent-youtube-icon-1713873095633.webp">
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="col-span-1 hidden md:flex">
-                <div class="">
-                    <iframe class="w-[292px] md:mt-16"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
-                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-
-                </div>
-            </div>
-            {{-- <div class="col-span-1">
-                <div class="mt-5">
-                    <span class="font-semibold text-xl uppercase">Danh mục</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-8">
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Trang chủ</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Học bổng - Ưu đãi</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Chương trình đào tạo</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Hoạt động sinh viên</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="mt-5">
-                    <span class="font-semibold text-xl uppercase">Chính sách</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-8">
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Chính sách và quy định chung</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết việc làm</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết học phí</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div> --}}
-            <div class="col-span-1 hidden md:flex">
-                <div class="md:mt-5">
-                    <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
-                    <div class="is-divider small"></div>
-                    <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                        data-width="500" data-height="149" data-small-header="false"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
-                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
-                    </div>
-
-                    <!-- Script Facebook SDK -->
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
-                    </script>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="container mx-auto px-12 gap-5">
-            <hr class="border-t-2">
-            <p class=" py-1">© 2025 GeoInformatics Research Center</p>
-
-        </div>
-    </footer>
-
-    <!-- Popup Đăng ký -->
-    <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex z-50 items-center justify-center hidden">
+        <!-- Popup Đăng ký -->
+        <div id="popup"
+        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white p-6 rounded-lg max-w-4xl relative">
             <!-- Nút đóng -->
             <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
@@ -983,13 +904,35 @@
                 </div>
             </div>
         </div>
-
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const popup = document.getElementById("popup");
                 const closePopup = document.getElementById("closePopup");
+
+                // Hiển thị popup khi trang load
+                setTimeout(() => {
+                    popup.classList.remove("hidden");
+                }, 1500);
+
+                // Đóng popup khi nhấn nút "X"
+                closePopup.addEventListener("click", function() {
+                    popup.classList.add("hidden");
+                });
+
+                // Đóng popup khi nhấn bên ngoài nội dung
+                popup.addEventListener("click", function(event) {
+                    if (event.target === popup) {
+                        popup.classList.add("hidden");
+                    }
+                });
+            });
+        </script>
+        {{-- <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popup = document.getElementById("popup");
+                const closePopup = document.getElementById("closePopup");
                 const popupKey = "popup_last_shown"; // Key lưu trong localStorage
-                const popupInterval = 6 * 60 * 60 * 1000; // 6 giờ (milliseconds)
+                const popupInterval = 1 * 60 * 60 * 1000; // 1 giờ (milliseconds)
 
                 // Kiểm tra nếu đã hiển thị popup trong khoảng thời gian quy định
                 const lastShown = localStorage.getItem(popupKey);
@@ -1016,11 +959,149 @@
                     }
                 });
             });
-        </script>
+        </script> --}}
     </div>
 
+    <!-- Thông tin liên hệ -->
+    <footer id="footer" class="text-white bg-cover bg-center mt-5"
+        style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
+
+        <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
+            <div class="md:col-span-2 mt-5">
+                <div id="text-3" class="col pb-0 widget widget_text">
+                    <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-7">
+                            <li>
+                                <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
+                                <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
+                                <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
+                                    Thái Nguyên</span>
+                            </li>
+
+                            <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
+                            <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
+                            <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="my-5">
+                    <ul class="flex gap-5 items-center">
+                        <li class="">
+                            <a title="Facebook" href="https://www.facebook.com/girctuaf" rel="nofollow"
+                                target="_blank">
+                                <img alt="Fanpage" class="size-7"
+                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/Facebook.png">
+                            </a>
+                        </li>
+                        <li class="">
+                            <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
+                                <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
+                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
+                        </li>
+                        <li>
+                            <a title="Youtube" href="https://www.youtube.com/@girc2025" rel="nofollow"
+                                target="_blank">
+                                <img alt="youtube" class="size-8 rounded-full"
+                                    src="https://banner2.cleanpng.com/20190827/hfk/transparent-youtube-icon-1713873095633.webp">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-1 hidden md:flex">
+                <div class="">
+                    <iframe class="w-[292px] md:mt-16"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
+                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+            </div>
+            {{-- <div class="col-span-1">
+                <div class="mt-5">
+                    <span class="font-semibold text-xl uppercase">Danh mục</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-8">
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Trang chủ</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Học bổng - Ưu đãi</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Chương trình đào tạo</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Hoạt động sinh viên</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mt-5">
+                    <span class="font-semibold text-xl uppercase">Chính sách</span>
+                    <div class="is-divider small"></div>
+                    <div class="mt-3">
+                        <ul class="leading-8">
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Chính sách và quy định chung</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết việc làm</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-orange-400" href="#">
+                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết học phí</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> --}}
+            <div class="col-span-1 hidden md:flex">
+                <div class="md:mt-5">
+                    <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
+                    <div class="is-divider small"></div>
+                    <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
+                        data-width="500" data-height="149" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
+                    </div>
+
+                    <!-- Script Facebook SDK -->
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container mx-auto px-12 gap-5">
+            <hr class="border-t-2">
+            <p class=" py-1">© 2025 GeoInformatics Research Center</p>
+
+        </div>
+    </footer>
+
     <!-- Nút hình ảnh lơ lửng với hiệu ứng -->
-    <div id="floatingButton" class="fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer">
+    <div id="floatingButton" class="hidden md:fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer md:block">
         <div class="relative">
             <!-- Vòng tròn hiệu ứng tỏa ra -->
             <span class="absolute inset-0 w-full h-full rounded-full"></span>
@@ -1028,7 +1109,7 @@
 
             <!-- Hình ảnh đăng ký -->
             <img src="{{ asset('newhome/đăng ký nhận H.png') }}" alt="Đăng ký ngay"
-                class="w-48 h-w-40 transition-transform animate-pulse hover:scale-125 duration-100">
+                class="w-48 h-w-40 transition-transform hover:scale-125 duration-100">
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
@@ -1048,7 +1129,7 @@
     <!-- End thông báo toast -->
 
     <!-- icon liên hệ lơ lửng -->
-    <div id="button-contact-vr" class="">
+    <div id="button-contact-vr" class="!z-10">
         <div id="gom-all-in-one">
             <!-- fanpage -->
             <div id="fanpage-vr" class="button-contact">
@@ -1068,7 +1149,7 @@
                 <div class="phone-vr">
                     <div class="phone-vr-circle-fill"></div>
                     <div class="phone-vr-img-circle">
-                        <a target="_blank" href="https://www.youtube.com/@girctuaf">
+                        <a target="_blank" href="https://www.youtube.com/@girc2025">
                             <img alt="youtube"
                                 src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/youtube.png" />
                         </a>
@@ -1107,7 +1188,7 @@
     <!-- End icon liên hệ lơ lửng -->
 
     <!-- Back to top -->
-    <a href="#top" class="hover:bg-red-700 bg-red-500 invert fixed z-1 circle rounded-full" id="top-link"
+    <a href="#top" class="hover:bg-red-700 bg-red-500 invert fixed z-10 circle rounded-full" id="top-link"
         aria-label="Go to top">
         <i class="fas fa-arrow-up"></i>
         <style>
@@ -1117,8 +1198,8 @@
                 width: 46px;
                 height: 46px;
                 border: 2px solid red;
-                right: 20px;
-                bottom: 140px;
+                left: 20px;
+                bottom: 375px;
                 color: #fff;
                 padding: 10px;
                 text-align: center;
