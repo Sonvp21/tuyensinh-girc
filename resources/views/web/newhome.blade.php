@@ -151,7 +151,7 @@
                 <div class="md:flex flex-col items-center justify-center">
                     <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
                         <!-- ảnh 1 -->
-                        <div
+                        <div id="openPopupQLTT"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -161,7 +161,7 @@
                         </div>
 
                         <!-- ảnh 2 -->
-                        <div
+                        <div id="openPopupDMST"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -171,7 +171,7 @@
                         </div>
 
                         <!-- ảnh 3 -->
-                        <div
+                        <div id="openPopupTTNT"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -184,10 +184,141 @@
             </div>
         </div>
     </section>
+    {{-- Chi tiết các ngành --}}
+    <!-- PopupQLTT -->
+    <div id="popupQLTT"
+        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+            <button id="closePopupQLTT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                ✖
+            </button>
+            <div class="flex flex-col md:flex-row gap-2">
+                <div class="w-full flex">
+                    <div class="max-h-[90vh] overflow-y-auto">
+                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 1.jpg" alt="Banner"
+                            class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popupQLTT = document.getElementById("popupQLTT");
+                const closePopupQLTT = document.getElementById("closePopupQLTT");
+                const openPopupQLTT = document.getElementById("openPopupQLTT"); // Chọn đúng id
 
+                // Mở popup khi click vào #openPopupQLTT
+                openPopupQLTT.addEventListener("click", function() {
+                    popupQLTT.classList.remove("hidden"); // Hiện popup
+                });
+
+                // Đóng popup khi nhấn nút "X"
+                closePopupQLTT.addEventListener("click", function() {
+                    popupQLTT.classList.add("hidden"); // Ẩn popup
+                });
+
+                // Đóng popup khi click bên ngoài nội dung
+                popupQLTT.addEventListener("click", function(event) {
+                    if (event.target === popupQLTT) {
+                        popupQLTT.classList.add("hidden"); // Ẩn popup
+                    }
+                });
+            });
+        </script>
+
+    </div>
+
+    <!-- PopupDMST -->
+    <div id="popupDMST"
+        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+            <button id="closePopupDMST" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                ✖
+            </button>
+            <div class="flex flex-col md:flex-row gap-2">
+                <div class="w-full flex">
+                    <div class="max-h-[90vh] overflow-y-auto">
+                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 2.jpg" alt="Banner"
+                            class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popupDMST = document.getElementById("popupDMST");
+                const closePopupDMST = document.getElementById("closePopupDMST");
+                const openPopupDMST = document.getElementById("openPopupDMST"); // Chọn đúng id
+
+                // Mở popup khi click vào #openPopupDMST
+                openPopupDMST.addEventListener("click", function() {
+                    popupDMST.classList.remove("hidden"); // Hiện popup
+                });
+
+                // Đóng popup khi nhấn nút "X"
+                closePopupDMST.addEventListener("click", function() {
+                    popupDMST.classList.add("hidden"); // Ẩn popup
+                });
+
+                // Đóng popup khi click bên ngoài nội dung
+                popupDMST.addEventListener("click", function(event) {
+                    if (event.target === popupDMST) {
+                        popupDMST.classList.add("hidden"); // Ẩn popup
+                    }
+                });
+            });
+        </script>
+
+    </div>
+
+    <!-- PopupTTNT -->
+    <div id="popupTTNT"
+        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+            <button id="closePopupTTNT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                ✖
+            </button>
+            <div class="flex flex-col md:flex-row gap-2">
+                <div class="w-full flex">
+                    <div class="max-h-[90vh] overflow-y-auto">
+                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 3.jpg" alt="Banner"
+                            class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popupTTNT = document.getElementById("popupTTNT");
+                const closePopupTTNT = document.getElementById("closePopupTTNT");
+                const openPopupTTNT = document.getElementById("openPopupTTNT"); // Chọn đúng id
+
+                // Mở popup khi click vào #openPopupTTNT
+                openPopupTTNT.addEventListener("click", function() {
+                    popupTTNT.classList.remove("hidden"); // Hiện popup
+                });
+
+                // Đóng popup khi nhấn nút "X"
+                closePopupTTNT.addEventListener("click", function() {
+                    popupTTNT.classList.add("hidden"); // Ẩn popup
+                });
+
+                // Đóng popup khi click bên ngoài nội dung
+                popupTTNT.addEventListener("click", function(event) {
+                    if (event.target === popupTTNT) {
+                        popupTTNT.classList.add("hidden"); // Ẩn popup
+                    }
+                });
+            });
+        </script>
+
+    </div>
+
+
+
+    <!-- Phương thức xét tuyển -->
     <section
         class="flex flex-col container mx-auto px-2 md:px-12 md:flex-row items-start md:items-center justify-between gap-20">
-        <!-- Phương thức xét tuyển -->
         <div class="w-full md:w-1/2 text-white rounded-lg md:mt-0 mt-4">
             <!-- Tiêu đề với nền xanh -->
             <div class="relative inline-block">
@@ -986,66 +1117,68 @@
     </div>
 
     <!-- Thông tin liên hệ -->
-    <footer id="footer" class="text-white bg-cover bg-center mt-5"
-        style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
+    <div class="bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[430px] flex flex-col justify-end mt-4"
+    style="background-image: url('{{ asset('/newhome/bg_footer.png') }}');">
 
-        <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
-            <div class="md:col-span-2 mt-5">
-                <div id="text-3" class="col pb-0 widget widget_text">
-                    <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-7">
+        <footer id="footer" class="text-white">
+
+            <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
+                <div class="md:col-span-2 mt-5">
+                    <div id="text-3" class="col pb-0 widget widget_text">
+                        <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
+                        <div class="is-divider small"></div>
+                        <div class="mt-3">
+                            <ul class="leading-7">
+                                <li>
+                                    <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
+                                    <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
+                                    <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
+                                        Thái Nguyên</span>
+                                </li>
+
+                                <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
+                                <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
+                                <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="my-5">
+                        <ul class="flex gap-5 items-center">
+                            <li class="">
+                                <a title="Facebook" href="https://www.facebook.com/girctuaf" rel="nofollow"
+                                    target="_blank">
+                                    <img alt="Fanpage" class="size-7"
+                                        src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/Facebook.png">
+                                </a>
+                            </li>
+                            <li class="">
+                                <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
+                                    <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
+                                        src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
+                            </li>
                             <li>
-                                <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
-                                <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
-                                <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
-                                    Thái Nguyên</span>
+                                <a title="Youtube" href="https://www.youtube.com/@girc2025" rel="nofollow"
+                                    target="_blank">
+                                    <img alt="youtube" class="size-8 rounded-full"
+                                        src="https://banner2.cleanpng.com/20190827/hfk/transparent-youtube-icon-1713873095633.webp">
+                                </a>
                             </li>
 
-                            <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
-                            <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
-                            <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-span-1 hidden md:flex">
+                    <div class="">
+                        <iframe class="w-[292px] md:mt-16"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
+                            style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
 
-                <div class="my-5">
-                    <ul class="flex gap-5 items-center">
-                        <li class="">
-                            <a title="Facebook" href="https://www.facebook.com/girctuaf" rel="nofollow"
-                                target="_blank">
-                                <img alt="Fanpage" class="size-7"
-                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/Facebook.png">
-                            </a>
-                        </li>
-                        <li class="">
-                            <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
-                                <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
-                                    src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
-                        </li>
-                        <li>
-                            <a title="Youtube" href="https://www.youtube.com/@girc2025" rel="nofollow"
-                                target="_blank">
-                                <img alt="youtube" class="size-8 rounded-full"
-                                    src="https://banner2.cleanpng.com/20190827/hfk/transparent-youtube-icon-1713873095633.webp">
-                            </a>
-                        </li>
-
-                    </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-span-1 hidden md:flex">
-                <div class="">
-                    <iframe class="w-[292px] md:mt-16"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
-                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-
-                </div>
-            </div>
-            {{-- <div class="col-span-1">
+                {{-- <div class="col-span-1">
                 <div class="mt-5">
                     <span class="font-semibold text-xl uppercase">Danh mục</span>
                     <div class="is-divider small"></div>
@@ -1098,31 +1231,32 @@
 
                 </div>
             </div> --}}
-            <div class="col-span-1 hidden md:flex">
-                <div class="md:mt-5">
-                    <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
-                    <div class="is-divider small"></div>
-                    <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                        data-width="292" data-height="149" data-small-header="false"
-                        data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"
-                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
+                <div class="col-span-1 hidden md:flex">
+                    <div class="md:mt-5">
+                        <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
+                        <div class="is-divider small"></div>
+                        <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
+                            data-width="292" data-height="149" data-small-header="false"
+                            data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"
+                            style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
+                        </div>
+
+
+                        <!-- Script Facebook SDK -->
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
+                        </script>
                     </div>
 
 
-                    <!-- Script Facebook SDK -->
-                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
-                    </script>
                 </div>
-
+            </div>
+            <div class="container mx-auto px-12 gap-5">
+                <hr class="border-t-2">
+                <p class=" py-1">© 2025 GeoInformatics Research Center</p>
 
             </div>
-        </div>
-        <div class="container mx-auto px-12 gap-5">
-            <hr class="border-t-2">
-            <p class=" py-1">© 2025 GeoInformatics Research Center</p>
-
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <!-- Nút hình ảnh lơ lửng với hiệu ứng -->
     <div id="floatingButton"
@@ -1229,7 +1363,7 @@
                 padding: 10px;
                 text-align: center;
                 cursor: pointer;
-                z-index: 1000;
+                z-index: 10;
             }
 
             #top-link.show {
