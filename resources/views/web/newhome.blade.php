@@ -12,13 +12,18 @@
     <link rel='stylesheet' id='pzf-style-css' href='{{ asset('newhome/zalostyle.css') }}' type='text/css'
         media='all' />
     {{-- icon liên hệ lơ lửng  --}}
+
+    {{-- swiper --}}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 
 <body>
 
     <!-- Header -->
     <header class="text-white text-center">
-        <img src="{{ asset('newhome/header.png') }}" alt="">
+        <img src="{{ asset('newhome/header.png') }}" class="relative w-full" alt="">
     </header>
 
     <section class="container mx-auto px-12 relative hidden md:flex">
@@ -26,9 +31,9 @@
         <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
 
         <!-- Chữ chồng lên ảnh -->
-        <div class="absolute inset-0 mx-4 flex flex-col items-center justify-center p-6 space-y-2 text-justify">
+        <div class="absolute inset-0 mx-4 flex flex-col items-center justify-center p-6 space-y-1 text-justify">
             <!-- Đoạn 1 -->
-            <div class="mx-8 text-sm md:text-sm lg:text-lg leading-relaxed flex">
+            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
                 <p>
                     <strong>Nghị quyết số 57-NQ/TW </strong> ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa
@@ -40,7 +45,7 @@
             </div>
 
             <!-- Đoạn 2 -->
-            <div class="mx-8 text-sm md:text-sm lg:text-lg leading-relaxed flex">
+            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
                 <p>
                     <strong>Quyết định số 749/QĐ-TTg </strong>
@@ -51,7 +56,7 @@
             </div>
 
             <!-- Đoạn 3 -->
-            <div class="mx-8 text-sm md:text-sm lg:text-lg leading-relaxed flex">
+            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
                 <p>
                     <strong>Quyết định số 942/QĐ-TTg </strong>
@@ -271,115 +276,156 @@
 
     <!-- video cam kết sv -->
     <section class="relative container mx-auto md:px-12 px-2 justify-self-center">
-        <!-- Chứa ảnh theo hàng ngang -->
         <div class="md:flex flex-col items-center justify-center">
-            <div class="flex">
-                <!-- Ảnh minh họa -->
-                <div class="relative max-w-5xl mx-auto py-10 overflow-hidden">
-                    <!-- Nút điều hướng trái -->
-                    <button id="prevBtn"
-                        class="absolute size-10 left-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-b from-yellow-400 to-orange-500 text-white text-center rounded-full shadow-lg text-2xl z-10 transition-all duration-300">
-                        ❮
-                    </button>
-
-                    <!-- Slider -->
-                    <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
-                        <div class="w-full flex-shrink-0">
-                            <video class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls>
-                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
-                                    type="video/mp4">
-                                Trình duyệt của bạn không hỗ trợ video.
-                            </video>
-                        </div>
-                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
-                                src="https://www.youtube.com/embed/_tWf95mYxck" allowfullscreen></iframe></div>
-                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
-                                src="https://www.youtube.com/embed/at4Ve-F0RvM" allowfullscreen></iframe></div>
-                        <div class="w-full flex-shrink-0"><iframe class="w-full md:h-96 h-56 rounded-xl shadow-lg"
-                                src="https://www.youtube.com/embed/vmsrUKZlhLk" allowfullscreen></iframe></div>
+            <div class="relative max-w-5xl mx-auto py-10 overflow-hidden">
+                <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
+                    <div class="w-full flex-shrink-0">
+                        <video class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls>
+                            <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
+                                type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video.
+                        </video>
                     </div>
-
-                    <!-- Nút điều hướng phải -->
-                    <button id="nextBtn"
-                        class="absolute size-10 right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-b from-yellow-400 to-orange-500 text-white text-center rounded-full shadow-lg text-2xl z-10 transition-all duration-300">
-                        ❯
-                    </button>
                 </div>
-                <script>
-                    let currentIndex = 0;
-                    const totalSlides = document.querySelectorAll('#carousel > div').length;
-                    const carousel = document.getElementById('carousel');
-                    let interval;
-
-                    function updateSlidePosition() {
-                        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-                    }
-
-                    function nextSlide() {
-                        currentIndex = (currentIndex + 1) % totalSlides;
-                        updateSlidePosition();
-                    }
-
-                    function prevSlide() {
-                        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                        updateSlidePosition();
-                    }
-
-                    function stopAutoSlide() {
-                        clearInterval(interval);
-                    }
-
-                    document.getElementById('nextBtn').addEventListener('click', () => {
-                        nextSlide();
-                    });
-
-                    document.getElementById('prevBtn').addEventListener('click', () => {
-                        prevSlide();
-                    });
-
-                    document.querySelectorAll('iframe').forEach(iframe => {
-                        iframe.addEventListener('mouseenter', stopAutoSlide);
-                    });
-
-                    updateSlidePosition();
-                </script>
-
-                <!-- Cam kết với sinh viên -->
-                {{-- <div class="relative justify-center self-center">
-                    <div class="text-center text-xl md:text-2xl font-bold p-4 uppercase bg-gradient-to-b from-yellow-600 to-orange-600 text-transparent bg-clip-text italic inline-block">
-                        Cam kết với sinh viên
-                    </div>
-
-                    <div class="ml-8 text-sm md:text-sm lg:text-lg leading-relaxed space-y-2">
-                        <div class="flex items-center">
-                            <img src="{{ asset('newhome/bullet 2.png') }}" class="size-5 md:size-6" alt="">
-                            <p class="ml-2">Giao tiếp tốt bằng tiếng Anh, tiếng Trung. </p>
-                        </div>
-                        <div class="flex items-center">
-                            <img src="{{ asset('newhome/bullet 2.png') }}" class="size-5 md:size-6" alt="">
-                            <p class="ml-2">Năm thứ 3 tham gia dự án có hưởng lương. </p>
-                        </div>
-                        <div class="flex items-center">
-                            <img src="{{ asset('newhome/bullet 2.png') }}" class="size-5 md:size-6" alt="">
-                            <p class="ml-2">Chuyên sâu về công nghệ thông tin, trí tuệ nhân tạo. </p>
-                        </div>
-                        <div class="flex items-center">
-                            <img src="{{ asset('newhome/bullet 2.png') }}" class="size-5 md:size-6" alt="">
-                            <p class="ml-2">Có việc làm ngay sau khi tốt nghiệp.</p>
-                        </div>
-                    </div>
-
-                </div> --}}
-
             </div>
         </div>
     </section>
+
+    <!-- Swiper 1 Môi trường học tập-->
+    <section class="container mx-auto md:px-12 px-1 relative">
+        <div
+            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
+            bg-gradient-to-b from-blue-400 to-blue-900
+            text-transparent bg-clip-text 
+            italic inline-block">
+            MÔI TRƯỜNG HỌC TẬP
+        </div>
+        <div class="relative max-w-3xl mx-auto">
+            <button
+                class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-1">
+                ❮
+            </button>
+
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 1"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 2"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 3"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 4"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 5"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
+                            class="w-full rounded-lg shadow-md"></div>
+                    <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
+                            class="w-full rounded-lg shadow-md"></div>
+                </div>
+            </div>
+
+            <button
+                class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-1">
+                ❯
+            </button>
+        </div>
+    </section>
+
+    <!-- Swiper 2 -->
+    <div class="relative max-w-3xl mx-auto mt-10">
+        <button
+            class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-2">
+            ❮
+        </button>
+
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 11"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 12"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 13"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 14"
+                        class="w-full rounded-lg shadow-md"></div>
+                <div class="swiper-slide"><img src="https://via.placeholder.com/300x200" alt="Slide 15"
+                        class="w-full rounded-lg shadow-md"></div>
+            </div>
+        </div>
+
+        <button
+            class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+            text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-2">
+            ❯
+        </button>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper1 = new Swiper(".mySwiper1", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next-1",
+                prevEl: ".swiper-button-prev-1",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                }, // Màn hình rất nhỏ (điện thoại)
+                640: {
+                    slidesPerView: 2
+                }, // Tablet nhỏ
+                1024: {
+                    slidesPerView: 5
+                }, // Laptop trở lên
+            }
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next-2",
+                prevEl: ".swiper-button-prev-2",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                640: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 5
+                },
+            }
+        });
+    </script>
 
     <!-- Môi trường học tập -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
             class="text-center text-xl md:text-2xl font-bold py-4 uppercase
-            bg-gradient-to-b from-blue-400 to-blue-900
+            bg-gradient-to-b from-blue-200 via-blue-400 via-40% to-blue-800
             text-transparent bg-clip-text 
             italic inline-block">
             MÔI TRƯỜNG HỌC TẬP
@@ -437,8 +483,6 @@
                 </p>
             </div>
         </div>
-
-
     </section>
 
     <!-- HOẠT ĐỘNG CỦA SINH VIÊN -->
@@ -507,12 +551,13 @@
     <!-- KHOA HỌC & CÔNG NGHỆ -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
-            bg-gradient-to-b from-blue-400 to-blue-900
-            text-transparent bg-clip-text 
-            italic inline-block">
+            class="text-xl md:text-2xl py-4 font-bold uppercase italic 
+               bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
+               bg-clip-text text-transparent">
             KHOA HỌC & CÔNG NGHỆ
         </div>
+
+
         <div class="grid md:grid-cols-5 gap-4">
             <div class="relative flex justify-center">
                 <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}" class="md:w-80 h-auto" alt="">
@@ -572,8 +617,8 @@
     <footer id="footer" class="text-white bg-cover bg-center mt-5"
         style="background-image: url('{{ asset('/newhome/bg_footer.jpg') }}');">
 
-        <div class="grid md:grid-cols-4 container mx-auto px-12 pb-6 gap-5">
-            <div class="md:col-span-3 mt-5">
+        <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
+            <div class="md:col-span-2 mt-5">
                 <div id="text-3" class="col pb-0 widget widget_text">
                     <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
                     <div class="is-divider small"></div>
@@ -617,10 +662,16 @@
 
                     </ul>
                 </div>
+            </div>
+            <div class="col-span-1 hidden md:flex">
+                <div class="">
+                    <iframe class="w-[292px] md:mt-16"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
+                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
 
-                <hr class="border-t-2  my-1">
-
-                <p class="mb-0 mt-5">© 2025 GeoInformatics Research Center</p>
+                </div>
             </div>
             {{-- <div class="col-span-1">
                 <div class="mt-5">
@@ -675,12 +726,12 @@
 
                 </div>
             </div> --}}
-            <div class="col-span-1">
-                <div class="mt-5">
+            <div class="col-span-1 hidden md:flex">
+                <div class="md:mt-5">
                     <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
                     <div class="is-divider small"></div>
-                    <div class="fb-page mt-3" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                        data-width="500" data-height="140" data-small-header="false"
+                    <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
+                        data-width="500" data-height="149" data-small-header="false"
                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
                         style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
                     </div>
@@ -690,76 +741,244 @@
                     </script>
                 </div>
 
-                <div class="mt-5">
-                    <iframe class="w-[292px]"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
-                        style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
 
-                </div>
             </div>
         </div>
+        <div class="container mx-auto px-12 gap-5">
+            <hr class="border-t-2">
+            <p class=" py-1">© 2025 GeoInformatics Research Center</p>
 
+        </div>
     </footer>
 
     <!-- Popup Đăng ký -->
     <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 flex z-50 items-center justify-center hidden">
-        <div class="bg-white p-6 rounded-lg w-[90%] max-w-3xl relative">
+        <div class="bg-white p-6 rounded-lg max-w-4xl relative">
             <!-- Nút đóng -->
             <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
             </button>
 
-            <div class="flex flex-col md:flex-row gap-4">
+            <div class="flex flex-col md:flex-row gap-2">
                 <!-- Hình ảnh -->
-                <div class="w-full md:w-1/2">
-                    <img src="http://httmaster.edu.vn/wp-content/uploads/2025/02/TS-thang-3_555x753px-03-scaled.jpg"
-                        alt="Banner" class="w-full rounded-lg">
+                <div class="w-full md:flex hidden md:w-[130%]">
+                    <img src="{{ asset('newhome/form dk.jpg') }}" alt="Banner" class="w-full rounded-lg">
                 </div>
 
                 <!-- Form Đăng Ký -->
-                <div class="w-full md:w-1/2">
+                <div class="w-full">
                     <h2 class="text-2xl font-bold text-center mb-2 text-green-600">ĐĂNG KÝ NGAY</h2>
-                    <p class="text-sm text-center mb-4">Thí sinh điền đầy đủ thông tin vào biểu mẫu dưới đây. Chúng tôi
-                        sẽ liên hệ với bạn trong vòng 01 ngày làm việc để xác nhận và hướng dẫn bạn hoàn thiện hồ sơ một
-                        cách thuận tiện nhất…</p>
+                    <p class="text-sm text-center mb-4">Vui lòng điền đầy đủ thông tin vào biểu mẫu dưới đây. Chúng tôi
+                        sẽ liên hệ với bạn sớm nhất</p>
 
-                    <form class="space-y-3">
-                        <input type="text" name="fullname" placeholder="Họ và Tên*"
+                    <form action="{{ route('dangky.store') }}" method="POST" class="space-y-3">
+                        @csrf
+
+                        <input type="text" name="name" id="name" placeholder="Họ và Tên*"
                             class="input input-bordered w-full">
-                        <input type="tel" name="phone" placeholder="Số điện thoại"
+                        <p id="error-name" class="text-red-500 text-sm hidden"></p>
+
+                        <input type="tel" name="phone" id="phone" placeholder="Số điện thoại*"
                             class="input input-bordered w-full">
+                        <p id="error-phone" class="text-red-500 text-sm hidden"></p>
 
                         <label class="block text-sm font-medium">Ngày sinh <span class="text-red-500">*</span></label>
-                        <input type="date" name="birthday" class="input input-bordered w-full" lang="vi">
+                        <input type="date" name="birthday" id="birthday" class="input input-bordered w-full">
+                        <p id="error-birthday" class="text-red-500 text-sm hidden"></p>
 
+
+                        <input type="text" name="address" id="address" placeholder="Địa chỉ"
+                            class="input input-bordered w-full">
+
+
+                        <!-- Chọn tỉnh -->
+
+                        <!-- Select2 CSS -->
+                        <link href="{{ asset('select2/select2.min.css') }}" rel="stylesheet" />
                         <div class="grid grid-cols-2 gap-2">
-                            <select name="participant_type" class="select select-bordered w-full">
-                                <option selected>Bạn là</option>
-                                <option>Học sinh</option>
-                                <option>Phụ huynh</option>
-                            </select>
-                            <select name="education_level" class="select select-bordered w-full">
-                                <option selected>Hệ tốt nghiệp</option>
-                                <option>THPT</option>
-                                <option>Trung Cấp</option>
-                                <option>Cao đẳng</option>
-                            </select>
+                            <!-- Chọn tỉnh -->
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium">Chọn tỉnh <span
+                                        class="text-red-500">*</span></label>
+                                <select id="province" name="province" class="select select-bordered w-full select2">
+                                    <option value="" disabled selected>Chọn tỉnh</option>
+                                </select>
+                                <p id="error-province" class="text-red-500 text-sm hidden"></p>
+                            </div>
+
+                            <!-- Chọn trường THPT -->
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium">Chọn trường THPT <span
+                                        class="text-red-500">*</span></label>
+                                <select id="highSchool" name="high_school"
+                                    class="select select-bordered w-full select2">
+                                    <option value="" disabled selected>Chọn trường</option>
+                                </select>
+                                <p id="error-highSchool" class="text-red-500 text-sm hidden"></p>
+                            </div>
                         </div>
 
-                        <input type="text" name="address" placeholder="Địa chỉ"
-                            class="input input-bordered w-full">
-                        <select name="major" class="select select-bordered w-full">
-                            <option selected>Chọn ngành học</option>
+                        <select id="major" name="major" class="select select-bordered w-full">
+                            <option value="" disabled selected>Chọn ngành học</option>
                             <option>Công nghệ và đổi mới sáng tạo</option>
                             <option>Ứng dụng trí tuệ nhân tạo</option>
                             <option>Quản lý thông tin</option>
                         </select>
-                        <input type="text" name="facebook_link" placeholder="Link Facebook"
-                            class="input input-bordered w-full">
+                        <p id="error-major" class="text-red-500 text-sm hidden"></p>
 
-                        <button type="submit" class="btn btn-primary w-full">Gửi cho chúng tôi</button>
+                        <input type="text" name="facebook_link" placeholder="Link Facebook của bạn"
+                            class="input input-bordered w-full" value="{{ old('facebook_link') }}">
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary w-full" disabled>Gửi</button>
+
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const formFields = {
+                                    "name": {
+                                        required: true
+                                    },
+                                    "phone": {
+                                        required: true,
+                                        regex: /^0[0-9]{9}$/
+                                    },
+                                    "birthday": {
+                                        required: true
+                                    },
+                                    "province": {
+                                        required: true
+                                    },
+                                    "highSchool": {
+                                        required: true
+                                    },
+                                    "major": {
+                                        required: true
+                                    }
+                                };
+
+                                function validateField(id, rules) {
+                                    const input = document.getElementById(id);
+                                    const errorMsg = document.getElementById("error-" + id);
+
+                                    if (!input) return true; // Bỏ qua nếu input không tồn tại
+
+                                    let value = input.value.trim();
+                                    let isValid = true;
+                                    let errorMessage = ""; // Thông báo lỗi mặc định
+
+                                    if (rules.required && !value) {
+                                        isValid = false;
+                                        switch (id) {
+                                            case "name":
+                                                errorMessage = "Vui lòng nhập họ và tên.";
+                                                break;
+                                            case "phone":
+                                                errorMessage = "Số điện thoại không được để trống.";
+                                                break;
+                                            case "birthday":
+                                                errorMessage = "Bạn cần chọn ngày sinh.";
+                                                break;
+                                            case "province":
+                                                errorMessage = "Vui lòng chọn tỉnh/thành phố.";
+                                                break;
+                                            case "highSchool":
+                                                errorMessage = "Vui lòng chọn trường THPT.";
+                                                break;
+                                            case "major":
+                                                errorMessage = "Bạn phải chọn ngành học mong muốn.";
+                                                break;
+                                            default:
+                                                errorMessage = "Trường này không được để trống.";
+                                        }
+                                    } else if (rules.regex && !rules.regex.test(value)) {
+                                        isValid = false;
+                                        if (id === "phone") {
+                                            errorMessage = "Số điện thoại phải có 10 chữ số và bắt đầu bằng số 0.";
+                                        } else {
+                                            errorMessage = "Giá trị nhập không hợp lệ.";
+                                        }
+                                    }
+
+                                    if (!isValid) {
+                                        if (errorMsg) {
+                                            errorMsg.textContent = errorMessage;
+                                            errorMsg.classList.remove("hidden");
+                                        }
+                                        input.classList.add("border-red-500");
+                                    } else {
+                                        if (errorMsg) errorMsg.classList.add("hidden");
+                                        input.classList.remove("border-red-500");
+                                    }
+
+                                    return isValid;
+                                }
+
+
+                                function checkFormValidity() {
+                                    let isValid = Object.keys(formFields).every(id => validateField(id, formFields[id]));
+                                    document.getElementById("submitBtn").disabled = !isValid;
+                                }
+
+                                Object.keys(formFields).forEach(id => {
+                                    let input = document.getElementById(id);
+                                    if (input) { // Kiểm tra nếu input tồn tại
+                                        input.addEventListener("input", () => {
+                                            validateField(id, formFields[id]);
+                                            checkFormValidity();
+                                        });
+                                    }
+                                });
+
+                                async function loadProvincesAndHighSchools() {
+                                    try {
+                                        const response = await fetch('/highschools.json');
+                                        window.highSchoolsData = await response.json();
+
+                                        const provinceSelect = $("#province");
+                                        const highSchoolSelect = $("#highSchool");
+
+                                        provinceSelect.empty().append('<option value="" disabled selected>Chọn tỉnh</option>');
+                                        highSchoolSelect.empty().append('<option value="" disabled selected>Chọn trường</option>');
+
+                                        Object.keys(window.highSchoolsData).forEach(province => {
+                                            provinceSelect.append(new Option(province, province));
+                                        });
+
+                                        // Áp dụng Select2
+                                        $(".select2").select2({
+                                            width: "100%",
+                                            placeholder: "Chọn...",
+                                            allowClear: true
+                                        });
+
+                                        // Khi chọn tỉnh -> Cập nhật danh sách trường
+                                        provinceSelect.on("change", function() {
+                                            let selectedProvince = provinceSelect.val();
+                                            highSchoolSelect.empty().append(
+                                                '<option value="" disabled selected>Chọn trường</option>');
+
+                                            if (window.highSchoolsData[selectedProvince]) {
+                                                window.highSchoolsData[selectedProvince].forEach(school => {
+                                                    highSchoolSelect.append(new Option(school, school));
+                                                });
+                                            }
+
+                                            highSchoolSelect.trigger("change");
+                                            checkFormValidity();
+                                        });
+
+                                        highSchoolSelect.on("change", checkFormValidity);
+                                    } catch (error) {
+                                        console.error("Lỗi khi tải dữ liệu:", error);
+                                    }
+                                }
+
+                                $(document).ready(loadProvincesAndHighSchools);
+                            });
+                        </script>
+
                     </form>
                 </div>
             </div>
@@ -769,11 +988,21 @@
             document.addEventListener("DOMContentLoaded", function() {
                 const popup = document.getElementById("popup");
                 const closePopup = document.getElementById("closePopup");
+                const popupKey = "popup_last_shown"; // Key lưu trong localStorage
+                const popupInterval = 6 * 60 * 60 * 1000; // 6 giờ (milliseconds)
 
-                // Hiển thị popup khi trang load
-                setTimeout(() => {
-                    popup.classList.remove("hidden");
-                }, 1000);
+                // Kiểm tra nếu đã hiển thị popup trong khoảng thời gian quy định
+                const lastShown = localStorage.getItem(popupKey);
+                const now = new Date().getTime();
+
+                if (!lastShown || now - lastShown > popupInterval) {
+                    // Hiển thị popup
+                    setTimeout(() => {
+                        popup.classList.remove("hidden");
+                        // Lưu timestamp lần hiển thị cuối
+                        localStorage.setItem(popupKey, now);
+                    }, 1000);
+                }
 
                 // Đóng popup khi nhấn nút "X"
                 closePopup.addEventListener("click", function() {
@@ -790,7 +1019,29 @@
         </script>
     </div>
 
+    <!-- Nút hình ảnh lơ lửng với hiệu ứng -->
+    <div id="floatingButton" class="fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer">
+        <div class="relative">
+            <!-- Vòng tròn hiệu ứng tỏa ra -->
+            <span class="absolute inset-0 w-full h-full rounded-full"></span>
+            <span class="absolute inset-0 w-full h-full rounded-full"></span>
 
+            <!-- Hình ảnh đăng ký -->
+            <img src="{{ asset('newhome/đăng ký nhận H.png') }}" alt="Đăng ký ngay"
+                class="w-48 h-w-40 transition-transform animate-pulse hover:scale-125 duration-100">
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const floatingButton = document.getElementById("floatingButton");
+                const popup = document.getElementById("popup");
+
+                // Khi click vào hình ảnh -> Hiển thị popup
+                floatingButton.addEventListener("click", function() {
+                    popup.classList.remove("hidden");
+                });
+            });
+        </script>
+    </div>
 
     <!-- thông báo toast -->
     <x-admin.alerts.toast />
@@ -908,6 +1159,7 @@
         tudong_chatbox.initial()
     </script>
     <!-- End Chat trực tuyến -->
+
 </body>
 
 </html>

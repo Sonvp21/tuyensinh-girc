@@ -6,26 +6,30 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class ApplyRequest extends FormRequest
 {
-    public function rules(): array
+    public function rules()
     {
         return [
-            'name' => 'required',
-            'phone' => 'required|digits_between:10,15',
-            'province' => 'required',
-            'email' => 'nullable',
-            'school' => 'nullable',
-            'major' => 'nullable',
-            'question' => 'nullable',
+            'name' => 'required|string|max:255',
+            'phone' => ['required', 'regex:/[0-9]+/'],
+            'birthday' => 'required|date',
+            'address' => 'nullable|string|max:255',
+            'province' => 'required|string|max:255',
+            'high_school' => 'required|string|max:255',
+            'major' => 'required|string|max:255',
+            'facebook_link' => 'nullable|url'
         ];
     }
 
     public function messages()
     {
         return [
-            'name.required' => 'Vui lòng nhập tên',
-            'phone.required' => 'Vui lòng nhập số điện thoại',
-            'phone.digits_between' => 'Số điện thoại phải có từ :min đến :max chữ số.',
-            'province.required' => 'Vui lòng chọn Tỉnh',
+            'name.required' => 'Vui lòng nhập họ và tên.',
+            'phone.regex' => 'Số điện thoại không hợp lệ.',
+            'birthday.required' => 'Vui lòng chọn ngày sinh.',
+            'province.required' => 'Vui lòng chọn tỉnh.',
+            'high_school.required' => 'Vui lòng chọn trường THPT.',
+            'major.required' => 'Vui lòng chọn ngành học.',
+            'facebook_link.url' => 'Link Facebook không hợp lệ.'
         ];
     }
 }

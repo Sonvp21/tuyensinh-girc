@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('phone')->nullable();
-            $table->string('email')->nullable();
-            $table->string('school')->nullable();
-            $table->string('major')->nullable();
-            $table->text('question')->nullable();
-            $table->string('province')->nullable();
+            $table->date('birthday');
+            $table->string('address')->nullable();
+            $table->string('province');
+            $table->string('high_school');
+            $table->string('major');
+            $table->string('facebook_link')->nullable();
             $table->timestamps();
         });
     }

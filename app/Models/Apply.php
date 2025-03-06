@@ -14,16 +14,8 @@ class Apply extends Model
     protected $table = 'applies';
 
     protected $fillable = [
-        'name',
-        'phone',
-        'province',
-    ];
-
-    protected $attributes = [
-        'email' => null,
-        'school' => null,
-        'major' => null,
-        'question' => null,
+        'name', 'phone', 'birthday', 'address', 'province', 
+        'high_school', 'major', 'facebook_link'
     ];
 
     protected function createdAtVi(): Attribute
