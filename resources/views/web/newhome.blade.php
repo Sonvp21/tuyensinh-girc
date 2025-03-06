@@ -1117,8 +1117,15 @@
     </div>
 
     <!-- Thông tin liên hệ -->
-    <div class="bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[430px] flex flex-col justify-end mt-4"
-    style="background-image: url('{{ asset('/newhome/bg_footer.png') }}');">
+    <style>
+        @media (max-width: 640px) {
+            .footer-bg {
+                background-image: url('/newhome/bg_footer.jpg') !important;
+            }
+        }
+    </style>
+    <div class="footer-bg bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[430px] flex flex-col justify-end mt-4"
+        style="background-image: url('{{ asset('/newhome/bg_footer.png') }}');">
 
         <footer id="footer" class="text-white">
 
