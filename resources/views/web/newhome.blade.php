@@ -151,7 +151,7 @@
                 <div class="md:flex flex-col items-center justify-center">
                     <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
                         <!-- ảnh 1 -->
-                        <div id="openPopupQLTT"
+                        <div id="openPopupQLTT" title="Click vào để xem chương trình đào tạo"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -160,8 +160,8 @@
                             </p>
                         </div>
 
-                        <!-- ảnh 2 -->
-                        <div id="openPopupDMST"
+                        <!-- ảnh 2 --> 
+                        <div id="openPopupDMST" title="Click vào để xem chương trình đào tạo"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -171,7 +171,7 @@
                         </div>
 
                         <!-- ảnh 3 -->
-                        <div id="openPopupTTNT"
+                        <div id="openPopupTTNT" title="Click vào để xem chương trình đào tạo"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
                             <p
@@ -518,16 +518,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
-                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
-                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                            Ký túc xá
-                        </p>
+                        <iframe src="https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview"
+                            width="229" height="168" allow="autoplay"></iframe>
                     </div>
+
                 </div>
             </div>
 
