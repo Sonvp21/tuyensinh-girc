@@ -160,7 +160,7 @@
                             </p>
                         </div>
 
-                        <!-- ảnh 2 --> 
+                        <!-- ảnh 2 -->
                         <div id="openPopupDMST" title="Click vào để xem chương trình đào tạo"
                             class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
@@ -447,7 +447,7 @@
     <!-- Swiper 1 Môi trường học tập-->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
+            class="open-popup-video cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-blue-400 to-blue-900
             text-transparent bg-clip-text 
             italic inline-block">
@@ -536,7 +536,7 @@
     <!-- Swiper 2 HOẠT ĐỘNG CỦA SINH VIÊN -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-center text-xl md:text-2xl font-bold py-4 uppercase
+            class="open-popup-video cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-lime-200 via-yellow-400 via-40% to-orange-700
             text-transparent bg-clip-text 
             italic inline-block">
@@ -631,7 +631,7 @@
     <!-- Swiper 3 khoa học công nghệ -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="text-xl md:text-2xl py-4 font-bold uppercase italic 
+            class="open-popup-video cursor-pointer text-xl md:text-2xl py-4 font-bold uppercase italic 
                bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
                bg-clip-text text-transparent">
             KHOA HỌC & CÔNG NGHỆ
@@ -818,6 +818,138 @@
             document.querySelector(nextBtn).classList.toggle("disabled", swiper.isEnd);
         }
     </script>
+
+
+    <!-- PopupXEMVIDEO -->
+    <div id="popupXEMVIDEO"
+        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg w-full max-w-4xl md:max-w-[70%]  md:h-[80vh] relative">
+            <button id="closePopupXEMVIDEO" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                ✖
+            </button>
+            <div class="flex flex-col md:flex-row gap-2">
+                <div class="w-full flex">
+                    <div class="max-h-[80vh] overflow-y-auto">
+                        <!-- Swiper -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiperVideo">
+                            <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                <div class="swiper-slide">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3/preview"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next-video"></div>
+                            <div class="swiper-button-prev-video"></div>
+                        </div>
+
+                        <div thumbsSlider="" class="swiper mySwiper mt-5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://drive.google.com/thumbnail?id=1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix"
+                                        alt="Video 1" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://drive.google.com/thumbnail?id=1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC"
+                                        alt="Video 2" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://drive.google.com/thumbnail?id=1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m"
+                                        alt="Video 3" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://drive.google.com/thumbnail?id=1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7"
+                                        alt="Video 4" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://drive.google.com/thumbnail?id=1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3"
+                                        alt="Video 5" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiperThumbs = new Swiper(".mySwiper", {
+                                loop: true,
+                                spaceBetween: 10,
+                                slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                breakpoints: {
+                                    768: {
+                                        slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                    }
+                                },
+                                freeMode: true,
+                                watchSlidesProgress: true,
+                            });
+                        
+                            var swiperVideo = new Swiper(".mySwiperVideo", {
+                                loop: true,
+                                spaceBetween: 10,
+                                navigation: {
+                                    nextEl: ".swiper-button-next-video",
+                                    prevEl: ".swiper-button-prev-video",
+                                },
+                                thumbs: {
+                                    swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                },
+                            });
+                        </script>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popupXEMVIDEO = document.getElementById("popupXEMVIDEO");
+                const closePopupXEMVIDEO = document.getElementById("closePopupXEMVIDEO");
+                const openPopupButtons = document.querySelectorAll(".open-popup-video"); // Chọn tất cả nút mở popup
+        
+                // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                openPopupButtons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        popupXEMVIDEO.classList.remove("hidden"); // Hiện popup
+                    });
+                });
+        
+                // Đóng popup khi nhấn nút "X"
+                closePopupXEMVIDEO.addEventListener("click", function() {
+                    popupXEMVIDEO.classList.add("hidden"); // Ẩn popup
+                });
+        
+                // Đóng popup khi click bên ngoài nội dung
+                popupXEMVIDEO.addEventListener("click", function(event) {
+                    if (event.target === popupXEMVIDEO) {
+                        popupXEMVIDEO.classList.add("hidden"); // Ẩn popup
+                    }
+                });
+            });
+        </script>        
+
+    </div>
 
     <!-- Popup Đăng ký -->
     <div id="popup"
