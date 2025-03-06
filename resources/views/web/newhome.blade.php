@@ -195,7 +195,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 1.jpg" alt="Banner"
+                        <img src="{{ asset('newhome/chi tiet nganh 1.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -238,7 +238,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 2.jpg" alt="Banner"
+                        <img src="{{ asset('newhome/chi tiet nganh 2.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -281,7 +281,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="http://tuyensinh-girc.test/newhome/chi tiet nganh 3.jpg" alt="Banner"
+                        <img src="{{ asset('newhome/chi tiet nganh 3.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
