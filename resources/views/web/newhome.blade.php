@@ -17,6 +17,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    {{-- custom css input  --}}
+    <style>
+        .input {
+            height: 2.3rem !important;
+        }
+
+        .select {
+            height: 2.3rem;
+            min-height: 2.3rem;
+        }
+
+        .select2-container {
+            padding-top: 8px !important;
+            margin-top: -8px !important;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            align-self: anchor-center !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -131,7 +151,8 @@
                 <div class="md:flex flex-col items-center justify-center">
                     <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
                         <!-- ảnh 1 -->
-                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
+                        <div
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
                             <p
                                 class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
@@ -140,7 +161,8 @@
                         </div>
 
                         <!-- ảnh 2 -->
-                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
+                        <div
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
                             <p
                                 class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
@@ -149,7 +171,8 @@
                         </div>
 
                         <!-- ảnh 3 -->
-                        <div class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500">
+                        <div
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
                             <p
                                 class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
@@ -671,10 +694,10 @@
         }
     </script>
 
-        <!-- Popup Đăng ký -->
-        <div id="popup"
+    <!-- Popup Đăng ký -->
+    <div id="popup"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-        <div class="bg-white p-6 rounded-lg max-w-4xl relative">
+        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
             <!-- Nút đóng -->
             <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
@@ -682,7 +705,7 @@
 
             <div class="flex flex-col md:flex-row gap-2">
                 <!-- Hình ảnh -->
-                <div class="w-full md:flex hidden md:w-[130%]">
+                <div class="w-full md:flex hidden">
                     <img src="{{ asset('newhome/form dk.jpg') }}" alt="Banner" class="w-full rounded-lg">
                 </div>
 
@@ -1080,10 +1103,11 @@
                     <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
                     <div class="is-divider small"></div>
                     <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                        data-width="500" data-height="149" data-small-header="false"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"
+                        data-width="292" data-height="149" data-small-header="false"
+                        data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"
                         style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
                     </div>
+
 
                     <!-- Script Facebook SDK -->
                     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0">
@@ -1101,7 +1125,8 @@
     </footer>
 
     <!-- Nút hình ảnh lơ lửng với hiệu ứng -->
-    <div id="floatingButton" class="hidden md:fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer md:block">
+    <div id="floatingButton"
+        class="hidden md:fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer md:block">
         <div class="relative">
             <!-- Vòng tròn hiệu ứng tỏa ra -->
             <span class="absolute inset-0 w-full h-full rounded-full"></span>
