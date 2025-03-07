@@ -2,10 +2,30 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Trang tuyển sinh 2025 của Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên - Cung cấp thông tin ngành học, chỉ tiêu tuyển sinh và hướng dẫn đăng ký.">
+    <meta name="keywords" content="Tuyển sinh 2025, Đại học Nông Lâm, Thái Nguyên, đăng ký học, đại học, ngành học">
+    <meta name="author" content="Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
+    
+    <!-- Open Graph (OG) for social sharing -->
+    <meta property="og:title" content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
+    <meta property="og:description" content="Thông tin chi tiết về tuyển sinh 2025 tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
+    <meta property="og:image" content="https://example.com/og-image.jpg"> <!-- Cập nhật link ảnh thumbnail -->
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
+    <meta name="twitter:description" content="Thông tin tuyển sinh 2025, hướng dẫn đăng ký tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
+    <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('home/logo Remove-bg.png') }}">
     <title>Danh sách đăng ký</title>
 
     <!-- Tailwind CSS & DaisyUI -->
