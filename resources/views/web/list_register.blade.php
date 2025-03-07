@@ -96,30 +96,41 @@
         <div class="relative md:hidden">
             <!-- Bộ lọc -->
             <form method="GET" action="{{ route('list.dangky') }}" class="mb-4 flex flex-wrap gap-2">
-            <input type="hidden" name="page" value="1"> <!-- Reset về trang 1 khi lọc -->
+                <input type="hidden" name="page" value="1"> <!-- Reset về trang 1 khi lọc -->
 
-            <!-- Lọc theo ngành học -->
-            <select name="major" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
-                <option value="">📚 Tất cả ngành</option>
-                <option value="Công nghệ và đổi mới sáng tạo" {{ request('major') == 'Công nghệ và đổi mới sáng tạo' ? 'selected' : '' }}>Công nghệ và đổi mới sáng tạo</option>
-                <option value="Ứng dụng trí tuệ nhân tạo" {{ request('major') == 'Ứng dụng trí tuệ nhân tạo' ? 'selected' : '' }}>Ứng dụng trí tuệ nhân tạo</option>
-                <option value="Quản lý thông tin" {{ request('major') == 'Quản lý thông tin' ? 'selected' : '' }}>Quản lý thông tin</option>
-            </select>
+                <!-- Lọc theo ngành học -->
+                <select name="major" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
+                    <option value="">📚 Tất cả ngành</option>
+                    <option value="Công nghệ và đổi mới sáng tạo" {{ request('major') == 'Công nghệ và đổi mới sáng tạo' ? 'selected' : '' }}>Công nghệ và đổi mới sáng tạo</option>
+                    <option value="Ứng dụng trí tuệ nhân tạo" {{ request('major') == 'Ứng dụng trí tuệ nhân tạo' ? 'selected' : '' }}>Ứng dụng trí tuệ nhân tạo</option>
+                    <option value="Quản lý thông tin" {{ request('major') == 'Quản lý thông tin' ? 'selected' : '' }}>Quản lý thông tin</option>
+                </select>
 
-            <!-- Lọc theo tỉnh -->
-            <select name="province" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
-                <option value="">📍 Tất cả tỉnh</option>
-                @foreach ($provinces as $province)
-                    <option value="{{ $province }}" {{ request('province') == $province ? 'selected' : '' }}>
-                        {{ $province }}
-                    </option>
-                @endforeach
-            </select>
-        </form>
+                <!-- Lọc theo tỉnh -->
+                <select name="province" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
+                    <option value="">📍 Tất cả tỉnh</option>
+                    @foreach ($provinces as $province)
+                        <option value="{{ $province }}" {{ request('province') == $province ? 'selected' : '' }}>
+                            {{ $province }}
+                        </option>
+                    @endforeach
+                </select>
+            </form>
 
             <!-- Bọc table trong div có cuộn ngang -->
+            <p class="text-center text-gray-500 text-sm md:hidden">
+                👉 Vuốt ngang để xem thêm dữ liệu
+            </p>
+
             <div class="overflow-x-auto border border-gray-300 shadow-md rounded-lg">
                 <table class="table w-full">
+                    <style>
+                        th:first-child {
+                            position: relative !important;
+                            z-index: auto !important;
+                            left: auto !important;
+                        }
+                    </style>
                     <!-- Head -->
                     <thead class="bg-base-200 text-base-content">
                         <tr>
