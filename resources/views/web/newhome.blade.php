@@ -573,8 +573,10 @@
                     </div>
                     <div class="swiper-slide">
                         <iframe src="https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview"
-                            width="229" height="168" allow="autoplay"></iframe>
-                    </div>
+                            class="md:w-[229px] md:h-[168px] w-[382px] h-[256px]"
+                            allow="autoplay">
+                        </iframe>
+                    </div>                    
 
                 </div>
             </div>
