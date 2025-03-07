@@ -74,7 +74,7 @@
 
     <!-- Header -->
     <header class="text-white text-center">
-        <img src="{{ asset('newhome/header.png') }}" class="relative w-full" alt="">
+        <img src="{{ asset('newhome/banner_header.png') }}" class="relative w-full" alt="">
     </header>
 
     <section class="container mx-auto px-12 relative hidden md:flex">
@@ -183,31 +183,34 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
                         <!-- ảnh 1 -->
                         <div id="openPopupQLTT" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7320205
+                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
+                                Mã ngành 7320205 <br>
+                                Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
 
                         <!-- ảnh 2 -->
                         <div id="openPopupDMST" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7480201
+                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
+                                Mã ngành 7480201<br>
+                                Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
 
                         <!-- ảnh 3 -->
                         <div id="openPopupTTNT" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-yellow-500 cursor-pointer">
+                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
                             <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
                             <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-12 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7480201
+                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
+                                Mã ngành 7480201<br>
+                                Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
                     </div>
