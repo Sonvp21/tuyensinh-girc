@@ -1387,7 +1387,7 @@
                     <div class="mt-3">
                         <p class="font-semibold">
                             <i class="fad fa-user-tie"></i>
-                            Tiến sĩ Nguyễn Văn Hiếu - Giám đốc Trung tâm Nghiên cứu Địa tin học
+                            Tiến sĩ Nguyễn Văn Hiểu - Giám đốc Trung tâm Nghiên cứu Địa tin học
                         </p>
                         <div class="ml-[18px]">
                             <p>SĐT/Zalo: 0934 001 103</p>

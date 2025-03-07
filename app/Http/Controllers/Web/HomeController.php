@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\ApplyRequest;
 use App\Models\Apply;
 use Illuminate\View\View;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -26,9 +27,29 @@ class HomeController extends Controller
     }
 
     //danh sách đăng ký
-    public function list()
+    public function list(Request $request)
     {
-        $applies = Apply::orderBy('created_at', 'desc')->get();
-        return view('web.list_register', compact('applies'));
+        $allApplies = Apply::orderBy('created_at', 'desc')->get(); // Lấy toàn bộ dữ liệu
+
+        $query = Apply::query();
+
+        // Lọc theo ngành học nếu có
+        if ($request->has('major') && !empty($request->major)) {
+            $query->where('major', $request->major);
+        }
+
+        // Lọc theo tỉnh nếu có
+        if ($request->has('province') && !empty($request->province)) {
+            $query->where('province', $request->province);
+        }
+
+        // Danh sách tỉnh đầy đủ (lấy từ tất cả dữ liệu, không lọc)
+        $provinces = Apply::pluck('province')->unique();
+
+        // Chỉ phân trang dữ liệu lọc
+        $applieMobiles = $query->orderBy('created_at', 'desc')->paginate(10)->appends($request->query());
+
+        return view('web.list_register', compact('allApplies', 'applieMobiles', 'provinces'));
     }
+  
 }

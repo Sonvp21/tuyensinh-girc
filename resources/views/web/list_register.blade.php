@@ -45,9 +45,9 @@
 
 </head>
 
-<body class="bg-gray-100 p-5">
+<body class="md:bg-gray-100 md:p-5">
 
-    <div class="container mx-auto bg-white p-6 rounded-xl shadow-lg">
+    <div class="container mx-auto bg-white p-2 rounded-xl shadow-lg">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">📋 Danh sách đăng ký</h2>
     
         <!-- Bảng dữ liệu -->
@@ -68,7 +68,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($applies as $key => $apply)
+                    @foreach ($allApplies as $key => $apply)
                         <tr class="border-b hover:bg-gray-100 transition">
                             <td class="px-4 py-2 text-center">{{ $loop->iteration }}</td>
                             <td class="px-4 py-2">{{ $apply->name }}</td>
@@ -93,44 +93,81 @@
         </div>
     
         <!-- Dạng thẻ trên điện thoại -->
-        <div class="sm:hidden overflow-y-auto h-[500px]" id="mobileList">
-            @foreach ($applies as $key => $apply)
-                <div class="bg-gray-50 p-4 mb-4 rounded-lg shadow-md hidden">
-                    <p class="text-lg font-semibold">{{ $apply->name }}</p>
-                    <p class="text-sm text-gray-600">📞 {{ $apply->phone }}</p>
-                    <p class="text-sm text-gray-600">🎂 {{ date('d/m/Y', strtotime($apply->birthday)) }}</p>
-                    <p class="text-sm text-gray-600">📚 Ngành: {{ $apply->major }}</p>
-                    <p class="text-sm text-gray-600">⏳ {{ date('H:i, d/m/Y', strtotime($apply->created_at)) }}</p>
-                    @if ($apply->facebook_link)
-                        <a href="{{ $apply->facebook_link }}" target="_blank" class="text-blue-600 hover:text-blue-800">🔗 Facebook</a>
-                    @endif
-                </div>
-            @endforeach
+        <div class="relative md:hidden">
+            <!-- Bộ lọc -->
+            <form method="GET" action="{{ route('list.dangky') }}" class="mb-4 flex flex-wrap gap-2">
+            <input type="hidden" name="page" value="1"> <!-- Reset về trang 1 khi lọc -->
+
+            <!-- Lọc theo ngành học -->
+            <select name="major" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
+                <option value="">📚 Tất cả ngành</option>
+                <option value="Công nghệ và đổi mới sáng tạo" {{ request('major') == 'Công nghệ và đổi mới sáng tạo' ? 'selected' : '' }}>Công nghệ và đổi mới sáng tạo</option>
+                <option value="Ứng dụng trí tuệ nhân tạo" {{ request('major') == 'Ứng dụng trí tuệ nhân tạo' ? 'selected' : '' }}>Ứng dụng trí tuệ nhân tạo</option>
+                <option value="Quản lý thông tin" {{ request('major') == 'Quản lý thông tin' ? 'selected' : '' }}>Quản lý thông tin</option>
+            </select>
+
+            <!-- Lọc theo tỉnh -->
+            <select name="province" class="select select-bordered w-full sm:w-auto" onchange="this.form.submit()">
+                <option value="">📍 Tất cả tỉnh</option>
+                @foreach ($provinces as $province)
+                    <option value="{{ $province }}" {{ request('province') == $province ? 'selected' : '' }}>
+                        {{ $province }}
+                    </option>
+                @endforeach
+            </select>
+        </form>
+
+            <!-- Bọc table trong div có cuộn ngang -->
+            <div class="overflow-x-auto border border-gray-300 shadow-md rounded-lg">
+                <table class="table w-full">
+                    <!-- Head -->
+                    <thead class="bg-base-200 text-base-content">
+                        <tr>
+                            <th class="px-3 py-2">STT</th>
+                            <th class="px-3 py-2">Họ & Tên</th>
+                            <th class="px-3 py-2">SĐT</th>
+                            <th class="px-3 py-2">Ngày Sinh</th>
+                            <th class="px-3 py-2">Địa Chỉ</th>
+                            <th class="px-3 py-2">Tỉnh</th>
+                            <th class="px-3 py-2">Trường THPT</th>
+                            <th class="px-3 py-2">Ngành Học</th>
+                            <th class="px-3 py-2">Facebook</th>
+                            <th class="px-3 py-2">Thời Gian Đăng Ký</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($applieMobiles as $key => $apply)
+                            <tr class="hover">
+                                <td class="px-3 py-2 text-center">
+                                    {{ ($applieMobiles->currentPage() - 1) * $applieMobiles->perPage() + $loop->iteration }}
+                                </td>
+                                <td class="px-3 py-2">{{ $apply->name }}</td>
+                                <td class="px-3 py-2">{{ $apply->phone }}</td>
+                                <td class="px-3 py-2">{{ date('d/m/Y', strtotime($apply->birthday)) }}</td>
+                                <td class="px-3 py-2">{{ $apply->address }}</td>
+                                <td class="px-3 py-2">{{ $apply->province }}</td>
+                                <td class="px-3 py-2">{{ $apply->high_school }}</td>
+                                <td class="px-3 py-2">{{ $apply->major }}</td>
+                                <td class="px-3 py-2 text-center">
+                                    @if ($apply->facebook_link)
+                                        <a href="{{ $apply->facebook_link }}" target="_blank" class="text-blue-600 hover:text-blue-800">🔗 Xem</a>
+                                    @else
+                                        N/A
+                                    @endif
+                                </td>
+                                <td class="px-3 py-2">{{ date('H:i, d/m/Y', strtotime($apply->created_at)) }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Phân trang cố định -->
+            <div class="mt-4 flex justify-center sticky bottom-0 bg-white py-2 shadow-md">
+                {{ $applieMobiles->links() }}
+            </div>
         </div>
-        
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                let items = document.querySelectorAll("#mobileList > div");
-                let index = 0;
-                let loadAmount = 10;
-        
-                function loadMore() {
-                    for (let i = index; i < index + loadAmount && i < items.length; i++) {
-                        items[i].classList.remove("hidden");
-                    }
-                    index += loadAmount;
-                }
-        
-                loadMore(); // Hiện 10 thẻ đầu tiên
-        
-                document.getElementById("mobileList").addEventListener("scroll", function () {
-                    if (this.scrollTop + this.clientHeight >= this.scrollHeight - 50) {
-                        loadMore();
-                    }
-                });
-            });
-        </script>
-        
+
     </div>
     
     <script>
