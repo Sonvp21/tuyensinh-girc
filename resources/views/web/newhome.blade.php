@@ -1502,14 +1502,14 @@
     <!-- Nút hình ảnh lơ lửng với hiệu ứng -->
     <div id="floatingButton"
         class="hidden md:fixed top-1/2 right-5 transform -translate-y-1/2 z-50 cursor-pointer md:block">
-        <div class="relative">
+        <div class="relative transition-transform hover:scale-125 duration-100">
             <!-- Vòng tròn hiệu ứng tỏa ra -->
             <span class="absolute inset-0 w-full h-full rounded-full"></span>
             <span class="absolute inset-0 w-full h-full rounded-full"></span>
 
             <!-- Hình ảnh đăng ký -->
             <img src="{{ asset('newhome/đăng ký nhận H.png') }}" alt="Đăng ký ngay"
-                class="w-48 h-w-40 transition-transform hover:scale-125 duration-100">
+                class="w-48 h-w-40">
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
