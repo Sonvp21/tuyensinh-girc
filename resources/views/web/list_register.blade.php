@@ -49,9 +49,9 @@
 
     <div class="container mx-auto bg-white p-6 rounded-xl shadow-lg">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">📋 Danh sách đăng ký</h2>
-
+    
         <!-- Bảng dữ liệu -->
-        <div class="overflow-x-auto">
+        <div class="overflow-x-auto hidden sm:block">
             <table id="applyTable" class="min-w-full border border-gray-300 rounded-lg shadow-sm">
                 <thead>
                     <tr class="bg-gray-200 text-gray-700 uppercase text-sm">
@@ -91,8 +91,48 @@
                 </tbody>
             </table>
         </div>
+    
+        <!-- Dạng thẻ trên điện thoại -->
+        <div class="sm:hidden overflow-y-auto h-[500px]" id="mobileList">
+            @foreach ($applies as $key => $apply)
+                <div class="bg-gray-50 p-4 mb-4 rounded-lg shadow-md hidden">
+                    <p class="text-lg font-semibold">{{ $apply->name }}</p>
+                    <p class="text-sm text-gray-600">📞 {{ $apply->phone }}</p>
+                    <p class="text-sm text-gray-600">🎂 {{ date('d/m/Y', strtotime($apply->birthday)) }}</p>
+                    <p class="text-sm text-gray-600">📚 Ngành: {{ $apply->major }}</p>
+                    <p class="text-sm text-gray-600">⏳ {{ date('H:i, d/m/Y', strtotime($apply->created_at)) }}</p>
+                    @if ($apply->facebook_link)
+                        <a href="{{ $apply->facebook_link }}" target="_blank" class="text-blue-600 hover:text-blue-800">🔗 Facebook</a>
+                    @endif
+                </div>
+            @endforeach
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let items = document.querySelectorAll("#mobileList > div");
+                let index = 0;
+                let loadAmount = 10;
+        
+                function loadMore() {
+                    for (let i = index; i < index + loadAmount && i < items.length; i++) {
+                        items[i].classList.remove("hidden");
+                    }
+                    index += loadAmount;
+                }
+        
+                loadMore(); // Hiện 10 thẻ đầu tiên
+        
+                document.getElementById("mobileList").addEventListener("scroll", function () {
+                    if (this.scrollTop + this.clientHeight >= this.scrollHeight - 50) {
+                        loadMore();
+                    }
+                });
+            });
+        </script>
+        
     </div>
-
+    
     <script>
         $(document).ready(function() {
             let table = $('#applyTable').DataTable({
