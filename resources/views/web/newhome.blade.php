@@ -428,12 +428,13 @@
     </section>
 
     <!-- video cam kết sv -->
+    <!-- Video tự động phát khi xuất hiện trên màn hình -->
     <section class="relative container mx-auto md:px-12 px-2 justify-self-center">
         <div class="md:flex flex-col items-center justify-center">
             <div class="relative max-w-5xl mx-auto py-10 overflow-hidden">
                 <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
                     <div class="w-full flex-shrink-0">
-                        <video class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls>
+                        <video id="autoplayVideo" class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls muted>
                             <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
                                 type="video/mp4">
                             Trình duyệt của bạn không hỗ trợ video.
@@ -442,6 +443,28 @@
                 </div>
             </div>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const video = document.getElementById("autoplayVideo");
+
+                if (video) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                video.play();
+                            } else {
+                                video.pause();
+                            }
+                        });
+                    }, {
+                        threshold: 0.5
+                    }); // Kích hoạt khi 50% video hiển thị
+
+                    observer.observe(video);
+                }
+            });
+        </script>
+
     </section>
 
     <!-- Swiper 1 Môi trường học tập-->
@@ -903,35 +926,40 @@
                                     <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}" alt="Video 1" />
                                     <!-- Nút Play có background riêng -->
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                        <i
+                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('videos/avatar_video_nhao.jpg') }}" alt="Video 2" />
                                     <!-- Nút Play có background riêng -->
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                        <i
+                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}" alt="Video 3" />
                                     <!-- Nút Play có background riêng -->
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                        <i
+                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}" alt="Video 4" />
                                     <!-- Nút Play có background riêng -->
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                        <i
+                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}" alt="Video 5" />
                                     <!-- Nút Play có background riêng -->
                                     <div class="absolute inset-0 flex items-center justify-center">
-                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                        <i
+                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
                                     </div>
                                 </div>
                             </div>
