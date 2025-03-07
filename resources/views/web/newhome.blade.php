@@ -318,7 +318,7 @@
 
     <!-- Phương thức xét tuyển -->
     <section
-        class="flex flex-col container mx-auto px-2 md:px-12 md:flex-row items-start md:items-center justify-between gap-20">
+        class="flex flex-col container mx-auto px-2 md:px-12 md:flex-row items-start md:items-center justify-between md:gap-20">
         <div class="w-full md:w-1/2 text-white rounded-lg md:mt-0 mt-4">
             <!-- Tiêu đề với nền xanh -->
             <div class="relative inline-block">
@@ -834,57 +834,105 @@
                         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                             class="swiper mySwiperVideo">
                             <div class="swiper-wrapper" style="text-align: -webkit-center;">
-                                <div class="swiper-slide">
-                                    <iframe
-                                        src="https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                <div class="swiper-slide relative group"
+                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview')">
+                                    <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i
+                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <iframe
-                                        src="https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                <div class="swiper-slide relative group"
+                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview')">
+                                    <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i
+                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <iframe
-                                        src="https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                <div class="swiper-slide relative group"
+                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview')">
+                                    <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i
+                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <iframe
-                                        src="https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                <div class="swiper-slide relative group"
+                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview')">
+                                    <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i
+                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <iframe
-                                        src="https://drive.google.com/file/d/1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3/preview"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay"></iframe>
+                                <div class="swiper-slide relative group"
+                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3/preview')">
+                                    <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
+                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i
+                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
+
+                                <script>
+                                    function playVideo(element, videoUrl) {
+                                        element.innerHTML = `
+                                            <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                        `;
+                                    }
+                                </script>
                             </div>
                             <div class="swiper-button-next-video"></div>
                             <div class="swiper-button-prev-video"></div>
                         </div>
 
-                        <div thumbsSlider="" class="swiper mySwiper mt-5">
+                        <div thumbsSlider="" class="swiper mySwiper mt-5 overflow-scroll">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://drive.google.com/thumbnail?id=1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix"
-                                        alt="Video 1" />
+                                    <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}" alt="Video 1" />
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://drive.google.com/thumbnail?id=1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC"
-                                        alt="Video 2" />
+                                    <img src="{{ asset('videos/avatar_video_nhao.jpg') }}" alt="Video 2" />
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://drive.google.com/thumbnail?id=1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m"
-                                        alt="Video 3" />
+                                    <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}" alt="Video 3" />
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://drive.google.com/thumbnail?id=1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7"
-                                        alt="Video 4" />
+                                    <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}" alt="Video 4" />
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://drive.google.com/thumbnail?id=1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3"
-                                        alt="Video 5" />
+                                    <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}" alt="Video 5" />
+                                    <!-- Nút Play có background riêng -->
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <i class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -903,7 +951,7 @@
                                 freeMode: true,
                                 watchSlidesProgress: true,
                             });
-                        
+
                             var swiperVideo = new Swiper(".mySwiperVideo", {
                                 loop: true,
                                 spaceBetween: 10,
@@ -916,7 +964,7 @@
                                 },
                             });
                         </script>
-                        
+
 
                     </div>
                 </div>
@@ -927,19 +975,19 @@
                 const popupXEMVIDEO = document.getElementById("popupXEMVIDEO");
                 const closePopupXEMVIDEO = document.getElementById("closePopupXEMVIDEO");
                 const openPopupButtons = document.querySelectorAll(".open-popup-video"); // Chọn tất cả nút mở popup
-        
+
                 // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
                 openPopupButtons.forEach(button => {
                     button.addEventListener("click", function() {
                         popupXEMVIDEO.classList.remove("hidden"); // Hiện popup
                     });
                 });
-        
+
                 // Đóng popup khi nhấn nút "X"
                 closePopupXEMVIDEO.addEventListener("click", function() {
                     popupXEMVIDEO.classList.add("hidden"); // Ẩn popup
                 });
-        
+
                 // Đóng popup khi click bên ngoài nội dung
                 popupXEMVIDEO.addEventListener("click", function(event) {
                     if (event.target === popupXEMVIDEO) {
@@ -947,7 +995,7 @@
                     }
                 });
             });
-        </script>        
+        </script>
 
     </div>
 
@@ -1268,13 +1316,35 @@
                                     <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
                                         Thái Nguyên</span>
                                 </li>
-
-                                <li><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</li>
-                                <li><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</li>
-                                <li><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</li>
                             </ul>
                         </div>
                     </div>
+
+                    <div class="mt-3">
+                        <p class="font-semibold">
+                            <i class="fad fa-user-tie"></i>
+                            Tiến sĩ Nguyễn Văn Hiếu - Giám đốc Trung tâm Nghiên cứu Địa tin học
+                        </p>
+                        <div class="ml-[18px]">
+                            <p>SĐT/Zalo: 0934 001 103</p>
+                        </div>
+
+                    </div>
+
+                    <p class="flex font-semibold mt-4">
+                        <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img" focusable="false"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M 7,7 C 8.6570312,7 10,5.65703 10,4 10,2.34297 8.6570312,1 7,1 5.3429688,1 4,2.34297 4,4 4,5.65703 5.3429688,7 7,7 Z M 9.2453125,7.76406 8.125,12.25 7.375,9.0625 8.125,7.75 5.875,7.75 6.625,9.0625 5.875,12.25 4.7546875,7.76406 C 3.0835937,7.84375 1.75,9.21016 1.75,10.9 l 0,0.975 C 1.75,12.49609 2.2539063,13 2.875,13 l 8.25,0 c 0.621094,0 1.125,-0.50391 1.125,-1.125 l 0,-0.975 c 0,-1.68984 -1.333594,-3.05625 -3.0046875,-3.13594 z">
+                                </path>
+                            </g>
+                        </svg>
+                        Thạc sĩ Phạm Ngọc Huyền - Phụ trách chương trình đào tạo
+                    </p>
+                    <p class="ml-5">SĐT/Zalo: 0329 014 816</p>
 
                     <div class="my-5">
                         <ul class="flex gap-5 items-center">
@@ -1298,6 +1368,11 @@
                                 </a>
                             </li>
 
+                            <li>
+                                <a title="Youtube" href="https://www.youtube.com/@girc2025" rel="nofollow"
+                                    target="_blank">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1385,8 +1460,13 @@
             </div>
             <div class="container mx-auto px-12 gap-5">
                 <hr class="border-t-2">
-                <p class=" py-1">© 2025 GeoInformatics Research Center</p>
 
+                <div class="md:flex py-1 gap-8">
+                    <p><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</p>
+                    <p><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</p>
+                    <p><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</p>
+                    <p>© 2025 GeoInformatics Research Center</p>
+                </div>
             </div>
         </footer>
     </div>
@@ -1526,7 +1606,22 @@
     <!-- End Back to top -->
 
     <!-- Chat trực tuyến -->
-    <script src="https://app.tudongchat.com/js/chatbox.js"></script>
+    <style>
+        .tudongchat-icon.svelte-3x3xt4.svelte-3x3xt4 {
+            padding: 8px;
+            background-color: #ffffff !important;
+        }
+
+        .tudongchat-icon-logo.svelte-3x3xt4.svelte-3x3xt4 {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+
+    <script>
+        window.iconChatbotUrl = "{{ asset('newhome/icon_chatbot.png') }}";
+    </script>
+    <script src="{{ asset('newhome/chatbox.js') }}"></script>
     <script>
         const tudong_chatbox = new TuDongChat('_eyUyr4r_GvLn10OhaRSw')
         tudong_chatbox.initial()
