@@ -24,4 +24,11 @@ class HomeController extends Controller
         Apply::create($request->all());
         return redirect()->route('dangky')->with('success', 'Bạn đã gửi thông tin thành công');
     }
+
+    //danh sách đăng ký
+    public function list()
+    {
+        $applies = Apply::orderBy('created_at', 'desc')->get();
+        return view('web.list_register', compact('applies'));
+    }
 }

@@ -18,4 +18,6 @@ Route::get('/dangky', [HomeController::class, 'register'])->name('dangky');
 
 Route::post('/dangky', [HomeController::class, 'storeRegister'])->name('dangky.store');
 
+Route::get('/danhsachdangky', [HomeController::class, 'list'])->name('list.dangky');
+
 require __DIR__.'/admin.php';
