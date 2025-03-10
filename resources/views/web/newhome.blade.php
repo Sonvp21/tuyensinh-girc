@@ -2160,8 +2160,8 @@
                     <div class="md:mt-5">
                         <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
                         <div class="is-divider small"></div>
-                        <div class="fb-page mt-4" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                            data-width="292" data-height="149" data-small-header="false"
+                        <div class="fb-page mt-4 w-[281px]" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
+                            data-width="281" data-height="149" data-small-header="false"
                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"
                             style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
                         </div>
