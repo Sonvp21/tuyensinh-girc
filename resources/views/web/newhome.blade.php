@@ -536,7 +536,7 @@
     <!-- Swiper 1 Môi trường học tập-->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="open-popup-popupmoitruonghoctap cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
+            class="cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-blue-400 to-blue-900
             text-transparent bg-clip-text 
             italic inline-block">
@@ -551,7 +551,7 @@
 
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide open-popup-popupmoitruonghoctap">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
                         <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -562,7 +562,7 @@
                             Giảng đường
                         </p>
                     </div>
-                    <div class="swiper-slide open-popup-popuplibrary">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popuplibrary">
                         <img src="{{ asset('newhome/album/thư viện.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -573,7 +573,7 @@
                             Thư viện
                         </p>
                     </div>
-                    <div class="swiper-slide open-popup-popupcomputer">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupcomputer">
                         <img src="{{ asset('newhome/album/phòng máy.png') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -584,7 +584,7 @@
                             Phòng máy tính
                         </p>
                     </div>
-                    <div class="swiper-slide open-popup-popupsport">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupsport">
                         <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -595,7 +595,7 @@
                             Nhà thể thao
                         </p>
                     </div>
-                    <div class="swiper-slide open-popup-popupktx">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupktx">
                         <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -606,7 +606,7 @@
                             Ký túc xá
                         </p>
                     </div>
-                    <div class="swiper-slide open-popup-popupmoitruonghoctap">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
                         <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
