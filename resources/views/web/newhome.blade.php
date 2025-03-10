@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Trang tuyển sinh 2025 của Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên - Cung cấp thông tin ngành học, chỉ tiêu tuyển sinh và hướng dẫn đăng ký.">
+    <meta name="description"
+        content="Trang tuyển sinh 2025 của Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên - Cung cấp thông tin ngành học, chỉ tiêu tuyển sinh và hướng dẫn đăng ký.">
     <meta name="keywords" content="Tuyển sinh 2025, Đại học Nông Lâm, Thái Nguyên, đăng ký học, đại học, ngành học">
     <meta name="author" content="Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
-    
+
     <!-- Open Graph (OG) for social sharing -->
-    <meta property="og:title" content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
-    <meta property="og:description" content="Thông tin chi tiết về tuyển sinh 2025 tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
+    <meta property="og:title"
+        content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
+    <meta property="og:description"
+        content="Thông tin chi tiết về tuyển sinh 2025 tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
     <meta property="og:image" content="https://example.com/og-image.jpg"> <!-- Cập nhật link ảnh thumbnail -->
     <meta property="og:url" content="https://example.com">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
-    <meta name="twitter:description" content="Thông tin tuyển sinh 2025, hướng dẫn đăng ký tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
+    <meta name="twitter:title"
+        content="Tuyển Sinh 2025 - Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên">
+    <meta name="twitter:description"
+        content="Thông tin tuyển sinh 2025, hướng dẫn đăng ký tại Trung tâm Nghiên cứu Địa tin học - Đại học Nông Lâm Thái Nguyên.">
     <meta name="twitter:image" content="https://example.com/twitter-image.jpg">
 
     <!-- Favicon -->
@@ -74,9 +79,13 @@
 
     <!-- Header -->
     <header class="text-white text-center">
-        <img src="{{ asset('newhome/banner_header.png') }}" class="relative w-full" alt="">
+        <img src="{{ asset('newhome/banner_header_top.png') }}" class="relative w-full" alt="">
     </header>
 
+    <section class="md:container mx-auto md:px-12 px-2 relative justify-center text-center">
+        <h2 class="mt-5 uppercase font-bold text-xl"><span class="text-yellow-400">Lý do </span>các bạn 2k7 nên lựa chọn
+            ngành học <span class="text-yellow-400">Công nghệ thông tin</span>?</h2>
+    </section>
     <section class="container mx-auto px-12 relative hidden md:flex">
         <!-- Hình ảnh nền -->
         <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
@@ -168,49 +177,45 @@
     </section>
     {{-- end mobile  --}}
 
-
     <!-- Giới thiệu ngành học -->
-    <section class="relative bg-[#019bc8]">
-        <div class="container mx-auto px-12 justify-self-center ">
-            <div class="bg-[#037ca5]">
+    <section class="relative bg-[#E3F2FD] py-10">
+        <div class="container mx-auto md:px-12">
+            <div class="bg-white shadow-lg rounded-xl md:p-6 p-2">
                 <!-- Tiêu đề ở giữa -->
-                <div class="text-center text-white text-xl md:text-2xl font-bold p-4">
+                <div class="text-center text-[#0277BD] text-xl md:text-2xl font-bold p-4">
                     CHUYÊN NGÀNH ĐÀO TẠO CÔNG NGHỆ THÔNG TIN, CHUYỂN ĐỔI SỐ
                 </div>
 
                 <!-- Chứa ảnh theo hàng ngang -->
                 <div class="md:flex flex-col items-center justify-center">
-                    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-20">
+                    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10 gap-3">
                         <!-- ảnh 1 -->
                         <div id="openPopupQLTT" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
-                            <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto" alt="">
-                            <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7320205 <br>
-                                Chỉ tiêu: 50 sinh viên
+                            class="relative flex flex-col items-center p-4 bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer hover:text-green-600">
+                            <img src="{{ asset('newhome/nganh 1.png') }}" class="md:w-80 h-auto rounded-lg"
+                                alt="">
+                            <p class="mt-3 text-center font-bold italic text-base">
+                                Mã ngành: 7320205 <br> Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
 
                         <!-- ảnh 2 -->
                         <div id="openPopupDMST" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
-                            <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto" alt="">
-                            <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7480201<br>
-                                Chỉ tiêu: 50 sinh viên
+                            class="relative flex flex-col items-center p-4 bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer hover:text-green-600">
+                            <img src="{{ asset('newhome/nganh 2.png') }}" class="md:w-80 h-auto rounded-lg"
+                                alt="">
+                            <p class="mt-3 text-center font-bold italic text-base">
+                                Mã ngành: 7480201<br> Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
 
                         <!-- ảnh 3 -->
                         <div id="openPopupTTNT" title="Click vào để xem chương trình đào tạo"
-                            class="relative flex justify-center transition-transform duration-300 hover:scale-105 hover:text-green-600 cursor-pointer">
-                            <img src="{{ asset('newhome/nganh 3.png') }}" class="md:w-80 h-auto" alt="">
-                            <p
-                                class="absolute bottom-0 left-0 right-0 text-center mb-9 font-bold italic text-base cursor-pointer">
-                                Mã ngành 7480201<br>
-                                Chỉ tiêu: 50 sinh viên
+                            class="relative flex flex-col items-center p-4 bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-105 cursor-pointer hover:text-green-600">
+                            <img src="{{ asset('newhome/album/nganh 3.png') }}" class="md:w-80 h-auto rounded-lg"
+                                alt="">
+                            <p class="mt-3 text-center font-bold italic text-base">
+                                Mã ngành<br> Chỉ tiêu: 50 sinh viên
                             </p>
                         </div>
                     </div>
@@ -218,18 +223,19 @@
             </div>
         </div>
     </section>
+
     {{-- Chi tiết các ngành --}}
     <!-- PopupQLTT -->
     <div id="popupQLTT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+        <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
             <button id="closePopupQLTT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/chi tiet nganh 1.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/album/nganh 1 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -265,14 +271,14 @@
     <!-- PopupDMST -->
     <div id="popupDMST"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+        <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
             <button id="closePopupDMST" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/chi tiet nganh 2.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/album/nganh 2 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -308,14 +314,14 @@
     <!-- PopupTTNT -->
     <div id="popupTTNT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-        <div class="bg-white pl-2 pb-2 p-6 rounded-lg max-w-4xl relative">
+        <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
             <button id="closePopupTTNT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/chi tiet nganh 3.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/album/nganh 3 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -447,7 +453,7 @@
                         </div>
                         <div class="flex items-center">
                             <img src="{{ asset('newhome/bullet.png') }}" class="size-6 md:size-8" alt="">
-                            <p class="ml-2">01 học kỳ thực tập tại và học lên Thạc sĩ tại Đài Loan.</p>
+                            <p class="ml-2">01 học kỳ thực tập và học lên Thạc sĩ tại Đài Loan.</p>
                         </div>
                     </div>
 
@@ -464,19 +470,45 @@
     <!-- video cam kết sv -->
     <!-- Video tự động phát khi xuất hiện trên màn hình -->
     <section class="relative container mx-auto md:px-12 px-2 justify-self-center">
-        <div class="md:flex flex-col items-center justify-center">
-            <div class="relative max-w-5xl mx-auto py-10 overflow-hidden">
-                <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
-                    <div class="w-full flex-shrink-0">
-                        <video id="autoplayVideo" class="w-full md:h-96 h-56 rounded-xl shadow-lg" controls muted>
-                            <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
-                                type="video/mp4">
-                            Trình duyệt của bạn không hỗ trợ video.
-                        </video>
+        <div class="md:flex gap-8 md:py-10 pb-3">
+            <!-- Video Section -->
+            <div class="md:w-1/2 w-full md:mt-0 mt-5">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">🎓 Cam kết với sinh viên</h2>
+                <div class="relative max-w-3xl mx-auto overflow-hidden">
+                    <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
+                        <div class="w-full flex-shrink-0">
+                            <video id="autoplayVideo" class="w-full md:h-full h-56 rounded-xl" controls muted>
+                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
+                                    type="video/mp4">
+                                Trình duyệt của bạn không hỗ trợ video.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Career Opportunities Section -->
+            <div class="md:w-1/2 w-full md:mt-0 mt-5">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">🚀 Cơ hội việc làm</h2>
+                <ul class="space-y-2 text-gray-700">
+                    <li><i class="far fa-check-square text-green-600"></i> Chuyên gia CNTT tại các cơ quan, nhà máy,
+                        doanh nghiệp</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ chuyển đổi số tại các sở, ban, ngành,
+                        địa phương</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ quản lý và khai thác hệ thống thông
+                        tin tại các doanh nghiệp, tổ chức tài chính</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ phân tích và quản trị dữ liệu trong
+                        các công ty công nghệ, trung tâm dữ liệu</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Chuyên viên tư vấn và triển khai các giải
+                        pháp chuyển đổi số, hệ thống quản lý thông tin</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Giảng viên, nghiên cứu viên trong các trường
+                        đại học, viện nghiên cứu về công nghệ và quản lý thông tin</li>
+                    <li><i class="far fa-check-square text-green-600"></i> Khởi nghiệp trong lĩnh vực công nghệ thông
+                        tin, dữ liệu và chuyển đổi số</li>
+                </ul>
+            </div>
         </div>
+
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const video = document.getElementById("autoplayVideo");
@@ -504,7 +536,7 @@
     <!-- Swiper 1 Môi trường học tập-->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="open-popup-video cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
+            class="open-popup-popupmoitruonghoctap cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-blue-400 to-blue-900
             text-transparent bg-clip-text 
             italic inline-block">
@@ -519,18 +551,7 @@
 
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
-                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
-                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                            Ký túc xá
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide open-popup-popupmoitruonghoctap">
                         <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -541,7 +562,7 @@
                             Giảng đường
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide open-popup-popuplibrary">
                         <img src="{{ asset('newhome/album/thư viện.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -552,7 +573,7 @@
                             Thư viện
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide open-popup-popupcomputer">
                         <img src="{{ asset('newhome/album/phòng máy.png') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -563,7 +584,7 @@
                             Phòng máy tính
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide open-popup-popupsport">
                         <img src="{{ asset('newhome/album/sân-cỏ-nhân-tạo.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -574,13 +595,28 @@
                             Nhà thể thao
                         </p>
                     </div>
-                    <div class="swiper-slide">
-                        <iframe src="https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview"
-                            class="md:w-[229px] md:h-[168px] w-[382px] h-[256px]"
-                            allow="autoplay">
-                        </iframe>
-                    </div>                    
-
+                    <div class="swiper-slide open-popup-popupktx">
+                        <img src="{{ asset('newhome/album/kí-túc-xá-trường-nông-lâm.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Ký túc xá
+                        </p>
+                    </div>
+                    <div class="swiper-slide open-popup-popupmoitruonghoctap">
+                        <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                           transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Giảng đường
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -590,12 +626,824 @@
                 ❯
             </button>
         </div>
+
+        <!-- popupmoitruonghoctap - giảng đường -->
+        <div id="popupmoitruonghoctap"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupmoitruonghoctap"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[80vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
+                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                        Môi trường học tập
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathClassRoom = public_path('newhome/album/classroom/');
+                                            $imageClassRooms = glob(
+                                                $imagePathClassRoom . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupmoitruonghoctap">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Video -->
+                                                        <div class="swiper-slide relative group"
+                                                            onclick="playVideo(this, 'https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview')">
+                                                            <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                                            <div
+                                                                class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imageClassRooms as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/classroom/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupmoitruonghoctap"></div>
+                                                    <div class="swiper-button-prev-popupmoitruonghoctap"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Giảng đường</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperClassRoom">
+                                                <div class="swiper-wrapper p-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
+                                                            alt="Video 1" class="md:h-32 h-[108px]" />
+                                                    </div>
+                                                    @foreach ($imageClassRooms as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/classroom/' . basename($image)) }}"
+                                                                alt="Ảnh Phòng học" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperClassRoom", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupmoitruonghoctap = new Swiper(".mySwiperpopupmoitruonghoctap", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupmoitruonghoctap",
+                                        prevEl: ".swiper-button-prev-popupmoitruonghoctap",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupmoitruonghoctap = document.getElementById("popupmoitruonghoctap");
+                    const closepopupmoitruonghoctap = document.getElementById("closepopupmoitruonghoctap");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupmoitruonghoctap"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupmoitruonghoctap.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupmoitruonghoctap.addEventListener("click", function() {
+                        popupmoitruonghoctap.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupmoitruonghoctap.addEventListener("click", function(event) {
+                        if (event.target === popupmoitruonghoctap) {
+                            popupmoitruonghoctap.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popuplibrary - thư viện -->
+        <div id="popuplibrary"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopuplibrary"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[80vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
+                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                        Môi trường học tập
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathlibrary = public_path('newhome/album/library/');
+                                            $imagelibrarys = glob(
+                                                $imagePathlibrary . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopuplibrary">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Video -->
+                                                        <div class="swiper-slide relative group"
+                                                            onclick="playVideo(this, 'https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview')">
+                                                            <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                                            <div
+                                                                class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagelibrarys as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/library/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popuplibrary"></div>
+                                                    <div class="swiper-button-prev-popuplibrary"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Thư viện</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperlibrary">
+                                                <div class="swiper-wrapper p-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
+                                                            alt="Video 1" class="md:h-32 h-[108px]" />
+                                                    </div>
+                                                    @foreach ($imagelibrarys as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/library/' . basename($image)) }}"
+                                                                alt="Ảnh Phòng học" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                    <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                    `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperlibrary", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopuplibrary = new Swiper(".mySwiperpopuplibrary", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popuplibrary",
+                                        prevEl: ".swiper-button-prev-popuplibrary",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popuplibrary = document.getElementById("popuplibrary");
+                    const closepopuplibrary = document.getElementById("closepopuplibrary");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popuplibrary"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popuplibrary.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopuplibrary.addEventListener("click", function() {
+                        popuplibrary.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popuplibrary.addEventListener("click", function(event) {
+                        if (event.target === popuplibrary) {
+                            popuplibrary.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupcomputer - Phòng máy tính -->
+        <div id="popupcomputer"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupcomputer"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[80vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
+                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                        Môi trường học tập
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathcomputer = public_path('newhome/album/computer/');
+                                            $imagecomputers = glob(
+                                                $imagePathcomputer . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupcomputer">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Video -->
+                                                        <div class="swiper-slide relative group">
+                                                            <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                                        </div>
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagecomputers as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/computer/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupcomputer"></div>
+                                                    <div class="swiper-button-prev-popupcomputer"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Phòng máy tính</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipercomputer">
+                                                <div class="swiper-wrapper p-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
+                                                            alt="Video 1" class="md:h-32 h-[108px]" />
+                                                    </div>
+                                                    @foreach ($imagecomputers as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/computer/' . basename($image)) }}"
+                                                                alt="Ảnh Phòng học" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                        <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                        `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipercomputer", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupcomputer = new Swiper(".mySwiperpopupcomputer", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupcomputer",
+                                        prevEl: ".swiper-button-prev-popupcomputer",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupcomputer = document.getElementById("popupcomputer");
+                    const closepopupcomputer = document.getElementById("closepopupcomputer");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupcomputer"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupcomputer.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupcomputer.addEventListener("click", function() {
+                        popupcomputer.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupcomputer.addEventListener("click", function(event) {
+                        if (event.target === popupcomputer) {
+                            popupcomputer.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupsport - Nhà thể thao -->
+        <div id="popupsport"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupsport" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[80vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
+                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                        Môi trường học tập
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathsport = public_path('newhome/album/sport/');
+                                            $imagesports = glob(
+                                                $imagePathsport . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupsport">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Video -->
+                                                        <div class="swiper-slide relative group"
+                                                            onclick="playVideo(this, 'https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview')">
+                                                            <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                                            <div
+                                                                class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagesports as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/sport/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupsport"></div>
+                                                    <div class="swiper-button-prev-popupsport"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Thể thao</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipersport">
+                                                <div class="swiper-wrapper p-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
+                                                            alt="Video 1" class="md:h-32 h-[108px]" />
+                                                    </div>
+                                                    @foreach ($imagesports as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/sport/' . basename($image)) }}"
+                                                                alt="Ảnh nhà thể thao" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                        <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                        `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipersport", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupsport = new Swiper(".mySwiperpopupsport", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupsport",
+                                        prevEl: ".swiper-button-prev-popupsport",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupsport = document.getElementById("popupsport");
+                    const closepopupsport = document.getElementById("closepopupsport");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupsport"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupsport.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupsport.addEventListener("click", function() {
+                        popupsport.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupsport.addEventListener("click", function(event) {
+                        if (event.target === popupsport) {
+                            popupsport.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupktx - ký túc xá -->
+        <div id="popupktx"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupktx" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[80vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
+                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                        Môi trường học tập
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathktx = public_path('newhome/album/ktx/');
+                                            $imagektxs = glob(
+                                                $imagePathktx . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupktx">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Video -->
+                                                        <div class="swiper-slide relative group"
+                                                            onclick="playVideo(this, 'https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview')">
+                                                            <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
+                                                            <div
+                                                                class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagektxs as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/ktx/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupktx"></div>
+                                                    <div class="swiper-button-prev-popupktx"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Ký túc xá</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperktx">
+                                                <div class="swiper-wrapper p-2">
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
+                                                            alt="Video 1" class="md:h-32 h-[108px]" />
+                                                    </div>
+                                                    @foreach ($imagektxs as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/ktx/' . basename($image)) }}"
+                                                                alt="Ảnh KTX" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                        <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                        `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperktx", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupktx = new Swiper(".mySwiperpopupktx", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupktx",
+                                        prevEl: ".swiper-button-prev-popupktx",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupktx = document.getElementById("popupktx");
+                    const closepopupktx = document.getElementById("closepopupktx");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupktx"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupktx.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupktx.addEventListener("click", function() {
+                        popupktx.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupktx.addEventListener("click", function(event) {
+                        if (event.target === popupktx) {
+                            popupktx.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
     </section>
 
     <!-- Swiper 2 HOẠT ĐỘNG CỦA SINH VIÊN -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="open-popup-video cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
+            class="cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
             bg-gradient-to-b from-lime-200 via-yellow-400 via-40% to-orange-700
             text-transparent bg-clip-text 
             italic inline-block">
@@ -685,12 +1533,13 @@
                 ❯
             </button>
         </div>
+
     </section>
 
     <!-- Swiper 3 khoa học công nghệ -->
     <section class="container mx-auto md:px-12 px-1 relative">
         <div
-            class="open-popup-video cursor-pointer text-xl md:text-2xl py-4 font-bold uppercase italic 
+            class="cursor-pointer text-xl md:text-2xl py-4 font-bold uppercase italic 
                bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
                bg-clip-text text-transparent">
             KHOA HỌC & CÔNG NGHỆ
@@ -704,17 +1553,6 @@
 
             <div class="swiper mySwiper3">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
-                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
-                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
-                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
-                           transition: background 0.3s ease;"
-                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
-                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                            Hợp tác quốc tế
-                        </p>
-                    </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
@@ -877,191 +1715,6 @@
             document.querySelector(nextBtn).classList.toggle("disabled", swiper.isEnd);
         }
     </script>
-
-
-    <!-- PopupXEMVIDEO -->
-    <div id="popupXEMVIDEO"
-        class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-        <div class="bg-white p-6 rounded-lg w-full max-w-4xl md:max-w-[70%]  md:h-[80vh] relative">
-            <button id="closePopupXEMVIDEO" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
-                ✖
-            </button>
-            <div class="flex flex-col md:flex-row gap-2">
-                <div class="w-full flex">
-                    <div class="max-h-[80vh] overflow-y-auto">
-                        <!-- Swiper -->
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                            class="swiper mySwiperVideo">
-                            <div class="swiper-wrapper" style="text-align: -webkit-center;">
-                                <div class="swiper-slide relative group"
-                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview')">
-                                    <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative group"
-                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview')">
-                                    <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative group"
-                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview')">
-                                    <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative group"
-                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview')">
-                                    <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide relative group"
-                                    onclick="playVideo(this, 'https://drive.google.com/file/d/1ARcM8GyXTVSBFhDjJkxdgQELyIJdL9d3/preview')">
-                                    <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
-                                        class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="far fa-play-circle text-white text-6xl opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-
-                                <script>
-                                    function playVideo(element, videoUrl) {
-                                        element.innerHTML = `
-                                            <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
-                                        `;
-                                    }
-                                </script>
-                            </div>
-                            <div class="swiper-button-next-video"></div>
-                            <div class="swiper-button-prev-video"></div>
-                        </div>
-
-                        <div thumbsSlider="" class="swiper mySwiper mt-5 overflow-scroll">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}" alt="Video 1" />
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('videos/avatar_video_nhao.jpg') }}" alt="Video 2" />
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}" alt="Video 3" />
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}" alt="Video 4" />
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}" alt="Video 5" />
-                                    <!-- Nút Play có background riêng -->
-                                    <div class="absolute inset-0 flex items-center justify-center">
-                                        <i
-                                            class="text-3xl far fa-play-circle text-white opacity-90 group-hover:opacity-100 transition"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Initialize Swiper -->
-                        <script>
-                            var swiperThumbs = new Swiper(".mySwiper", {
-                                loop: true,
-                                spaceBetween: 10,
-                                slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
-                                breakpoints: {
-                                    768: {
-                                        slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
-                                    }
-                                },
-                                freeMode: true,
-                                watchSlidesProgress: true,
-                            });
-
-                            var swiperVideo = new Swiper(".mySwiperVideo", {
-                                loop: true,
-                                spaceBetween: 10,
-                                navigation: {
-                                    nextEl: ".swiper-button-next-video",
-                                    prevEl: ".swiper-button-prev-video",
-                                },
-                                thumbs: {
-                                    swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
-                                },
-                            });
-                        </script>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const popupXEMVIDEO = document.getElementById("popupXEMVIDEO");
-                const closePopupXEMVIDEO = document.getElementById("closePopupXEMVIDEO");
-                const openPopupButtons = document.querySelectorAll(".open-popup-video"); // Chọn tất cả nút mở popup
-
-                // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
-                openPopupButtons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        popupXEMVIDEO.classList.remove("hidden"); // Hiện popup
-                    });
-                });
-
-                // Đóng popup khi nhấn nút "X"
-                closePopupXEMVIDEO.addEventListener("click", function() {
-                    popupXEMVIDEO.classList.add("hidden"); // Ẩn popup
-                });
-
-                // Đóng popup khi click bên ngoài nội dung
-                popupXEMVIDEO.addEventListener("click", function(event) {
-                    if (event.target === popupXEMVIDEO) {
-                        popupXEMVIDEO.classList.add("hidden"); // Ẩn popup
-                    }
-                });
-            });
-        </script>
-
-    </div>
 
     <!-- Popup Đăng ký -->
     <div id="popup"
@@ -1544,8 +2197,7 @@
             <span class="absolute inset-0 w-full h-full rounded-full"></span>
 
             <!-- Hình ảnh đăng ký -->
-            <img src="{{ asset('newhome/đăng ký nhận H.png') }}" alt="Đăng ký ngay"
-                class="w-48 h-w-40">
+            <img src="{{ asset('newhome/đăng-ký-nhận-H.gif') }}" alt="Đăng ký ngay" class="w-48 h-w-40">
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
