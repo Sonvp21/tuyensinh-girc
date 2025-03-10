@@ -630,7 +630,7 @@
         <!-- popupmoitruonghoctap - giảng đường -->
         <div id="popupmoitruonghoctap"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupmoitruonghoctap"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
@@ -712,7 +712,7 @@
                                                     @foreach ($imageClassRooms as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/classroom/' . basename($image)) }}"
-                                                                alt="Ảnh Phòng học" />
+                                                                alt="Ảnh Phòng học"  class="md:h-32 h-[108px] w-full"/>
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -794,7 +794,7 @@
         <!-- popuplibrary - thư viện -->
         <div id="popuplibrary"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuplibrary"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
@@ -876,7 +876,7 @@
                                                     @foreach ($imagelibrarys as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/library/' . basename($image)) }}"
-                                                                alt="Ảnh Phòng học" />
+                                                                alt="Ảnh thư viện" class="md:h-32 h-[108px] w-full" />
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -958,7 +958,7 @@
         <!-- popupcomputer - Phòng máy tính -->
         <div id="popupcomputer"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupcomputer"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
@@ -1034,7 +1034,7 @@
                                                     @foreach ($imagecomputers as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/computer/' . basename($image)) }}"
-                                                                alt="Ảnh Phòng học" />
+                                                                alt="Ảnh Phòng máy tính" class="md:h-32 h-[108px] w-full"/>
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -1116,7 +1116,7 @@
         <!-- popupsport - Nhà thể thao -->
         <div id="popupsport"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupsport" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
@@ -1197,7 +1197,7 @@
                                                     @foreach ($imagesports as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/sport/' . basename($image)) }}"
-                                                                alt="Ảnh nhà thể thao" />
+                                                                alt="Ảnh nhà thể thao"  class="md:h-32 h-[108px] w-full"/>
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -1279,7 +1279,7 @@
         <!-- popupktx - ký túc xá -->
         <div id="popupktx"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white p-6 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupktx" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
@@ -1360,7 +1360,7 @@
                                                     @foreach ($imagektxs as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/ktx/' . basename($image)) }}"
-                                                                alt="Ảnh KTX" />
+                                                                alt="Ảnh KTX" class="md:h-32 h-[108px] w-full" />
                                                         </div>
                                                     @endforeach
                                                 </div>
