@@ -263,16 +263,36 @@
     </section>
 
     {{-- Chi tiết các ngành --}}
+    <style>
+        .scroll-container {
+            max-height: 90vh;
+            overflow-y: auto;
+
+            /* Tạo thanh scroll riêng biệt */
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 5px;
+            /* Giảm kích thước scrollbar */
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+    </style>
     <!-- PopupQLTT -->
     <div id="popupQLTT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupQLTT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+            <button id="closePopupQLTT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
-                    <div class="max-h-[90vh] overflow-y-auto">
+                    <div class="max-h-[80vh] overflow-y-auto scroll-container">
                         <img src="{{ asset('newhome/chitietnganh1.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
@@ -310,12 +330,12 @@
     <div id="popupDMST"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupDMST" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+            <button id="closePopupDMST" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
-                    <div class="max-h-[90vh] overflow-y-auto">
+                    <div class="max-h-[80vh] overflow-y-auto scroll-container">
                         <img src="{{ asset('newhome/chitietnganh2.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
@@ -353,12 +373,12 @@
     <div id="popupTTNT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupTTNT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+            <button id="closePopupTTNT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
-                    <div class="max-h-[90vh] overflow-y-auto">
+                    <div class="max-h-[80vh] overflow-y-auto scroll-container">
                         <img src="{{ asset('newhome/chitietnganh3.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
@@ -710,12 +730,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupmoitruonghoctap"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-blue-800 inline-block relative p-1">
                                     <svg fill="currentColor"
@@ -877,12 +897,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuplibrary"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1043,12 +1063,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupcomputer"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1203,12 +1223,13 @@
         <div id="popupsport"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
-                <button id="closepopupsport" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                <button id="closepopupsport"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1369,12 +1390,13 @@
         <div id="popupktx"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
-                <button id="closepopupktx" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                <button id="closepopupktx"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1630,12 +1652,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupnhaphoc"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-yellow-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1781,12 +1803,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuphocngoaingu"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-yellow-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -1933,12 +1955,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupchuctet"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-yellow-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -2084,12 +2106,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupthethao"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-yellow-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -2235,12 +2257,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupvannghe"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-yellow-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -2471,12 +2493,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuphoptac"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-lime-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -2621,150 +2643,147 @@
         <div id="popupduan"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
-                <button id="closepopupduan" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                <button id="closepopupduan"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
-                    <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
-                            <div>
-                                <div class="bg-lime-500 inline-block relative py-2 px-2">
-                                    <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
-                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
-                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                        viewBox="0 0 120 36">
-                                        <path
-                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
-                                        </path>
-                                    </svg>
-                                    <h3
-                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                        KHOA HỌC & CÔNG NGHỆ
-                                    </h3>
-                                </div>
-                                <div class="border border-black rounded-lg rounded-l-none">
-                                    <div class="h-full">
-                                        @php
-                                            $imagePathduan = public_path('newhome/album/duan/');
-                                            $imageduans = glob(
-                                                $imagePathduan . '*.{jpg,jpeg,png,gif,webp,JPG}',
-                                                GLOB_BRACE,
-                                            );
-                                        @endphp
+                    <div class="w-full flex p-6">
+                        <div class="max-h-[90vh] overflow-y-auto"overflow-y-auto scroll-container <div
+                            class="bg-lime-500 inline-block relative py-2 px-2">
+                            <svg fill="currentColor"
+                                class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                viewBox="0 0 120 36">
+                                <path
+                                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                </path>
+                            </svg>
+                            <h3
+                                class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                KHOA HỌC & CÔNG NGHỆ
+                            </h3>
+                        </div>
+                        <div class="border border-black rounded-lg rounded-l-none">
+                            <div class="h-full">
+                                @php
+                                    $imagePathduan = public_path('newhome/album/duan/');
+                                    $imageduans = glob($imagePathduan . '*.{jpg,jpeg,png,gif,webp,JPG}', GLOB_BRACE);
+                                @endphp
 
-                                        <div class="mt-3 row-span-1 h-full">
-                                            <div class="max-w-full overflow-auto content-container">
-                                                <!-- Swiper -->
-                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                                                    class="swiper mySwiperpopupduan">
-                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
-                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
-                                                        @foreach ($imageduans as $image)
-                                                            <div class="swiper-slide">
-                                                                <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
-                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
-                                                            </div>
-                                                        @endforeach
+                                <div class="mt-3 row-span-1 h-full">
+                                    <div class="max-w-full overflow-auto content-container">
+                                        <!-- Swiper -->
+                                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                            class="swiper mySwiperpopupduan">
+                                            <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                @foreach ($imageduans as $image)
+                                                    <div class="swiper-slide">
+                                                        <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
+                                                            class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
                                                     </div>
-                                                    <div class="swiper-button-next-popupduan"></div>
-                                                    <div class="swiper-button-prev-popupduan"></div>
-                                                </div>
+                                                @endforeach
                                             </div>
-                                            <h3
-                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
-                                                <div
-                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
-                                                </div>
-                                                <span class="px-2 font-serif italic">Triển khai dự án</span>
-                                                <div
-                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
-                                                </div>
-                                            </h3>
-
-                                            <!-- Thumbnails -->
-                                            <div thumbsSlider="" class="swiper mySwiperduan">
-                                                <div class="swiper-wrapper p-2">
-                                                    @foreach ($imageduans as $image)
-                                                        <div class="swiper-slide">
-                                                            <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
-                                                                alt="Ảnh duan" class="md:h-32 h-[108px] w-full" />
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            </div>
+                                            <div class="swiper-button-next-popupduan"></div>
+                                            <div class="swiper-button-prev-popupduan"></div>
                                         </div>
+                                    </div>
+                                    <h3
+                                        class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                        <div
+                                            class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                        </div>
+                                        <span class="px-2 font-serif italic">Triển khai dự án</span>
+                                        <div
+                                            class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                        </div>
+                                    </h3>
 
-                                        <script>
-                                            function playVideo(element, videoUrl) {
-                                                element.innerHTML = `
-                                                                    <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
-                                                                    `;
-                                            }
-                                        </script>
+                                    <!-- Thumbnails -->
+                                    <div thumbsSlider="" class="swiper mySwiperduan">
+                                        <div class="swiper-wrapper p-2">
+                                            @foreach ($imageduans as $image)
+                                                <div class="swiper-slide">
+                                                    <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
+                                                        alt="Ảnh duan" class="md:h-32 h-[108px] w-full" />
+                                                </div>
+                                            @endforeach
+                                        </div>
                                     </div>
                                 </div>
+
+                                <script>
+                                    function playVideo(element, videoUrl) {
+                                        element.innerHTML = `
+                                                                    <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                    `;
+                                    }
+                                </script>
                             </div>
-
-                            <!-- Initialize Swiper -->
-                            <script>
-                                var swiperThumbs = new Swiper(".mySwiperduan", {
-                                    loop: true,
-                                    spaceBetween: 10,
-                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
-                                    breakpoints: {
-                                        768: {
-                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
-                                        }
-                                    },
-                                    freeMode: true,
-                                    watchSlidesProgress: true,
-                                });
-
-                                var swiperpopupduan = new Swiper(".mySwiperpopupduan", {
-                                    loop: true,
-                                    spaceBetween: 10,
-                                    navigation: {
-                                        nextEl: ".swiper-button-next-popupduan",
-                                        prevEl: ".swiper-button-prev-popupduan",
-                                    },
-                                    thumbs: {
-                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
-                                    },
-                                });
-                            </script>
                         </div>
                     </div>
+
+                    <!-- Initialize Swiper -->
+                    <script>
+                        var swiperThumbs = new Swiper(".mySwiperduan", {
+                            loop: true,
+                            spaceBetween: 10,
+                            slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                            breakpoints: {
+                                768: {
+                                    slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                }
+                            },
+                            freeMode: true,
+                            watchSlidesProgress: true,
+                        });
+
+                        var swiperpopupduan = new Swiper(".mySwiperpopupduan", {
+                            loop: true,
+                            spaceBetween: 10,
+                            navigation: {
+                                nextEl: ".swiper-button-next-popupduan",
+                                prevEl: ".swiper-button-prev-popupduan",
+                            },
+                            thumbs: {
+                                swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                            },
+                        });
+                    </script>
                 </div>
             </div>
+        </div>
+        </div>
 
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const popupduan = document.getElementById("popupduan");
-                    const closepopupduan = document.getElementById("closepopupduan");
-                    const openPopupButtons = document.querySelectorAll(
-                        ".open-popup-popupduan"); // Chọn tất cả nút mở popup
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const popupduan = document.getElementById("popupduan");
+                const closepopupduan = document.getElementById("closepopupduan");
+                const openPopupButtons = document.querySelectorAll(
+                    ".open-popup-popupduan"); // Chọn tất cả nút mở popup
 
-                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
-                    openPopupButtons.forEach(button => {
-                        button.addEventListener("click", function() {
-                            popupduan.classList.remove("hidden"); // Hiện popup
-                        });
-                    });
-
-                    // Đóng popup khi nhấn nút "X"
-                    closepopupduan.addEventListener("click", function() {
-                        popupduan.classList.add("hidden"); // Ẩn popup
-                    });
-
-                    // Đóng popup khi click bên ngoài nội dung
-                    popupduan.addEventListener("click", function(event) {
-                        if (event.target === popupduan) {
-                            popupduan.classList.add("hidden"); // Ẩn popup
-                        }
+                // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                openPopupButtons.forEach(button => {
+                    button.addEventListener("click", function() {
+                        popupduan.classList.remove("hidden"); // Hiện popup
                     });
                 });
-            </script>
+
+                // Đóng popup khi nhấn nút "X"
+                closepopupduan.addEventListener("click", function() {
+                    popupduan.classList.add("hidden"); // Ẩn popup
+                });
+
+                // Đóng popup khi click bên ngoài nội dung
+                popupduan.addEventListener("click", function(event) {
+                    if (event.target === popupduan) {
+                        popupduan.classList.add("hidden"); // Ẩn popup
+                    }
+                });
+            });
+        </script>
         </div>
 
         <!-- popupdieutra - Điều tra thực địa -->
@@ -2772,12 +2791,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupdieutra"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-lime-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -2924,12 +2943,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuptaphuan"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-lime-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -3076,12 +3095,12 @@
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
             <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupnckh"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[90vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
                                 <div class="bg-lime-500 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
@@ -3327,7 +3346,7 @@
             <!-- Nút đóng -->
             <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                 ✖
-            </button>
+            </button p-6>
 
             <div class="flex flex-col md:flex-row gap-2">
                 <!-- Hình ảnh -->
