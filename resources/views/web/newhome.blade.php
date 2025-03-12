@@ -73,18 +73,45 @@
             align-self: anchor-center !important;
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- Header -->
     <header class="text-white text-center">
-        <img src="{{ asset('newhome/banner_header_top.png') }}" class="relative w-full" alt="">
+        <img src="{{ asset('newhome/header_new2.jpg') }}" class="relative w-full" alt="">
     </header>
 
     <section class="md:container mx-auto md:px-12 px-2 relative justify-center text-center">
-        <h2 class="mt-5 uppercase font-bold text-xl"><span class="text-yellow-400">Lý do </span>các bạn 2k7 nên lựa chọn
-            ngành học <span class="text-yellow-400">Công nghệ thông tin</span>?</h2>
+        <style>
+            @keyframes my {
+
+                0%,
+                100% {
+                    color: #FF0000;
+                }
+
+                50% {
+                    color: rgb(255, 140, 0);
+                }
+            }
+
+            .animate-blink-color {
+                font-size: 24px;
+                font-weight: bold;
+                color: #FF0000;
+                text-shadow: 2px 2px 4px rgba(236, 236, 236, 0.3);
+                /* Thêm bóng nhẹ */
+                animation: my 700ms infinite;
+            }
+        </style>
+        <h2 class="mt-5 uppercase font-bold text-xl animate-blink-color">
+            Lý do các bạn 2k7 nên lựa chọn ngành học Công nghệ thông tin?
+        </h2>
+
     </section>
     <section class="container mx-auto px-12 relative hidden md:flex">
         <!-- Hình ảnh nền -->
@@ -92,23 +119,13 @@
 
         <!-- Chữ chồng lên ảnh -->
         <div class="absolute inset-0 mx-4 flex flex-col items-center justify-center p-6 space-y-1 text-justify">
-            <!-- Đoạn 1 -->
-            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
-                <p>
-                    <strong>Nghị quyết số 57-NQ/TW </strong> ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa
-                    học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia là đột phá quan trọng hàng đầu, nhằm tạo
-                    động lực chính để phát triển lực lượng sản xuất hiện đại, hoàn thiện quan hệ sản xuất, đổi mới quản
-                    trị quốc gia, phát triển kinh tế - xã hội, ngăn chặn nguy cơ tụt hậu và đưa đất nước phát triển bứt
-                    phá trong kỷ nguyên mới.
-                </p>
-            </div>
-
             <!-- Đoạn 2 -->
             <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
                 <p>
-                    <strong>Quyết định số 749/QĐ-TTg </strong>
+                    <a href="https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Quyet-dinh-749-QD-TTg-2020-phe-duyet-Chuong-trinh-Chuyen-doi-so-quoc-gia-444136.aspx"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Quyết định số 749/QĐ-TTg</a>
                     ngày 03/06/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm
                     2030" với mục tiêu phát triển chính phủ số, kinh tế số, xã hội số, hình thành các doanh nghiệp số
                     tiên phong và nâng cao năng lực cạnh tranh quốc gia trong kỷ nguyên số.
@@ -119,30 +136,29 @@
             <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
                 <p>
-                    <strong>Quyết định số 942/QĐ-TTg </strong>
+                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat/quyet-dinh-so-942qd-ttg-ngay-1562021-cua-thu-tuong-chinh-phu-phe-duyet-chien-luoc-phat-trien-chinh-phu-dien-tu-huong-toi-chinh-phu-7529"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Quyết định số 942/QĐ-TTg</a>
                     ngày 15/6/2021 của Thủ tướng Chính phủ về việc phê duyệt Chiến lược phát triển Chính phủ điện tử
                     hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030.
+                </p>
+            </div>
+            <!-- Đoạn 1 -->
+            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
+                <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
+                <p>
+                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-57-nqtw-ngay-22122024-cua-bo-chinh-tri-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-11162"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Nghị quyết số 57-NQ/TW</a>
+                    ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển
+                    đổi số quốc gia là đột phá quan trọng hàng đầu, nhằm tạo động lực chính để phát triển lực lượng sản
+                    xuất hiện đại, hoàn thiện quan hệ sản xuất, đổi mới quản trị quốc gia, phát triển kinh tế - xã hội,
+                    ngăn chặn nguy cơ tụt hậu và đưa đất nước phát triển bứt phá trong kỷ nguyên mới.
                 </p>
             </div>
         </div>
     </section>
     {{-- mobile  --}}
-    <section class="container mx-auto px-2 relative flex md:hidden">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
-
-        <!-- Chữ chồng lên ảnh -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
-            <!-- Đoạn 1 -->
-            <div class="mx-2 text-xs leading-relaxed flex">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
-                <p>
-                    <strong>Nghị quyết số 57-NQ/TW </strong> ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa
-                    học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia là đột phá quan trọng hàng đầu...
-                </p>
-            </div>
-        </div>
-    </section>
     <section class="container mx-auto px-2 relative  flex md:hidden">
         <!-- Hình ảnh nền -->
         <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
@@ -150,10 +166,12 @@
         <!-- Chữ chồng lên ảnh -->
         <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
             <!-- Đoạn 2 -->
-            <div class="mx-2 text-xs leading-relaxed flex">
+            <div class="mx-2 text-xs leading-relaxed flex mr-4">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
                 <p>
-                    <strong>Quyết định số 749/QĐ-TTg </strong>
+                    <a href="https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Quyet-dinh-749-QD-TTg-2020-phe-duyet-Chuong-trinh-Chuyen-doi-so-quoc-gia-444136.aspx"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Quyết định số 749/QĐ-TTg</a>
                     ngày 03/06/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm
                     2030" với mục tiêu phát triển chính phủ số, kinh tế số, xã hội số...
                 </p>
@@ -165,12 +183,32 @@
         <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
         <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
             <!-- Đoạn 3 -->
-            <div class="mx-2 text-xs leading-relaxed flex">
+            <div class="mx-2 text-xs leading-relaxed flex mr-4">
                 <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
                 <p>
-                    <strong>Quyết định số 942/QĐ-TTg </strong>
+                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat/quyet-dinh-so-942qd-ttg-ngay-1562021-cua-thu-tuong-chinh-phu-phe-duyet-chien-luoc-phat-trien-chinh-phu-dien-tu-huong-toi-chinh-phu-7529"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Quyết định số 942/QĐ-TTg</a>
                     ngày 15/6/2021 của Thủ tướng Chính phủ về việc phê duyệt Chiến lược phát triển Chính phủ điện tử
                     hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-2 relative flex md:hidden">
+        <!-- Hình ảnh nền -->
+        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
+
+        <!-- Chữ chồng lên ảnh -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
+            <!-- Đoạn 1 -->
+            <div class="mx-2 text-xs leading-relaxed flex mr-4">
+                <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
+                <p>
+                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-57-nqtw-ngay-22122024-cua-bo-chinh-tri-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-11162"
+                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
+                        Nghị quyết số 57-NQ/TW</a> ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa
+                    học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia là đột phá quan trọng hàng đầu...
                 </p>
             </div>
         </div>
@@ -235,7 +273,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/album/nganh 1 detail.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh1.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -278,7 +316,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/album/nganh 2 detail.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh2.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -321,7 +359,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[90vh] overflow-y-auto">
-                        <img src="{{ asset('newhome/album/nganh 3 detail.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh3.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -353,8 +391,6 @@
         </script>
 
     </div>
-
-
 
     <!-- Phương thức xét tuyển -->
     <section
@@ -490,21 +526,61 @@
             <!-- Career Opportunities Section -->
             <div class="md:w-1/2 w-full md:mt-0 mt-5">
                 <h2 class="text-xl font-bold text-gray-800 mb-4">🚀 Cơ hội việc làm</h2>
-                <ul class="space-y-2 text-gray-700">
-                    <li><i class="far fa-check-square text-green-600"></i> Chuyên gia CNTT tại các cơ quan, nhà máy,
-                        doanh nghiệp</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ chuyển đổi số tại các sở, ban, ngành,
-                        địa phương</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ quản lý và khai thác hệ thống thông
-                        tin tại các doanh nghiệp, tổ chức tài chính</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Cán bộ phân tích và quản trị dữ liệu trong
-                        các công ty công nghệ, trung tâm dữ liệu</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Chuyên viên tư vấn và triển khai các giải
-                        pháp chuyển đổi số, hệ thống quản lý thông tin</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Giảng viên, nghiên cứu viên trong các trường
-                        đại học, viện nghiên cứu về công nghệ và quản lý thông tin</li>
-                    <li><i class="far fa-check-square text-green-600"></i> Khởi nghiệp trong lĩnh vực công nghệ thông
-                        tin, dữ liệu và chuyển đổi số</li>
+                <ul class="space-y-3 text-[17px] text-gray-700 text-justify">
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i>
+                        Chuyên gia quản trị hệ thống CNTT tại các cơ quan, nhà máy,
+                        doanh nghiệp, tổ chức tài chính.</li>
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i>
+                        Chuyên gia chuyển đổi số tại các sở, ban, ngành,
+                        địa phương.</li>
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i>
+                        Chuyên gia phân tích, lập trình các hệ thống phần mềm, trí tuệ nhân tạo.</li>
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i>
+                        Chuyên gia tư vấn và triển khai các giải
+                        pháp chuyển đổi số, ứng dụng trí tuệ nhân tạo cho các tổ chức, doanh nghiệp.</li>
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i> Giáo
+                        viên phổ thông, giảng viên các trường đại học, nghiên cứu viên các viện nghiên cứu về lĩnh vực
+                        CNTT và ứng dụng trí tuệ nhân tạo.</li>
+                    <li class="flex items-start"><i class="mt-[6px] mr-2 far fa-check-square text-green-600"></i> Khởi
+                        nghiệp trong lĩnh vực CNTT, chuyển đổi số, trí tuệ nhân tạo.</li>
+                    <!-- Mục cuối cùng "Thành công đang chờ bạn!" -->
+                    <li class="flex items-center justify-center text-yellow-500 mt-6 drop-shadow-md">
+                        <span
+                            class="text-3xl font-bold text-center font-handwriting animate-typing whitespace-nowrap overflow-hidden border-r-4 border-yellow-500 pr-3">
+                            Thành công đang chờ đợi bạn ở phía trước!
+                        </span>
+                        <i class="fas fa-pen text-yellow-500 text-3xl ml-3"></i>
+                    </li>
+                    <!-- Nhúng Google Font -->
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+                        .font-handwriting {
+                            font-family: 'Dancing Script', cursive;
+                        }
+
+                        /* Hiệu ứng chữ viết tay */
+                        .animate-typing {
+                            animation: typing 5s steps(400, end) infinite, blink 0.5s infinite;
+                            animation-delay: 0s, 5s, 8s;
+                        }
+
+                        @keyframes typing {
+                            from {
+                                width: 0;
+                            }
+
+                            to {
+                                width: 100%;
+                            }
+                        }
+
+                        @keyframes blink {
+                            50% {
+                                border-color: transparent;
+                            }
+                        }
+                    </style>
                 </ul>
             </div>
         </div>
@@ -551,7 +627,8 @@
 
             <div class="swiper mySwiper1">
                 <div class="swiper-wrapper">
-                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
+                    <div title="Click để xem thêm"
+                        class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
                         <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -606,7 +683,8 @@
                             Ký túc xá
                         </p>
                     </div>
-                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
+                    <div title="Click để xem thêm"
+                        class="swiper-slide cursor-pointer open-popup-popupmoitruonghoctap">
                         <img src="{{ asset('newhome/album/giảng đường.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -630,25 +708,27 @@
         <!-- popupmoitruonghoctap - giảng đường -->
         <div id="popupmoitruonghoctap"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupmoitruonghoctap"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[80vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto">
                             <div>
-                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                <div class="bg-blue-800 inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
-                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
                                         <path
                                             d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
                                         </path>
                                     </svg>
-                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
                                         Môi trường học tập
                                     </h3>
                                 </div>
@@ -712,7 +792,8 @@
                                                     @foreach ($imageClassRooms as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/classroom/' . basename($image)) }}"
-                                                                alt="Ảnh Phòng học"  class="md:h-32 h-[108px] w-full"/>
+                                                                alt="Ảnh Phòng học"
+                                                                class="md:h-32 h-[108px] w-full" />
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -794,25 +875,27 @@
         <!-- popuplibrary - thư viện -->
         <div id="popuplibrary"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopuplibrary"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[80vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
-                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
                                         <path
                                             d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
                                         </path>
                                     </svg>
-                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
                                         Môi trường học tập
                                     </h3>
                                 </div>
@@ -958,25 +1041,27 @@
         <!-- popupcomputer - Phòng máy tính -->
         <div id="popupcomputer"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupcomputer"
                     class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[80vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
-                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
                                         <path
                                             d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
                                         </path>
                                     </svg>
-                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
                                         Môi trường học tập
                                     </h3>
                                 </div>
@@ -1034,7 +1119,8 @@
                                                     @foreach ($imagecomputers as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/computer/' . basename($image)) }}"
-                                                                alt="Ảnh Phòng máy tính" class="md:h-32 h-[108px] w-full"/>
+                                                                alt="Ảnh Phòng máy tính"
+                                                                class="md:h-32 h-[108px] w-full" />
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -1116,24 +1202,26 @@
         <!-- popupsport - Nhà thể thao -->
         <div id="popupsport"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupsport" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[80vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
-                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
                                         <path
                                             d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
                                         </path>
                                     </svg>
-                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
                                         Môi trường học tập
                                     </h3>
                                 </div>
@@ -1197,7 +1285,8 @@
                                                     @foreach ($imagesports as $image)
                                                         <div class="swiper-slide">
                                                             <img src="{{ asset('newhome/album/sport/' . basename($image)) }}"
-                                                                alt="Ảnh nhà thể thao"  class="md:h-32 h-[108px] w-full"/>
+                                                                alt="Ảnh nhà thể thao"
+                                                                class="md:h-32 h-[108px] w-full" />
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -1279,24 +1368,26 @@
         <!-- popupktx - ký túc xá -->
         <div id="popupktx"
             class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
-            <div class="bg-white md:p-6 p-1 rounded-lg w-full max-w-4xl relative">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
                 <button id="closepopupktx" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
-                        <div class="max-h-[80vh] overflow-y-auto">
+                        <div class="max-h-[90vh] overflow-y-auto">
                             <div>
                                 <div class="bg-blue-800 inline-block relative py-2 px-2">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3rem] top-0 z-0 h-10 text-blue-700 transform scale-y-[-1]"
-                                        xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                        text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
                                         <path
                                             d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
                                         </path>
                                     </svg>
-                                    <h3 class="relative z-20 text-white uppercase font-semibold whitespace-nowrap">
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
                                         Môi trường học tập
                                     </h3>
                                 </div>
@@ -1458,7 +1549,7 @@
 
             <div class="swiper mySwiper2">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupnhaphoc">
                         <img src="{{ asset('newhome/album/nhập học.JPG') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1469,7 +1560,7 @@
                             Nhập học
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popuphocngoaingu">
                         <img src="{{ asset('newhome/album/học tiếng anh.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1480,7 +1571,7 @@
                             Học ngoại ngữ
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupchuctet">
                         <img src="{{ asset('newhome/album/chuc tết.jfif') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1491,7 +1582,7 @@
                             Chúc tết sinh viên
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupthethao">
                         <img src="{{ asset('newhome/album/thể thao.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1502,7 +1593,7 @@
                             Hoạt động thể thao
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupvannghe">
                         <img src="{{ asset('newhome/album/văn nghệ.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1513,7 +1604,7 @@
                             Văn nghệ
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupnhaphoc">
                         <img src="{{ asset('newhome/album/nhập học.JPG') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1532,6 +1623,762 @@
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-2">
                 ❯
             </button>
+        </div>
+
+        <!-- popupnhaphoc - nhập học -->
+        <div id="popupnhaphoc"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupnhaphoc"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        Hoạt động của sinh viên
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathnhaphoc = public_path('newhome/album/nhaphoc/');
+                                            $imagenhaphocs = glob(
+                                                $imagePathnhaphoc . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupnhaphoc">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagenhaphocs as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/nhaphoc/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupnhaphoc"></div>
+                                                    <div class="swiper-button-prev-popupnhaphoc"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Nhập học</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipernhaphoc">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagenhaphocs as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/nhaphoc/' . basename($image)) }}"
+                                                                alt="Ảnh nhaphoc" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                            <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                            `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipernhaphoc", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupnhaphoc = new Swiper(".mySwiperpopupnhaphoc", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupnhaphoc",
+                                        prevEl: ".swiper-button-prev-popupnhaphoc",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupnhaphoc = document.getElementById("popupnhaphoc");
+                    const closepopupnhaphoc = document.getElementById("closepopupnhaphoc");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupnhaphoc"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupnhaphoc.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupnhaphoc.addEventListener("click", function() {
+                        popupnhaphoc.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupnhaphoc.addEventListener("click", function(event) {
+                        if (event.target === popupnhaphoc) {
+                            popupnhaphoc.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popuphocngoaingu - Học ngoại ngữ -->
+        <div id="popuphocngoaingu"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopuphocngoaingu"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        Hoạt động của sinh viên
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathhocngoaingu = public_path('newhome/album/hocngoaingu/');
+                                            $imagehocngoaingus = glob(
+                                                $imagePathhocngoaingu . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopuphocngoaingu">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagehocngoaingus as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/hocngoaingu/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popuphocngoaingu"></div>
+                                                    <div class="swiper-button-prev-popuphocngoaingu"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Học ngoại ngữ</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperhocngoaingu">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagehocngoaingus as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/hocngoaingu/' . basename($image)) }}"
+                                                                alt="Ảnh hocngoaingu"
+                                                                class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperhocngoaingu", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopuphocngoaingu = new Swiper(".mySwiperpopuphocngoaingu", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popuphocngoaingu",
+                                        prevEl: ".swiper-button-prev-popuphocngoaingu",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popuphocngoaingu = document.getElementById("popuphocngoaingu");
+                    const closepopuphocngoaingu = document.getElementById("closepopuphocngoaingu");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popuphocngoaingu"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popuphocngoaingu.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopuphocngoaingu.addEventListener("click", function() {
+                        popuphocngoaingu.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popuphocngoaingu.addEventListener("click", function(event) {
+                        if (event.target === popuphocngoaingu) {
+                            popuphocngoaingu.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupchuctet - Chúc tết sinh viên -->
+        <div id="popupchuctet"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupchuctet"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        Hoạt động của sinh viên
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathchuctet = public_path('newhome/album/chuctet/');
+                                            $imagechuctets = glob(
+                                                $imagePathchuctet . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupchuctet">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagechuctets as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/chuctet/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupchuctet"></div>
+                                                    <div class="swiper-button-prev-popupchuctet"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Chào mừng năm mới</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperchuctet">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagechuctets as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/chuctet/' . basename($image)) }}"
+                                                                alt="Ảnh chuctet" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                    <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                    `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperchuctet", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupchuctet = new Swiper(".mySwiperpopupchuctet", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupchuctet",
+                                        prevEl: ".swiper-button-prev-popupchuctet",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupchuctet = document.getElementById("popupchuctet");
+                    const closepopupchuctet = document.getElementById("closepopupchuctet");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupchuctet"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupchuctet.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupchuctet.addEventListener("click", function() {
+                        popupchuctet.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupchuctet.addEventListener("click", function(event) {
+                        if (event.target === popupchuctet) {
+                            popupchuctet.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupthethao - Thể thao -->
+        <div id="popupthethao"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupthethao"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        Hoạt động của sinh viên
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePaththethao = public_path('newhome/album/thethao/');
+                                            $imagethethaos = glob(
+                                                $imagePaththethao . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupthethao">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagethethaos as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/thethao/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupthethao"></div>
+                                                    <div class="swiper-button-prev-popupthethao"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Thể thao</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperthethao">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagethethaos as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/thethao/' . basename($image)) }}"
+                                                                alt="Ảnh thethao" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                        <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                        `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperthethao", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupthethao = new Swiper(".mySwiperpopupthethao", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupthethao",
+                                        prevEl: ".swiper-button-prev-popupthethao",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupthethao = document.getElementById("popupthethao");
+                    const closepopupthethao = document.getElementById("closepopupthethao");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupthethao"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupthethao.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupthethao.addEventListener("click", function() {
+                        popupthethao.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupthethao.addEventListener("click", function(event) {
+                        if (event.target === popupthethao) {
+                            popupthethao.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupvannghe - Văn nghệ -->
+        <div id="popupvannghe"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupvannghe"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        Hoạt động của sinh viên
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathvannghe = public_path('newhome/album/vannghe/');
+                                            $imagevannghes = glob(
+                                                $imagePathvannghe . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupvannghe">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagevannghes as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/vannghe/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupvannghe"></div>
+                                                    <div class="swiper-button-prev-popupvannghe"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Văn nghệ</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipervannghe">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagevannghes as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/vannghe/' . basename($image)) }}"
+                                                                alt="Ảnh vannghe" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                            <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                            `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipervannghe", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupvannghe = new Swiper(".mySwiperpopupvannghe", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupvannghe",
+                                        prevEl: ".swiper-button-prev-popupvannghe",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupvannghe = document.getElementById("popupvannghe");
+                    const closepopupvannghe = document.getElementById("closepopupvannghe");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupvannghe"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupvannghe.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupvannghe.addEventListener("click", function() {
+                        popupvannghe.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupvannghe.addEventListener("click", function(event) {
+                        if (event.target === popupvannghe) {
+                            popupvannghe.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
         </div>
 
     </section>
@@ -1553,7 +2400,7 @@
 
             <div class="swiper mySwiper3">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popuphoptac">
                         <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1564,7 +2411,7 @@
                             Hợp tác quốc tế
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupduan">
                         <img src="{{ asset('newhome/album/dự án.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1575,7 +2422,7 @@
                             Triển khai dự án
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupdieutra">
                         <img src="{{ asset('newhome/album/điều tra.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1586,7 +2433,7 @@
                             Điều tra thực địa
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popuptaphuan">
                         <img src="{{ asset('newhome/album/tạp huấn.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1597,7 +2444,7 @@
                             Tập huấn công nghệ
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupnckh">
                         <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}"
                             class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
                         <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
@@ -1616,6 +2463,763 @@
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-3">
                 ❯
             </button>
+        </div>
+
+
+        <!-- popuphoptac - Hợp tác quốc tế -->
+        <div id="popuphoptac"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopuphoptac"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        KHOA HỌC & CÔNG NGHỆ
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathhoptac = public_path('newhome/album/hoptac/');
+                                            $imagehoptacs = glob(
+                                                $imagePathhoptac . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopuphoptac">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagehoptacs as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/hoptac/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popuphoptac"></div>
+                                                    <div class="swiper-button-prev-popuphoptac"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Hợp tác quốc tế</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperhoptac">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagehoptacs as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/hoptac/' . basename($image)) }}"
+                                                                alt="Ảnh hoptac" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperhoptac", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopuphoptac = new Swiper(".mySwiperpopuphoptac", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popuphoptac",
+                                        prevEl: ".swiper-button-prev-popuphoptac",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popuphoptac = document.getElementById("popuphoptac");
+                    const closepopuphoptac = document.getElementById("closepopuphoptac");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popuphoptac"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popuphoptac.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopuphoptac.addEventListener("click", function() {
+                        popuphoptac.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popuphoptac.addEventListener("click", function(event) {
+                        if (event.target === popuphoptac) {
+                            popuphoptac.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupduan - Triển khai dự án -->
+        <div id="popupduan"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupduan" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        KHOA HỌC & CÔNG NGHỆ
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathduan = public_path('newhome/album/duan/');
+                                            $imageduans = glob(
+                                                $imagePathduan . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupduan">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imageduans as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupduan"></div>
+                                                    <div class="swiper-button-prev-popupduan"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Triển khai dự án</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperduan">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imageduans as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
+                                                                alt="Ảnh duan" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                    <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                    `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperduan", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupduan = new Swiper(".mySwiperpopupduan", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupduan",
+                                        prevEl: ".swiper-button-prev-popupduan",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupduan = document.getElementById("popupduan");
+                    const closepopupduan = document.getElementById("closepopupduan");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupduan"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupduan.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupduan.addEventListener("click", function() {
+                        popupduan.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupduan.addEventListener("click", function(event) {
+                        if (event.target === popupduan) {
+                            popupduan.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupdieutra - Điều tra thực địa -->
+        <div id="popupdieutra"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupdieutra"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        KHOA HỌC & CÔNG NGHỆ
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathdieutra = public_path('newhome/album/dieutra/');
+                                            $imagedieutras = glob(
+                                                $imagePathdieutra . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupdieutra">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagedieutras as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/dieutra/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupdieutra"></div>
+                                                    <div class="swiper-button-prev-popupdieutra"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Điều tra thực địa</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwiperdieutra">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagedieutras as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/dieutra/' . basename($image)) }}"
+                                                                alt="Ảnh dieutra"
+                                                                class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                        <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                        `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwiperdieutra", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupdieutra = new Swiper(".mySwiperpopupdieutra", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupdieutra",
+                                        prevEl: ".swiper-button-prev-popupdieutra",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupdieutra = document.getElementById("popupdieutra");
+                    const closepopupdieutra = document.getElementById("closepopupdieutra");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupdieutra"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupdieutra.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupdieutra.addEventListener("click", function() {
+                        popupdieutra.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupdieutra.addEventListener("click", function(event) {
+                        if (event.target === popupdieutra) {
+                            popupdieutra.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popuptaphuan - Tập huấn công nghệ -->
+        <div id="popuptaphuan"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopuptaphuan"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        KHOA HỌC & CÔNG NGHỆ
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathtaphuan = public_path('newhome/album/taphuan/');
+                                            $imagetaphuans = glob(
+                                                $imagePathtaphuan . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopuptaphuan">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagetaphuans as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/taphuan/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popuptaphuan"></div>
+                                                    <div class="swiper-button-prev-popuptaphuan"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Tập huấn công nghệ</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipertaphuan">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagetaphuans as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/taphuan/' . basename($image)) }}"
+                                                                alt="Ảnh taphuan"
+                                                                class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                            <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                            `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipertaphuan", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopuptaphuan = new Swiper(".mySwiperpopuptaphuan", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popuptaphuan",
+                                        prevEl: ".swiper-button-prev-popuptaphuan",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popuptaphuan = document.getElementById("popuptaphuan");
+                    const closepopuptaphuan = document.getElementById("closepopuptaphuan");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popuptaphuan"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popuptaphuan.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopuptaphuan.addEventListener("click", function() {
+                        popuptaphuan.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popuptaphuan.addEventListener("click", function(event) {
+                        if (event.target === popuptaphuan) {
+                            popuptaphuan.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- popupnckh - Nghiên cứu khoa học -->
+        <div id="popupnckh"
+            class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
+            <div class="bg-white md:p-4 p-2 rounded-lg w-full max-w-4xl relative">
+                <button id="closepopupnckh"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">
+                    ✖
+                </button>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto">
+                            <div>
+                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                    <svg fill="currentColor"
+                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                        viewBox="0 0 120 36">
+                                        <path
+                                            d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                        </path>
+                                    </svg>
+                                    <h3
+                                        class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                        KHOA HỌC & CÔNG NGHỆ
+                                    </h3>
+                                </div>
+                                <div class="border border-black rounded-lg rounded-l-none">
+                                    <div class="h-full">
+                                        @php
+                                            $imagePathnckh = public_path('newhome/album/nckh/');
+                                            $imagenckhs = glob(
+                                                $imagePathnckh . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                                GLOB_BRACE,
+                                            );
+                                        @endphp
+
+                                        <div class="mt-3 row-span-1 h-full">
+                                            <div class="max-w-full overflow-auto content-container">
+                                                <!-- Swiper -->
+                                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                    class="swiper mySwiperpopupnckh">
+                                                    <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                        <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                        @foreach ($imagenckhs as $image)
+                                                            <div class="swiper-slide">
+                                                                <img src="{{ asset('newhome/album/nckh/' . basename($image)) }}"
+                                                                    class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <div class="swiper-button-next-popupnckh"></div>
+                                                    <div class="swiper-button-prev-popupnckh"></div>
+                                                </div>
+                                            </div>
+                                            <h3
+                                                class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                                </div>
+                                                <span class="px-2 font-serif italic">Nghiên cứu khoa học</span>
+                                                <div
+                                                    class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                                </div>
+                                            </h3>
+
+                                            <!-- Thumbnails -->
+                                            <div thumbsSlider="" class="swiper mySwipernckh">
+                                                <div class="swiper-wrapper p-2">
+                                                    @foreach ($imagenckhs as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/nckh/' . basename($image)) }}"
+                                                                alt="Ảnh nckh" class="md:h-32 h-[108px] w-full" />
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script>
+                                            function playVideo(element, videoUrl) {
+                                                element.innerHTML = `
+                                                                                <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+                                                                                `;
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Initialize Swiper -->
+                            <script>
+                                var swiperThumbs = new Swiper(".mySwipernckh", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    slidesPerView: 2, // Hiển thị 2 thumbnail trên mobile
+                                    breakpoints: {
+                                        768: {
+                                            slidesPerView: 4, // Hiển thị 4 thumbnail trên desktop
+                                        }
+                                    },
+                                    freeMode: true,
+                                    watchSlidesProgress: true,
+                                });
+
+                                var swiperpopupnckh = new Swiper(".mySwiperpopupnckh", {
+                                    loop: true,
+                                    spaceBetween: 10,
+                                    navigation: {
+                                        nextEl: ".swiper-button-next-popupnckh",
+                                        prevEl: ".swiper-button-prev-popupnckh",
+                                    },
+                                    thumbs: {
+                                        swiper: swiperThumbs, // Đúng là phải dùng swiperThumbs
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const popupnckh = document.getElementById("popupnckh");
+                    const closepopupnckh = document.getElementById("closepopupnckh");
+                    const openPopupButtons = document.querySelectorAll(
+                        ".open-popup-popupnckh"); // Chọn tất cả nút mở popup
+
+                    // Mở popup khi click vào bất kỳ phần tử nào có class "open-popup"
+                    openPopupButtons.forEach(button => {
+                        button.addEventListener("click", function() {
+                            popupnckh.classList.remove("hidden"); // Hiện popup
+                        });
+                    });
+
+                    // Đóng popup khi nhấn nút "X"
+                    closepopupnckh.addEventListener("click", function() {
+                        popupnckh.classList.add("hidden"); // Ẩn popup
+                    });
+
+                    // Đóng popup khi click bên ngoài nội dung
+                    popupnckh.addEventListener("click", function(event) {
+                        if (event.target === popupnckh) {
+                            popupnckh.classList.add("hidden"); // Ẩn popup
+                        }
+                    });
+                });
+            </script>
         </div>
     </section>
 
@@ -1734,7 +3338,8 @@
                 <!-- Form Đăng Ký -->
                 <div class="w-full">
                     <h2 class="text-2xl font-bold text-center mb-2 text-green-600">ĐĂNG KÝ NGAY</h2>
-                    <p class="text-sm text-center mb-4">Vui lòng điền đầy đủ thông tin vào biểu mẫu dưới đây. Chúng tôi
+                    <p class="text-sm text-center mb-4">Vui lòng điền đầy đủ thông tin vào biểu mẫu dưới đây. Chúng
+                        tôi
                         sẽ liên hệ với bạn sớm nhất</p>
 
                     <form action="{{ route('dangky.store') }}" method="POST" class="space-y-3">
@@ -1748,8 +3353,10 @@
                             class="input input-bordered w-full">
                         <p id="error-phone" class="text-red-500 text-sm hidden"></p>
 
-                        <label class="block text-sm font-medium">Ngày sinh <span class="text-red-500">*</span></label>
-                        <input type="date" name="birthday" id="birthday" class="input input-bordered w-full">
+                        <label class="block text-sm font-medium">Ngày sinh <span
+                                class="text-red-500">*</span></label>
+                        <input type="date" name="birthday" id="birthday"
+                            class="input input-bordered w-full">
                         <p id="error-birthday" class="text-red-500 text-sm hidden"></p>
 
 
@@ -1766,7 +3373,8 @@
                             <div class="mb-4">
                                 <label class="block text-sm font-medium">Chọn tỉnh <span
                                         class="text-red-500">*</span></label>
-                                <select id="province" name="province" class="select select-bordered w-full select2">
+                                <select id="province" name="province"
+                                    class="select select-bordered w-full select2">
                                     <option value="" disabled selected>Chọn tỉnh</option>
                                 </select>
                                 <p id="error-province" class="text-red-500 text-sm hidden"></p>
@@ -1786,9 +3394,10 @@
 
                         <select id="major" name="major" class="select select-bordered w-full">
                             <option value="" disabled selected>Chọn ngành học</option>
-                            <option>Công nghệ và đổi mới sáng tạo</option>
-                            <option>Ứng dụng trí tuệ nhân tạo</option>
+
+                            <option>Trí tuệ nhân tạo</option>
                             <option>Quản lý thông tin</option>
+                            <option>Công nghệ và đổi mới sáng tạo</option>
                         </select>
                         <p id="error-major" class="text-red-500 text-sm hidden"></p>
 
@@ -2030,7 +3639,8 @@
                                 <li>
                                     <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
                                     <span>Trường Đại học Nông Lâm, Đại học Thái Nguyên</span>
-                                    <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên, Tỉnh
+                                    <span class="block md:ml-[76px]">Tổ 10, Xã Quyết Thắng, Thành phố Thái Nguyên,
+                                        Tỉnh
                                         Thái Nguyên</span>
                                 </li>
                             </ul>
@@ -2049,8 +3659,8 @@
                     </div>
 
                     <p class="flex font-semibold mt-4">
-                        <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img" focusable="false"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img"
+                            focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -2073,7 +3683,8 @@
                                 </a>
                             </li>
                             <li class="">
-                                <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow" target="_blank">
+                                <a title="Twitter" href="https://zalo.me/0904031103" rel="nofollow"
+                                    target="_blank">
                                     <img alt="Zalo" class="size-7 rounded-lg bg-blue-500"
                                         src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png"></a>
                             </li>
@@ -2160,8 +3771,8 @@
                     <div class="md:mt-5">
                         <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
                         <div class="is-divider small"></div>
-                        <div class="fb-page mt-4 w-[281px]" data-href="https://www.facebook.com/girctuaf" data-tabs="timeline"
-                            data-width="281" data-height="149" data-small-header="false"
+                        <div class="fb-page mt-4 w-[281px]" data-href="https://www.facebook.com/girctuaf"
+                            data-tabs="timeline" data-width="281" data-height="149" data-small-header="false"
                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"
                             style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;">
                         </div>
@@ -2175,14 +3786,15 @@
 
                 </div>
             </div>
-            <div class="container mx-auto px-12 gap-5">
+            <div class="container mx-auto px-12 text-sm">
                 <hr class="border-t-2">
 
-                <div class="md:flex py-1 gap-8">
+                <div class="md:flex py-1 gap-4">
                     <p><strong><i class="far fa-phone-alt"></i> Hotline:</strong> 0904031103</p>
                     <p><strong><i class="far fa-envelope"></i> Email: </strong> girc.tuaf@gmail.com</p>
                     <p><strong><i class="far fa-globe"></i> Website:</strong> girc.tuaf.edu.vn</p>
-                    <p>© 2025 GeoInformatics Research Center</p>
+
+                    <x-website.counter />
                 </div>
             </div>
         </footer>
@@ -2251,7 +3863,8 @@
                     <div class="phone-vr-circle-fill"></div>
                     <div class="phone-vr-img-circle">
                         <a target="_blank" href="https://zalo.me/0904031103" class="zalo_loading">
-                            <img alt="Zalo" src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png" />
+                            <img alt="Zalo"
+                                src="https://httmaster.edu.vn/wp-content/plugins/zalo/img/zalo.png" />
                             <span style="display:none;">https://zalo.me/0904031103</span>
                         </a>
                     </div>
@@ -2270,6 +3883,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- end phone -->
         </div><!-- end v3 class gom-all-in-one -->
     </div>
