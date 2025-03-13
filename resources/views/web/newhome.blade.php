@@ -884,14 +884,24 @@
                         });
                     });
 
+                    // Hàm dừng video
+                    function stopVideo() {
+                        const iframe = popupmoitruonghoctap.querySelector("iframe");
+                        if (iframe) {
+                            iframe.src = iframe.src; // Reset lại src để dừng video
+                        }
+                    }
+
                     // Đóng popup khi nhấn nút "X"
                     closepopupmoitruonghoctap.addEventListener("click", function() {
+                        stopVideo();
                         popupmoitruonghoctap.classList.add("hidden"); // Ẩn popup
                     });
 
                     // Đóng popup khi click bên ngoài nội dung
                     popupmoitruonghoctap.addEventListener("click", function(event) {
                         if (event.target === popupmoitruonghoctap) {
+                            stopVideo();
                             popupmoitruonghoctap.classList.add("hidden"); // Ẩn popup
                         }
                     });
@@ -982,10 +992,10 @@
                                                     <div class="swiper-slide">
                                                         <img src="{{ asset('videos/video_thuvien.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
-                                                            <div class="absolute inset-0 flex items-center justify-center">
-                                                                <i
-                                                                    class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
-                                                            </div>
+                                                        <div class="absolute inset-0 flex items-center justify-center">
+                                                            <i
+                                                                class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                        </div>
                                                     </div>
                                                     @foreach ($imagelibrarys as $image)
                                                         <div class="swiper-slide">
@@ -1054,14 +1064,24 @@
                         });
                     });
 
+                    // Hàm dừng video
+                    function stopVideo() {
+                        const iframe = popuplibrary.querySelector("iframe");
+                        if (iframe) {
+                            iframe.src = iframe.src; // Reset lại src để dừng video
+                        }
+                    }
+
                     // Đóng popup khi nhấn nút "X"
                     closepopuplibrary.addEventListener("click", function() {
+                        stopVideo();
                         popuplibrary.classList.add("hidden"); // Ẩn popup
                     });
 
                     // Đóng popup khi click bên ngoài nội dung
                     popuplibrary.addEventListener("click", function(event) {
                         if (event.target === popuplibrary) {
+                            stopVideo();
                             popuplibrary.classList.add("hidden"); // Ẩn popup
                         }
                     });
@@ -1313,10 +1333,10 @@
                                                     <div class="swiper-slide">
                                                         <img src="{{ asset('videos/video_nhathethao.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
-                                                            <div class="absolute inset-0 flex items-center justify-center">
-                                                                <i
-                                                                    class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
-                                                            </div>
+                                                        <div class="absolute inset-0 flex items-center justify-center">
+                                                            <i
+                                                                class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                        </div>
                                                     </div>
                                                     @foreach ($imagesports as $image)
                                                         <div class="swiper-slide">
@@ -1386,14 +1406,24 @@
                         });
                     });
 
+                    // Hàm dừng video
+                    function stopVideo() {
+                        const iframe = popupsport.querySelector("iframe");
+                        if (iframe) {
+                            iframe.src = iframe.src; // Reset lại src để dừng video
+                        }
+                    }
+
                     // Đóng popup khi nhấn nút "X"
                     closepopupsport.addEventListener("click", function() {
+                        stopVideo();
                         popupsport.classList.add("hidden"); // Ẩn popup
                     });
 
                     // Đóng popup khi click bên ngoài nội dung
                     popupsport.addEventListener("click", function(event) {
                         if (event.target === popupsport) {
+                            stopVideo();
                             popupsport.classList.add("hidden"); // Ẩn popup
                         }
                     });
@@ -1552,14 +1582,24 @@
                         });
                     });
 
+                    // Hàm dừng video
+                    function stopVideo() {
+                        const iframe = popupktx.querySelector("iframe");
+                        if (iframe) {
+                            iframe.src = iframe.src; // Reset lại src để dừng video
+                        }
+                    }
+
                     // Đóng popup khi nhấn nút "X"
                     closepopupktx.addEventListener("click", function() {
+                        stopVideo();
                         popupktx.classList.add("hidden"); // Ẩn popup
                     });
 
                     // Đóng popup khi click bên ngoài nội dung
                     popupktx.addEventListener("click", function(event) {
                         if (event.target === popupktx) {
+                            stopVideo();
                             popupktx.classList.add("hidden"); // Ẩn popup
                         }
                     });
