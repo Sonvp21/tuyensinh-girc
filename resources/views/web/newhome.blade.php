@@ -774,7 +774,7 @@
                                                         <!-- Video -->
                                                         <div class="swiper-slide relative group"
                                                             onclick="playVideo(this, 'https://drive.google.com/file/d/1Jze8Ntl0_mM94-QMEj9_ZyiQqWZpvdix/preview')">
-                                                            <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
+                                                            <img src="{{ asset('videos/video_giangduong.jpg') }}"
                                                                 class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
                                                             <div
                                                                 class="absolute inset-0 flex items-center justify-center">
@@ -809,8 +809,12 @@
                                             <div thumbsSlider="" class="swiper mySwiperClassRoom">
                                                 <div class="swiper-wrapper p-2">
                                                     <div class="swiper-slide">
-                                                        <img src="{{ asset('videos/avatar_video_giangduong.jpg') }}"
+                                                        <img src="{{ asset('videos/video_giangduong.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
+                                                        <div class="absolute inset-0 flex items-center justify-center">
+                                                            <i
+                                                                class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                        </div>
                                                     </div>
                                                     @foreach ($imageClassRooms as $image)
                                                         <div class="swiper-slide">
@@ -941,7 +945,7 @@
                                                         <!-- Video -->
                                                         <div class="swiper-slide relative group"
                                                             onclick="playVideo(this, 'https://drive.google.com/file/d/1hIwfBPVLRyyWu4TzX7pmFHUL5p9VEW6m/preview')">
-                                                            <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
+                                                            <img src="{{ asset('videos/video_thuvien.jpg') }}"
                                                                 class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
                                                             <div
                                                                 class="absolute inset-0 flex items-center justify-center">
@@ -976,8 +980,12 @@
                                             <div thumbsSlider="" class="swiper mySwiperlibrary">
                                                 <div class="swiper-wrapper p-2">
                                                     <div class="swiper-slide">
-                                                        <img src="{{ asset('videos/avatar_video_thuvien.jpg') }}"
+                                                        <img src="{{ asset('videos/video_thuvien.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
+                                                            <div class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
                                                     </div>
                                                     @foreach ($imagelibrarys as $image)
                                                         <div class="swiper-slide">
@@ -1106,7 +1114,7 @@
                                                     <div class="swiper-wrapper" style="text-align: -webkit-center;">
                                                         <!-- Video -->
                                                         <div class="swiper-slide relative group">
-                                                            <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
+                                                            <img src="{{ asset('videos/video_maytinh.jpg') }}"
                                                                 class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
                                                         </div>
                                                         <!-- Duyệt toàn bộ ảnh trong thư mục -->
@@ -1136,7 +1144,7 @@
                                             <div thumbsSlider="" class="swiper mySwipercomputer">
                                                 <div class="swiper-wrapper p-2">
                                                     <div class="swiper-slide">
-                                                        <img src="{{ asset('videos/avatar_video_maytinh.jpg') }}"
+                                                        <img src="{{ asset('videos/video_maytinh.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
                                                     </div>
                                                     @foreach ($imagecomputers as $image)
@@ -1268,7 +1276,7 @@
                                                         <!-- Video -->
                                                         <div class="swiper-slide relative group"
                                                             onclick="playVideo(this, 'https://drive.google.com/file/d/1YS3jF-B68Yf7ensNj_IPd2LeZfmb6Bl7/preview')">
-                                                            <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
+                                                            <img src="{{ asset('videos/video_nhathethao.jpg') }}"
                                                                 class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
                                                             <div
                                                                 class="absolute inset-0 flex items-center justify-center">
@@ -1303,8 +1311,12 @@
                                             <div thumbsSlider="" class="swiper mySwipersport">
                                                 <div class="swiper-wrapper p-2">
                                                     <div class="swiper-slide">
-                                                        <img src="{{ asset('videos/avatar_video_nhathethao.jpg') }}"
+                                                        <img src="{{ asset('videos/video_nhathethao.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
+                                                            <div class="absolute inset-0 flex items-center justify-center">
+                                                                <i
+                                                                    class="far fa-play-circle text-white text-3xl opacity-90 group-hover:opacity-100 transition"></i>
+                                                            </div>
                                                     </div>
                                                     @foreach ($imagesports as $image)
                                                         <div class="swiper-slide">
@@ -1435,7 +1447,7 @@
                                                         <!-- Video -->
                                                         <div class="swiper-slide relative group"
                                                             onclick="playVideo(this, 'https://drive.google.com/file/d/1ws7YjuE5pQfqeS6acwfBQFccs4D-c5gC/preview')">
-                                                            <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
+                                                            <img src="{{ asset('videos/video_nhao.jpg') }}"
                                                                 class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer">
                                                             <div
                                                                 class="absolute inset-0 flex items-center justify-center">
@@ -1470,7 +1482,7 @@
                                             <div thumbsSlider="" class="swiper mySwiperktx">
                                                 <div class="swiper-wrapper p-2">
                                                     <div class="swiper-slide">
-                                                        <img src="{{ asset('videos/avatar_video_nhao.jpg') }}"
+                                                        <img src="{{ asset('videos/video_nhao.jpg') }}"
                                                             alt="Video 1" class="md:h-32 h-[108px]" />
                                                     </div>
                                                     @foreach ($imagektxs as $image)
