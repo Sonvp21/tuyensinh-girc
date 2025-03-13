@@ -8,7 +8,7 @@
 <li class="hover:text-white flex gap-1 items-center md:justify-center ml-3">
     <div class="inline-flex items-center gap-1 w-max">
         {{ svg('heroicon-o-clock', 'size-4 flex-none') }}
-        <p class="flex-grow contents">Hôm nay: {{ (int) $today + 1232 }}</p>
+        <p class="flex-grow contents">Hôm nay: {{ (int) $today + 1262 }}</p>
     </div>
 </li>
 <li class="hover:text-white flex gap-1 items-center md:justify-center ml-3">

@@ -287,7 +287,8 @@
     <div id="popupQLTT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupQLTT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
+            <button id="closePopupQLTT"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
@@ -330,7 +331,8 @@
     <div id="popupDMST"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupDMST" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
+            <button id="closePopupDMST"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
@@ -373,7 +375,8 @@
     <div id="popupTTNT"
         class="md:p-0 p-4 fixed inset-0 bg-black bg-opacity-50 flex z-[999] items-center justify-center hidden">
         <div class="bg-white pl-2 pb-2 p-2 pr-6 rounded-lg max-w-4xl relative">
-            <button id="closePopupTTNT" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
+            <button id="closePopupTTNT"
+                class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl -p-2 z-10">
                 ✖
             </button>
             <div class="flex flex-col md:flex-row gap-2">
@@ -2648,79 +2651,84 @@
                     ✖
                 </button>
                 <div class="flex flex-col md:flex-row gap-2">
-                    <div class="w-full flex p-6">
-                        <div class="max-h-[90vh] overflow-y-auto"overflow-y-auto scroll-container <div
-                            class="bg-lime-500 inline-block relative py-2 px-2">
-                            <svg fill="currentColor"
-                                class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
-                                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
-                                shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
-                                viewBox="0 0 120 36">
-                                <path
-                                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
-                                </path>
-                            </svg>
-                            <h3
-                                class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                KHOA HỌC & CÔNG NGHỆ
-                            </h3>
-                        </div>
-                        <div class="border border-black rounded-lg rounded-l-none">
-                            <div class="h-full">
-                                @php
-                                    $imagePathduan = public_path('newhome/album/duan/');
-                                    $imageduans = glob($imagePathduan . '*.{jpg,jpeg,png,gif,webp,JPG}', GLOB_BRACE);
-                                @endphp
+                    <div class="w-full flex">
+                        <div class="max-h-[90vh] overflow-y-auto scroll-container">
 
-                                <div class="mt-3 row-span-1 h-full">
-                                    <div class="max-w-full overflow-auto content-container">
-                                        <!-- Swiper -->
-                                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                                            class="swiper mySwiperpopupduan">
-                                            <div class="swiper-wrapper" style="text-align: -webkit-center;">
-                                                <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                            <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                <svg fill="currentColor"
+                                    class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                    style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                    viewBox="0 0 120 36">
+                                    <path
+                                        d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                                    </path>
+                                </svg>
+                                <h3
+                                    class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                                    KHOA HỌC & CÔNG NGHỆ
+                                </h3>
+                            </div>
+                            <div class="border border-black rounded-lg rounded-l-none">
+                                <div class="h-full">
+                                    @php
+                                        $imagePathduan = public_path('newhome/album/duan/');
+                                        $imageduans = glob(
+                                            $imagePathduan . '*.{jpg,jpeg,png,gif,webp,JPG}',
+                                            GLOB_BRACE,
+                                        );
+                                    @endphp
+
+                                    <div class="mt-3 row-span-1 h-full">
+                                        <div class="max-w-full overflow-auto content-container">
+                                            <!-- Swiper -->
+                                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                                class="swiper mySwiperpopupduan">
+                                                <div class="swiper-wrapper" style="text-align: -webkit-center;">
+                                                    <!-- Duyệt toàn bộ ảnh trong thư mục -->
+                                                    @foreach ($imageduans as $image)
+                                                        <div class="swiper-slide">
+                                                            <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
+                                                                class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                                <div class="swiper-button-next-popupduan"></div>
+                                                <div class="swiper-button-prev-popupduan"></div>
+                                            </div>
+                                        </div>
+                                        <h3
+                                            class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
+                                            <div
+                                                class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
+                                            </div>
+                                            <span class="px-2 font-serif italic">Triển khai dự án</span>
+                                            <div
+                                                class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
+                                            </div>
+                                        </h3>
+
+                                        <!-- Thumbnails -->
+                                        <div thumbsSlider="" class="swiper mySwiperduan">
+                                            <div class="swiper-wrapper p-2">
                                                 @foreach ($imageduans as $image)
                                                     <div class="swiper-slide">
                                                         <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
-                                                            class="w-full max-w-[640px] h-[24vh] md:h-[400px] object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg">
+                                                            alt="Ảnh duan" class="md:h-32 h-[108px] w-full" />
                                                     </div>
                                                 @endforeach
                                             </div>
-                                            <div class="swiper-button-next-popupduan"></div>
-                                            <div class="swiper-button-prev-popupduan"></div>
                                         </div>
                                     </div>
-                                    <h3
-                                        class="font-bold text-lg text-center font-times tracking-wide relative flex items-center justify-center">
-                                        <div
-                                            class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
-                                        </div>
-                                        <span class="px-2 font-serif italic">Triển khai dự án</span>
-                                        <div
-                                            class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
-                                        </div>
-                                    </h3>
 
-                                    <!-- Thumbnails -->
-                                    <div thumbsSlider="" class="swiper mySwiperduan">
-                                        <div class="swiper-wrapper p-2">
-                                            @foreach ($imageduans as $image)
-                                                <div class="swiper-slide">
-                                                    <img src="{{ asset('newhome/album/duan/' . basename($image)) }}"
-                                                        alt="Ảnh duan" class="md:h-32 h-[108px] w-full" />
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <script>
-                                    function playVideo(element, videoUrl) {
-                                        element.innerHTML = `
+                                    <script>
+                                        function playVideo(element, videoUrl) {
+                                            element.innerHTML = `
                                                                     <iframe src="${videoUrl}" class="w-full max-w-[640px] h-[24vh] md:h-[400px]" allow="autoplay" frameborder="0" allowfullscreen></iframe>
                                                                     `;
-                                    }
-                                </script>
+                                        }
+                                    </script>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3643,7 +3651,7 @@
             }
         }
     </style>
-    <div class="footer-bg bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[430px] flex flex-col justify-end mt-4"
+    <div class="footer-bg bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[440px] flex flex-col justify-end mt-4"
         style="background-image: url('{{ asset('/newhome/bg_footer.png') }}');">
 
         <footer id="footer" class="text-white">
