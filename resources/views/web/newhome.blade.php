@@ -100,7 +100,6 @@
             }
 
             .animate-blink-color {
-                font-size: 24px;
                 font-weight: bold;
                 color: #FF0000;
                 text-shadow: 2px 2px 4px rgba(236, 236, 236, 0.3);
@@ -108,121 +107,142 @@
                 animation: my 700ms infinite;
             }
         </style>
-        <h2 class="mt-5 uppercase font-bold text-xl animate-blink-color">
+        <h2 class="mt-5 uppercase font-bold md:text-2xl text-lg animate-blink-color">
             Lý do các bạn 2k7 nên lựa chọn ngành học Công nghệ thông tin?
         </h2>
 
     </section>
-    <section class="container mx-auto px-12 relative hidden md:flex">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
 
+    <section class="container mx-auto px-1 md:px-12 relative flex flex-col">
+        <!-- Hình ảnh nền -->
+        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-56 md:h-auto">
+
+        <style>
+            #content-container {
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+
+            #content-container::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
         <!-- Chữ chồng lên ảnh -->
-        <div class="absolute inset-0 mx-4 flex flex-col items-center justify-center p-6 space-y-1 text-justify">
-            <!-- Đoạn 2 -->
-            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
-                <p>
-                    <a href="https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Quyet-dinh-749-QD-TTg-2020-phe-duyet-Chuong-trinh-Chuyen-doi-so-quoc-gia-444136.aspx"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Quyết định số 749/QĐ-TTg</a>
-                    ngày 03/06/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm
-                    2030" với mục tiêu phát triển chính phủ số, kinh tế số, xã hội số, hình thành các doanh nghiệp số
-                    tiên phong và nâng cao năng lực cạnh tranh quốc gia trong kỷ nguyên số.
-                </p>
+        <div class="absolute inset-0 md:mx-4 flex flex-col items-center justify-center md:p-6 p-5 text-justify">
+            <div id="content-container" class="overflow-hidden relative mb-3 md:max-h-[245px] overflow-y-auto">
+                <!-- Các đoạn văn bản -->
+                <div class="content-item ml-2 pr-4 md:ml-8 md:pr-12 text-base md:text-lg leading-relaxed flex">
+                    <img src="{{ asset('newhome/bullet.png') }}" class="size-6 mt-[2px]" alt="">
+                    <p>
+                        <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-57-nqtw-ngay-22122024-cua-bo-chinh-tri-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-11162"
+                            class="link link-primary" target="_blank" rel="noopener noreferrer">
+                            Nghị quyết số 57-NQ/TW</a>
+                        ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa học, công nghệ, đổi mới sáng tạo và
+                        chuyển
+                        đổi số quốc gia là đột phá quan trọng hàng đầu, nhằm tạo động lực chính để phát triển lực lượng
+                        sản
+                        xuất hiện đại, hoàn thiện quan hệ sản xuất, đổi mới quản trị quốc gia, phát triển kinh tế - xã
+                        hội,
+                        ngăn chặn nguy cơ tụt hậu và đưa đất nước phát triển bứt phá trong kỷ nguyên mới.
+                    </p>
+                </div>
+                <div class="content-item ml-2 pr-4 md:ml-8 md:pr-12 text-base md:text-lg leading-relaxed flex">
+                    <img src="{{ asset('newhome/bullet.png') }}" class="size-6 mt-[2px]" alt="">
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=PUAxnEadN4M" class="link link-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            Tổng Bí thư</a> chủ trì phiên họp về phát triển khoa học, công nghệ, đổi mới
+                        sáng tạo, chuyển đổi số.
+                    </p>
+                </div>
+                <div class="content-item ml-2 pr-4 md:ml-8 md:pr-12 text-base md:text-lg leading-relaxed flex">
+                    <img src="{{ asset('newhome/bullet.png') }}" class="size-6 mt-[2px]" alt="">
+                    <p>
+                        <a href="https://www.nait.vn/cds/thu-tuong-chuyen-doi-so-phai-gan-ket-chat-che-voi-cuoc-cach-mang-ve-sap-xep-tinh-gon-bo-may-hanh-chinh-1548.html"
+                            class="link link-primary" target="_blank" rel="noopener noreferrer">
+                            Thủ tướng Chính phủ:</a> Chuyển đổi số phải gắn kết chặt chẽ với cuộc “cách mạng” về sắp
+                        xếp, tinh gọn bộ máy hành chính.
+                    </p>
+                </div>
+
+                <div class="content-item ml-2 pr-4 md:ml-8 md:pr-12 text-base md:text-lg leading-relaxed flex">
+                    <img src="{{ asset('newhome/bullet.png') }}" class="size-6 mt-[2px]" alt="">
+                    <p>
+                        <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat/quyet-dinh-so-942qd-ttg-ngay-1562021-cua-thu-tuong-chinh-phu-phe-duyet-chien-luoc-phat-trien-chinh-phu-dien-tu-huong-toi-chinh-phu-7529"
+                            class="link link-primary" target="_blank" rel="noopener noreferrer">
+                            Quyết định số 942/QĐ-TTg</a>
+                        ngày 15/6/2021 của Thủ tướng Chính phủ về việc phê duyệt Chiến lược phát triển Chính phủ điện tử
+                        hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030.
+                    </p>
+                </div>
+                <div class="content-item ml-2 pr-4 md:ml-8 md:pr-12 text-base md:text-lg leading-relaxed flex">
+                    <img src="{{ asset('newhome/bullet.png') }}" class="size-6 mt-[2px]" alt="">
+                    <p>
+                        <a href="https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Quyet-dinh-749-QD-TTg-2020-phe-duyet-Chuong-trinh-Chuyen-doi-so-quoc-gia-444136.aspx"
+                            class="link link-primary" target="_blank" rel="noopener noreferrer">
+                            Quyết định số 749/QĐ-TTg</a>
+                        ngày 03/06/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm
+                        2030" với mục tiêu phát triển chính phủ số, kinh tế số, xã hội số, hình thành các doanh nghiệp
+                        số tiên phong và nâng cao năng lực cạnh tranh quốc gia trong kỷ nguyên số.
+                    </p>
+                </div>
             </div>
 
-            <!-- Đoạn 3 -->
-            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
-                <p>
-                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat/quyet-dinh-so-942qd-ttg-ngay-1562021-cua-thu-tuong-chinh-phu-phe-duyet-chien-luoc-phat-trien-chinh-phu-dien-tu-huong-toi-chinh-phu-7529"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Quyết định số 942/QĐ-TTg</a>
-                    ngày 15/6/2021 của Thủ tướng Chính phủ về việc phê duyệt Chiến lược phát triển Chính phủ điện tử
-                    hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030.
-                </p>
-            </div>
-            <!-- Đoạn 1 -->
-            <div class="ml-8 pr-12 text-sm md:text-sm lg:text-lg leading-relaxed flex">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-8" alt="">
-                <p>
-                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-57-nqtw-ngay-22122024-cua-bo-chinh-tri-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-11162"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Nghị quyết số 57-NQ/TW</a>
-                    ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển
-                    đổi số quốc gia là đột phá quan trọng hàng đầu, nhằm tạo động lực chính để phát triển lực lượng sản
-                    xuất hiện đại, hoàn thiện quan hệ sản xuất, đổi mới quản trị quốc gia, phát triển kinh tế - xã hội,
-                    ngăn chặn nguy cơ tụt hậu và đưa đất nước phát triển bứt phá trong kỷ nguyên mới.
-                </p>
-            </div>
+            <!-- Nút bấm hiển thị thêm -->
+            <button id="scrollBtn"
+                class="absolute bottom-0 bg-gray-200/30 hover:bg-gray-200/80 text-gray-600 hover:text-blue-500 px-4 py-2 text-center transition duration-300">
+                <i class="far fa-chevron-double-down"></i>
+            </button>
         </div>
     </section>
-    {{-- mobile  --}}
-    <section class="container mx-auto px-2 relative  flex md:hidden">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
 
-        <!-- Chữ chồng lên ảnh -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
-            <!-- Đoạn 2 -->
-            <div class="mx-2 text-xs leading-relaxed flex mr-4">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
-                <p>
-                    <a href="https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Quyet-dinh-749-QD-TTg-2020-phe-duyet-Chuong-trinh-Chuyen-doi-so-quoc-gia-444136.aspx"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Quyết định số 749/QĐ-TTg</a>
-                    ngày 03/06/2020 phê duyệt "Chương trình Chuyển đổi số quốc gia đến năm 2025, định hướng đến năm
-                    2030" với mục tiêu phát triển chính phủ số, kinh tế số, xã hội số...
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="container mx-auto px-2 relative  flex md:hidden">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
-        <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
-            <!-- Đoạn 3 -->
-            <div class="mx-2 text-xs leading-relaxed flex mr-4">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
-                <p>
-                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-quy-pham-phap-luat/quyet-dinh-so-942qd-ttg-ngay-1562021-cua-thu-tuong-chinh-phu-phe-duyet-chien-luoc-phat-trien-chinh-phu-dien-tu-huong-toi-chinh-phu-7529"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Quyết định số 942/QĐ-TTg</a>
-                    ngày 15/6/2021 của Thủ tướng Chính phủ về việc phê duyệt Chiến lược phát triển Chính phủ điện tử
-                    hướng tới Chính phủ số giai đoạn 2021-2025, định hướng đến năm 2030.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="container mx-auto px-2 relative flex md:hidden">
-        <!-- Hình ảnh nền -->
-        <img src="{{ asset('newhome/frame techono.png') }}" alt="Tech Frame" class="w-full h-auto">
+    <script>
+        document.getElementById("scrollBtn").addEventListener("click", function() {
+            let container = document.getElementById("content-container");
+            let maxScroll = container.scrollHeight - container.clientHeight;
 
-        <!-- Chữ chồng lên ảnh -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center px-2 space-y-2 text-justify">
-            <!-- Đoạn 1 -->
-            <div class="mx-2 text-xs leading-relaxed flex mr-4">
-                <img src="{{ asset('newhome/bullet.png') }}" class="size-6" alt="">
-                <p>
-                    <a href="https://tulieuvankien.dangcongsan.vn/he-thong-van-ban/van-ban-cua-dang/nghi-quyet-so-57-nqtw-ngay-22122024-cua-bo-chinh-tri-ve-dot-pha-phat-trien-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-11162"
-                        class="link link-primary font-bold" target="_blank" rel="noopener noreferrer">
-                        Nghị quyết số 57-NQ/TW</a> ngày 22/12/2024 của Bộ Chính trị xác định phát triển khoa
-                    học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia là đột phá quan trọng hàng đầu...
-                </p>
-            </div>
-        </div>
-    </section>
-    {{-- end mobile  --}}
+            if (container.scrollTop < maxScroll) {
+                // Cuộn xuống dần
+                container.scrollBy({
+                    top: 50,
+                    behavior: 'smooth'
+                });
+
+                // Nếu gần đến cuối, đổi nút thành cuộn lên
+                setTimeout(() => {
+                    if (container.scrollTop >= maxScroll - 50) {
+                        this.innerHTML = '<i class="far fa-chevron-double-up"></i>';
+                    }
+                }, 300);
+            } else {
+                // Nếu đang ở cuối -> cuộn lên đầu
+                container.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+                // Đổi lại nút thành cuộn xuống
+                setTimeout(() => {
+                    this.innerHTML = '<i class="far fa-chevron-double-down"></i>';
+                }, 300);
+            }
+        });
+    </script>
 
     <!-- Giới thiệu ngành học -->
     <section class="relative bg-[#E3F2FD] py-10">
         <div class="container mx-auto md:px-12">
             <div class="bg-white shadow-lg rounded-xl md:p-6 p-2">
                 <!-- Tiêu đề ở giữa -->
-                <div class="text-center text-[#0277BD] text-xl md:text-2xl font-bold p-4">
+                <div class="text-center text-[#0277BD] text-2xl md:text-3xl font-bold p-2">
                     CHUYÊN NGÀNH ĐÀO TẠO CÔNG NGHỆ THÔNG TIN, CHUYỂN ĐỔI SỐ
+                    <p class="text-[#F57C00] italic text-lg md:text-xl font-medium mt-2">
+                        "ĐƯỢC HỖ TRỢ BỞI CÁC TRƯỜNG ĐẠI HỌC HÀNG ĐẦU CỦA ĐÀI LOAN" <br>
+                        <span class="italic font-normal text-green-600">Chắc lý thuyết, giỏi thực hành - Sáng tạo để
+                            thành công!</span>
+                    </p>
                 </div>
+
 
                 <!-- Chứa ảnh theo hàng ngang -->
                 <div class="md:flex flex-col items-center justify-center">
@@ -294,7 +314,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh1.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh1_new.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -338,7 +358,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh2.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh2_new.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -382,7 +402,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh3.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/chitietnganh3_new.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -430,7 +450,6 @@
                 <div class="absolute top-0 -right-10 w-4 h-full bg-orange-500 skew-x-[-20deg]"></div>
             </div>
 
-
             <!-- Danh sách xét tuyển -->
             <ul class="mt-3 space-y-2 md:leading-10 w-[90%] md:w-full">
                 <li class="flex items-center text-orange-600 font-bold">
@@ -462,7 +481,9 @@
     </section>
 
     {{-- 100% SINH VIÊN CÓ CƠ HỘI NHẬN ĐƯỢC HỌC <br> BỔNG GIÁ TRỊ LÊN ĐẾN 150 TRIỆU ĐỒNG --}}
-    <section class="relative bg-[#def0fe]">
+    <section class="relative bg-[#def0fe] bg-contain bg-center bg-no-repeat"
+        style="background-image: url('{{ asset('newhome/bg_hocbong_new.jpg') }}');">
+
         <!-- Chứa ảnh theo hàng ngang -->
         <div class="container mx-auto md:px-12 md:flex flex-col justify-self-center items-center">
             <div class="flex">
@@ -477,7 +498,7 @@
                         BỔNG GIÁ TRỊ LÊN ĐẾN 150 TRIỆU ĐỒNG
                     </div>
 
-                    <div class="md:ml-8 ml-4 text-sm md:text-sm lg:text-lg leading-relaxed">
+                    <div class="md:ml-8 ml-4 text-sm md:text-sm lg:text-lg leading-relaxed text-black">
                         <div class="flex items-center">
                             <img src="{{ asset('newhome/bullet.png') }}" class="size-6 md:size-8" alt="">
                             <p class="ml-2">Miễn tiền ký túc xá năm đầu.</p>
@@ -532,12 +553,16 @@
         <div class="md:flex gap-8 md:py-10 pb-3">
             <!-- Video Section -->
             <div class="md:w-1/2 w-full md:mt-0 mt-5">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">🎓 Cam kết với sinh viên</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-4 flex">
+                    <img src="{{ asset('newhome/icon_check.jpg') }}" class="w-7" alt="">
+                    Cam kết với sinh viên
+                </h2>
                 <div class="relative max-w-3xl mx-auto overflow-hidden">
                     <div class="relative flex transition-transform duration-500 ease-in-out" id="carousel">
                         <div class="w-full flex-shrink-0">
                             <video id="autoplayVideo" class="w-full md:h-full h-56 rounded-xl" controls muted>
-                                <source src="{{ asset('videos/Program Overview (1920 x 1080 px) (Video)-2.mp4') }}"
+                                <source
+                                    src="{{ asset('videos/video new of Program Overview (1920 x 1080 px) (Video).mp4') }}"
                                     type="video/mp4">
                                 Trình duyệt của bạn không hỗ trợ video.
                             </video>
@@ -634,14 +659,19 @@
 
     <!-- Swiper 1 Môi trường học tập-->
     <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
-            bg-gradient-to-b from-blue-400 to-blue-900
-            text-transparent bg-clip-text 
-            italic inline-block">
-            MÔI TRƯỜNG HỌC TẬP
+        <div class="bg-[#055387] inline-block relative p-1">
+            <svg fill="currentColor" class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
+                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                <path
+                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                </path>
+            </svg>
+            <h3 class="relative z-20 min-w-64 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                Môi trường học tập
+            </h3>
         </div>
-        <div class="relative mx-auto">
+        <div class="relative mx-auto border-t-[1px] border-black">
             <button
                 class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-1">
@@ -740,9 +770,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-blue-800 inline-block relative p-1">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -921,9 +951,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -1101,9 +1131,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -1262,9 +1292,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -1443,9 +1473,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-blue-800 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-blue-700 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -1609,15 +1639,20 @@
     </section>
 
     <!-- Swiper 2 HOẠT ĐỘNG CỦA SINH VIÊN -->
-    <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="cursor-pointer text-center text-xl md:text-2xl font-bold py-4 uppercase
-            bg-gradient-to-b from-lime-200 via-yellow-400 via-40% to-orange-700
-            text-transparent bg-clip-text 
-            italic inline-block">
-            HOẠT ĐỘNG CỦA SINH VIÊN
+    <section class="container mx-auto md:px-12 px-1 relative pt-4">
+        <div class="bg-[#055387] inline-block relative p-1">
+            <svg fill="currentColor" class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
+                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                <path
+                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                </path>
+            </svg>
+            <h3 class="relative z-20 min-w-64 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                Hoạt động của sinh viên
+            </h3>
         </div>
-        <div class="relative mx-auto">
+        <div class="relative mx-auto border-t-[1px] border-black">
             <button
                 class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-2">
@@ -1714,9 +1749,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -1865,9 +1900,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2017,9 +2052,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2168,9 +2203,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2319,9 +2354,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-yellow-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-yellow-400 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2460,15 +2495,21 @@
 
     </section>
 
-    <!-- Swiper 3 khoa học công nghệ -->
-    <section class="container mx-auto md:px-12 px-1 relative">
-        <div
-            class="cursor-pointer text-xl md:text-2xl py-4 font-bold uppercase italic 
-               bg-gradient-to-b from-yellow-400 via-lime-400 via-40% to-green-800
-               bg-clip-text text-transparent">
-            KHOA HỌC & CÔNG NGHỆ
+    <!-- Swiper 3 khoa học & công nghệ -->
+    <section class="container mx-auto md:px-12 px-1 relative pt-4">
+        <div class="bg-[#055387] inline-block relative p-1">
+            <svg fill="currentColor" class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
+                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                <path
+                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                </path>
+            </svg>
+            <h3 class="relative z-20 min-w-64 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                Khoa học & công nghệ
+            </h3>
         </div>
-        <div class="relative mx-auto">
+        <div class="relative mx-auto border-t-[1px] border-black">
             <button
                 class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
             text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-3">
@@ -2555,9 +2596,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2567,7 +2608,7 @@
                                     </svg>
                                     <h3
                                         class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                        KHOA HỌC & CÔNG NGHỆ
+                                        Khoa học & công nghệ
                                     </h3>
                                 </div>
                                 <div class="border border-black rounded-lg rounded-l-none">
@@ -2705,10 +2746,9 @@
                 <div class="flex flex-col md:flex-row gap-2">
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
-
-                            <div class="bg-lime-500 inline-block relative py-2 px-2">
+                            <div class="bg-[#055387] inline-block relative p-1">
                                 <svg fill="currentColor"
-                                    class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                    class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                     style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                     shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                     viewBox="0 0 120 36">
@@ -2718,7 +2758,7 @@
                                 </svg>
                                 <h3
                                     class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                    KHOA HỌC & CÔNG NGHỆ
+                                    Khoa học & công nghệ
                                 </h3>
                             </div>
                             <div class="border border-black rounded-lg rounded-l-none">
@@ -2858,9 +2898,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -2870,7 +2910,7 @@
                                     </svg>
                                     <h3
                                         class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                        KHOA HỌC & CÔNG NGHỆ
+                                        Khoa học & công nghệ
                                     </h3>
                                 </div>
                                 <div class="border border-black rounded-lg rounded-l-none">
@@ -3010,9 +3050,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -3022,7 +3062,7 @@
                                     </svg>
                                     <h3
                                         class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                        KHOA HỌC & CÔNG NGHỆ
+                                        Khoa học & công nghệ
                                     </h3>
                                 </div>
                                 <div class="border border-black rounded-lg rounded-l-none">
@@ -3162,9 +3202,9 @@
                     <div class="w-full flex">
                         <div class="max-h-[90vh] overflow-y-auto scroll-container">
                             <div>
-                                <div class="bg-lime-500 inline-block relative py-2 px-2">
+                                <div class="bg-[#055387] inline-block relative p-1">
                                     <svg fill="currentColor"
-                                        class="absolute -right-[3.5rem] top-0 z-0 text-lime-500 transform scale-y-[-1]"
+                                        class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
                                         style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
                                         shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
                                         viewBox="0 0 120 36">
@@ -3174,7 +3214,7 @@
                                     </svg>
                                     <h3
                                         class="relative z-20 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
-                                        KHOA HỌC & CÔNG NGHỆ
+                                        Khoa học & công nghệ
                                     </h3>
                                 </div>
                                 <div class="border border-black rounded-lg rounded-l-none">
@@ -3301,6 +3341,96 @@
             </script>
         </div>
     </section>
+
+    <!-- Swiper 4 đội ngũ giảng viên -->
+    {{-- <section class="container mx-auto md:px-12 px-1 relative pt-4">
+        <div class="bg-[#055387] inline-block relative p-1">
+            <svg fill="currentColor" class="absolute -right-[3rem] top-0 z-0 text-[#006cb6] transform scale-y-[-1]"
+                style="height: -webkit-fill-available;" xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 120 36">
+                <path
+                    d="M77.103718 36C98.551859 36 98.551859 0 120 0H42.896282C21.448141 0 21.448141 36 0 36h77.103718Z">
+                </path>
+            </svg>
+            <h3 class="relative z-20 min-w-64 text-white text-xl font-semibold whitespace-nowrap font-serif italic">
+                Đội ngũ giảng viên
+            </h3>
+        </div>
+        <div class="relative mx-auto border-t-[1px] border-black">
+            <button
+                class="absolute left-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+                text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-prev-3">
+                ❮
+            </button>
+
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-pointer">
+                        <img src="{{ asset('newhome/album/hợp tác quốc tế.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                               transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tiến sĩ Nguyễn Văn Hiểu
+                        </p>
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img src="{{ asset('newhome/album/dự án.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                               transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tiến sĩ .......A
+                        </p>
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img src="{{ asset('newhome/album/điều tra.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                               transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tiến sĩ .......A
+                        </p>
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img src="{{ asset('newhome/album/tạp huấn.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                               transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tiến sĩ .......A
+                        </p>
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img src="{{ asset('newhome/album/nghiên cứu khoa học.jpg') }}"
+                            class="md:w-80 h-64 md:h-44 md:max-h-[168px] w-full" alt="">
+                        <p class="absolute bottom-0 left-0 right-0 text-center text-white font-bold italic text-base p-1"
+                            style="background: linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%);
+                               transition: background 0.3s ease;"
+                            onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
+                            onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
+                            Tiến sĩ .......A
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="absolute right-0 size-9 top-1/2 -translate-y-1/2 z-10 bg-gradient-to-b from-yellow-400 to-orange-500 
+                text-white text-center rounded-full shadow-lg text-2xl transition-all duration-300 swiper-button-next-3">
+                ❯
+            </button>
+        </div>
+
+    </section> --}}
 
     <!-- Initialize Swiper -->
     <style>
