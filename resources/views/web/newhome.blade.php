@@ -314,7 +314,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh1_new.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/nganh 1 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -358,7 +358,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh2_new.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/nganh 2 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -402,7 +402,7 @@
             <div class="flex flex-col md:flex-row gap-2">
                 <div class="w-full flex">
                     <div class="max-h-[80vh] overflow-y-auto scroll-container">
-                        <img src="{{ asset('newhome/chitietnganh3_new.jpg') }}" alt="Banner"
+                        <img src="{{ asset('newhome/nganh 3 detail.jpg') }}" alt="Banner"
                             class="w-full rounded-lg">
                     </div>
                 </div>
@@ -593,9 +593,8 @@
                         nghiệp trong lĩnh vực CNTT, chuyển đổi số, trí tuệ nhân tạo.</li>
                     <!-- Mục cuối cùng "Thành công đang chờ bạn!" -->
                     <li class="flex items-center justify-center text-yellow-500 mt-6 drop-shadow-md">
-                        <span
-                            class="text-3xl font-bold text-center font-handwriting animate-typing whitespace-nowrap overflow-hidden border-r-4 border-yellow-500 pr-3">
-                            Thành công đang chờ đợi bạn ở phía trước!
+                        <span class="md:text-3xl text-xl font-bold text-center font-handwriting animate-typing whitespace-nowrap overflow-hidden border-r-4 border-yellow-500 pr-3 w-full">
+                            Thành công đang chờ đón bạn ở phía trước!
                         </span>
                         <i class="fas fa-pen text-yellow-500 text-3xl ml-3"></i>
                     </li>
@@ -1351,7 +1350,7 @@
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
                                                 </div>
-                                                <span class="px-2 font-serif italic">Thể thao</span>
+                                                <span class="px-2 font-serif italic">Khu liên hiệp thể thao</span>
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
                                                 </div>
@@ -1702,7 +1701,7 @@
                            transition: background 0.3s ease;"
                             onmouseover="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 1) 0%, rgba(21, 88, 132, 1) 100%)'"
                             onmouseout="this.style.background='linear-gradient(270deg, rgba(85, 172, 57, 0.8) 0%, rgba(21, 88, 132, 0.8) 100%)'">
-                            Hoạt động thể thao
+                            Thể thao
                         </p>
                     </div>
                     <div title="Click để xem thêm" class="swiper-slide cursor-pointer open-popup-popupvannghe">
@@ -1797,7 +1796,7 @@
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
                                                 </div>
-                                                <span class="px-2 font-serif italic">Nhập học</span>
+                                                <span class="px-2 font-serif italic">Sinh viên tưng bừng trong ngày nhập học</span>
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
                                                 </div>
@@ -3098,7 +3097,7 @@
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
                                                 </div>
-                                                <span class="px-2 font-serif italic">Tập huấn công nghệ</span>
+                                                <span class="px-2 font-serif italic">Tập huấ<span class="absolute -ml-2">n </span>&nbsp; công nghệ</span>
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
                                                 </div>
@@ -3833,7 +3832,7 @@
             }
         }
     </style>
-    <div class="footer-bg bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[440px] flex flex-col justify-end mt-4"
+    <div class="footer-bg bg-cover bg-center bg-no-repeat min-h-[300px] md:min-h-[485px] flex flex-col justify-end mt-4"
         style="background-image: url('{{ asset('/newhome/bg_footer.png') }}');">
 
         <footer id="footer" class="text-white">
@@ -3841,9 +3840,11 @@
             <div class="grid md:grid-cols-4 container mx-auto md:px-12 px-2 gap-5">
                 <div class="md:col-span-2 mt-5">
                     <div id="text-3" class="col pb-0 widget widget_text">
-                        <span class="font-semibold text-xl uppercase">Trung tâm nghiên cứu Địa tin học</span>
-                        <div class="is-divider small"></div>
-                        <div class="mt-3">
+                        <span class="font-bold text-2xl text-red-500 uppercase"
+                        style="-webkit-text-fill-color: #fc0000; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff;">
+                            Liên hệ với chúng tôi để được tư vấn:</span> <br>
+                        <span class="font-semibold text-xl uppercase mt-3">Trung tâm nghiên cứu Địa tin học</span>
+                        <div class="">
                             <ul class="leading-7">
                                 <li>
                                     <strong><i class="far fa-map-marker-alt"></i> Địa chỉ:</strong>
@@ -3856,18 +3857,45 @@
                         </div>
                     </div>
 
-                    <div class="mt-3">
+                    <div class="mt-2">
                         <p class="font-semibold">
                             <i class="fad fa-user-tie"></i>
-                            Tiến sĩ Nguyễn Văn Hiểu - Giám đốc Trung tâm Nghiên cứu Địa tin học
+                            Tiến sĩ Nguyễn Văn Hiểu - Giám đốc
                         </p>
                         <div class="ml-[18px]">
-                            <p>SĐT/Zalo: 0934 001 103</p>
+                            <p>Tel/Zalo: 0934 001 103</p>
                         </div>
 
                     </div>
 
-                    <p class="flex font-semibold mt-4">
+                    <div class="mt-2">
+                        <p class="font-semibold flex">
+                            <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img"
+                            focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M 7,7 C 8.6570312,7 10,5.65703 10,4 10,2.34297 8.6570312,1 7,1 5.3429688,1 4,2.34297 4,4 4,5.65703 5.3429688,7 7,7 Z M 9.2453125,7.76406 8.125,12.25 7.375,9.0625 8.125,7.75 5.875,7.75 6.625,9.0625 5.875,12.25 4.7546875,7.76406 C 3.0835937,7.84375 1.75,9.21016 1.75,10.9 l 0,0.975 C 1.75,12.49609 2.2539063,13 2.875,13 l 8.25,0 c 0.621094,0 1.125,-0.50391 1.125,-1.125 l 0,-0.975 c 0,-1.68984 -1.333594,-3.05625 -3.0046875,-3.13594 z">
+                                </path>
+                            </g>
+                        </svg>
+                            Tiến sĩ Hứa Thị Toàn - Phó giám đốc
+                        </p>
+                        <div class="ml-[18px]">
+                            <p>Tel/Zalo: 0984 041 052</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-2">
+                        <p class="font-semibold">
+                            <i class="fad fa-user-tie"></i>
+                            Thạc sĩ Vũ Hồng Quân - Trưởng phòng
+                        </p>
+                    </div>
+
+                    <p class="flex font-semibold mt-2">
                         <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img"
                             focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -3880,7 +3908,7 @@
                         </svg>
                         Thạc sĩ Phạm Ngọc Huyền - Phụ trách chương trình đào tạo
                     </p>
-                    <p class="ml-5">SĐT/Zalo: 0329 014 816</p>
+                    <p class="ml-5">Tel/Zalo: 0329 014 816</p>
 
                     <div class="my-5">
                         <ul class="flex gap-5 items-center">
@@ -3915,7 +3943,7 @@
                 </div>
                 <div class="col-span-1 hidden md:flex">
                     <div class="">
-                        <iframe class="w-[292px] md:mt-16"
+                        <iframe class="w-[292px] md:mt-36"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.7968399958504!2d105.8082287107248!3d21.59385188011803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313527142d4a273b%3A0x93ac520307150ed8!2zVHJ1bmcgdMOibSBOZ2hpw6puIGPhu6l1IMSQ4buLYSB0aW4gaOG7jWMgLSBHSVJD!5e0!3m2!1svi!2s!4v1741098932000!5m2!1svi!2s"
                             style="border-radius: 10px; border: 6px solid rgba(255, 255, 255, 0.3); overflow: hidden;"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -3923,61 +3951,9 @@
 
                     </div>
                 </div>
-                {{-- <div class="col-span-1">
-                <div class="mt-5">
-                    <span class="font-semibold text-xl uppercase">Danh mục</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-8">
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Trang chủ</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Giới thiệu</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Học bổng - Ưu đãi</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Chương trình đào tạo</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Hoạt động sinh viên</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="mt-5">
-                    <span class="font-semibold text-xl uppercase">Chính sách</span>
-                    <div class="is-divider small"></div>
-                    <div class="mt-3">
-                        <ul class="leading-8">
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Chính sách và quy định chung</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết việc làm</a>
-                            </li>
-                            <li>
-                                <a class="hover:text-orange-400" href="#">
-                                    <i class="fas fa-chevron-right mr-2"></i>Cam kết học phí</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div> --}}
-                <div class="col-span-1 hidden md:flex">
-                    <div class="md:mt-5">
+                
+                <div class="col-span-1 hidden md:flex items-center">
+                    <div>
                         <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
                         <div class="is-divider small"></div>
                         <div class="fb-page mt-4 w-[281px]" data-href="https://www.facebook.com/girctuaf"
