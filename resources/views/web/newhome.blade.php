@@ -593,7 +593,8 @@
                         nghiệp trong lĩnh vực CNTT, chuyển đổi số, trí tuệ nhân tạo.</li>
                     <!-- Mục cuối cùng "Thành công đang chờ bạn!" -->
                     <li class="flex items-center justify-center text-yellow-500 mt-6 drop-shadow-md">
-                        <span class="md:text-3xl text-xl font-bold text-center font-handwriting animate-typing whitespace-nowrap overflow-hidden border-r-4 border-yellow-500 pr-3 w-full">
+                        <span
+                            class="md:text-3xl text-xl font-bold text-center font-handwriting animate-typing whitespace-nowrap overflow-hidden border-r-4 border-yellow-500 pr-3 w-full">
                             Thành công đang chờ đón bạn ở phía trước!
                         </span>
                         <i class="fas fa-pen text-yellow-500 text-3xl ml-3"></i>
@@ -1796,7 +1797,8 @@
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
                                                 </div>
-                                                <span class="px-2 font-serif italic">Sinh viên tưng bừng trong ngày nhập học</span>
+                                                <span class="px-2 font-serif italic">Sinh viên tưng bừng trong ngày
+                                                    nhập học</span>
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
                                                 </div>
@@ -3097,7 +3099,8 @@
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-blue-400 via-blue-500 via-50% to-red-500 h-0.5">
                                                 </div>
-                                                <span class="px-2 font-serif italic">Tập huấ<span class="absolute -ml-2">n </span>&nbsp; công nghệ</span>
+                                                <span class="px-2 font-serif italic">Tập huấ<span
+                                                        class="absolute -ml-2">n </span>&nbsp; công nghệ</span>
                                                 <div
                                                     class="flex-grow mx-2 bg-gradient-to-r from-red-500 via-blue-500 via-50% to-blue-400 h-0.5">
                                                 </div>
@@ -3841,7 +3844,7 @@
                 <div class="md:col-span-2 mt-5">
                     <div id="text-3" class="col pb-0 widget widget_text">
                         <span class="font-bold text-2xl text-red-500 uppercase"
-                        style="-webkit-text-fill-color: #fc0000; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff;">
+                            style="-webkit-text-fill-color: #fc0000; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff;">
                             Liên hệ với chúng tôi để được tư vấn:</span> <br>
                         <span class="font-semibold text-xl uppercase mt-3">Trung tâm nghiên cứu Địa tin học</span>
                         <div class="">
@@ -3871,15 +3874,15 @@
                     <div class="mt-2">
                         <p class="font-semibold flex">
                             <svg class="w-5" fill="#ffffff" viewBox="0 0 14 14" role="img"
-                            focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M 7,7 C 8.6570312,7 10,5.65703 10,4 10,2.34297 8.6570312,1 7,1 5.3429688,1 4,2.34297 4,4 4,5.65703 5.3429688,7 7,7 Z M 9.2453125,7.76406 8.125,12.25 7.375,9.0625 8.125,7.75 5.875,7.75 6.625,9.0625 5.875,12.25 4.7546875,7.76406 C 3.0835937,7.84375 1.75,9.21016 1.75,10.9 l 0,0.975 C 1.75,12.49609 2.2539063,13 2.875,13 l 8.25,0 c 0.621094,0 1.125,-0.50391 1.125,-1.125 l 0,-0.975 c 0,-1.68984 -1.333594,-3.05625 -3.0046875,-3.13594 z">
-                                </path>
-                            </g>
-                        </svg>
+                                focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M 7,7 C 8.6570312,7 10,5.65703 10,4 10,2.34297 8.6570312,1 7,1 5.3429688,1 4,2.34297 4,4 4,5.65703 5.3429688,7 7,7 Z M 9.2453125,7.76406 8.125,12.25 7.375,9.0625 8.125,7.75 5.875,7.75 6.625,9.0625 5.875,12.25 4.7546875,7.76406 C 3.0835937,7.84375 1.75,9.21016 1.75,10.9 l 0,0.975 C 1.75,12.49609 2.2539063,13 2.875,13 l 8.25,0 c 0.621094,0 1.125,-0.50391 1.125,-1.125 l 0,-0.975 c 0,-1.68984 -1.333594,-3.05625 -3.0046875,-3.13594 z">
+                                    </path>
+                                </g>
+                            </svg>
                             Tiến sĩ Hứa Thị Toàn - Phó giám đốc
                         </p>
                         <div class="ml-[18px]">
@@ -3951,7 +3954,7 @@
 
                     </div>
                 </div>
-                
+
                 <div class="col-span-1 hidden md:flex items-center">
                     <div>
                         <span class="font-semibold text-xl uppercase mt-5">Fanpage</span>
@@ -4010,7 +4013,36 @@
     </div>
 
     <!-- thông báo toast -->
-    <x-admin.alerts.toast />
+    {{-- <x-admin.alerts.toast /> --}}
+    @if (session('success'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Gửi thành công!',
+                    text: '{{ session('success') }}',
+                    confirmButtonColor: '#3085d6',
+                    confirmButtonText: 'OK'
+                });
+            });
+        </script>
+    @endif
+
+    @if ($errors->any())
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gửi không thành công!',
+                    text: 'Vui lòng kiểm tra lại thông tin nhập vào.',
+                    confirmButtonColor: '#d33',
+                    confirmButtonText: 'OK'
+                });
+            });
+        </script>
+    @endif
+    <!-- Thêm SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- End thông báo toast -->
 
     <!-- icon liên hệ lơ lửng -->

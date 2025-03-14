@@ -23,7 +23,7 @@ class HomeController extends Controller
     public function storeRegister(ApplyRequest $request)
     {
         Apply::create($request->all());
-        return redirect()->route('dangky')->with('success', 'Bạn đã gửi thông tin thành công');
+        return redirect()->route('dangky')->with('success', 'Bạn đã gửi thông tin thành công! Chúng tôi sẽ sớm liên hệ lại với bạn');
     }
 
     //danh sách đăng ký
